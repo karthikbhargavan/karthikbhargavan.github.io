@@ -1,16 +1,20 @@
 html {}
 
+
+
 body {
 	background: #FFF;
-	color: #111;
-	font-family: 'Source Sans Pro', sans-serif;
+	color: #000000;
+	font-family: 'Helvetica';
+	font-size: 21px;
+	letter-spacing: 0.95px;
+	line-height: 30px;
 	width: 100%;
 	height: 100%;
 	padding: 0;
 	margin: 10px 0 0 0;
-	font-size: 16px;
-	line-height: 28px;
 }
+
 
 strong {
 	font-weight: bold;
@@ -78,6 +82,22 @@ hr {
 	outline: none;
 	width: 80%;
 	margin: 20px auto;
+}
+
+div.header h1 {
+/* MORE MATERIALS: */
+font-family: Helvetica;
+font-size: 44px;
+color: #000000;
+letter-spacing: 5px;
+}
+
+div.header h2 {
+/* Rosy Lamb: */
+font-family: Helvetica;
+font-size: 24px;
+color: #000000;
+letter-spacing: 3px;
 }
 
 div.main {
