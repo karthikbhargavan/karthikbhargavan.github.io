@@ -1,0 +1,319 @@
+html {}
+
+body {
+	background: #FFF;
+	color: #111;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 10px 0 0 0;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a img {
+	border: none;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-family: 'PragmataPro', sans-serif;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-family: 'PragmataPro', sans-serif;
+	margin: 10px 0px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+ul {
+	list-style-type: square;
+	margin: 0 auto;
+	width: 80%;
+}
+
+a {
+	text-decoration: none;
+	transition: text-decoration 0.2s;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	margin: 10px 0;
+	width: 95%;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0)
+	);
+	outline: none;
+	width: 80%;
+	margin: 20px auto;
+}
+
+div.main {
+	margin: 0% auto 0 auto;
+	width: 80%;
+	max-width: 1000px;
+}
+
+div.left {
+	width: 200px;
+	position: fixed;
+	top: 10px;
+}
+
+div.left img.symbolic {
+	width: 100%;
+	height: auto;
+	display: block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+div.left div.nav {
+	margin: 20px auto;
+}
+
+div.left div.nav a {
+	font-family: 'PragmataPro';
+	width: 100%;
+	margin: 8px auto;
+	border-radius: 2px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	opacity: 0.9;
+	text-align: center;
+	padding: 2px 0;
+	transition: background-color 0.35s, color 0.35s;
+}
+
+div.left div.nav a.services {
+	background-color: #D4EDF7;
+}
+
+div.left div.nav a.technologies {
+	background-color: #F8BCC8;
+}
+
+div.left div.nav a.blog {
+	background-color: #E2A075;
+}
+
+div.left div.nav a.about {
+	background-color: #7ED3AF;
+}
+
+div.left div.nav a.contact {
+	background-color: #F4EA81;
+}
+
+div.left div.nav a:hover {
+	background-color: #FFF;
+	color: #000;
+}
+
+div.left div.nav a.active {
+	background-color: #FFF;
+	color: #000;
+}
+
+div.right {
+	margin-left: 250px;
+}
+
+div.right p {
+	margin: 0 0 20px 0;
+}
+
+div.right p.intro {
+	font-size: 1.3em;
+	line-height: 2em;
+	margin: 40px 0 46px 0;
+}
+
+div.right p.subIntro {
+}
+
+div.right div.figure {
+	margin: 15px auto 25px auto;
+}
+
+div.right div.figure img {
+	margin: 0 auto 10px auto;
+	width: 80%;
+	max-width: 450px;
+	height: auto;
+	border: 4px solid #FAFAFA;
+	box-shadow: 0 0 4px #777;
+	display: block;
+}
+
+div.right div.figure p {
+	text-align: center;
+	font-size: 0.8em;
+	width: 80%;
+	max-width: 450px;
+	margin: 0 auto;
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+div.right div.addressBottom {
+	height: 100px;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin-top: 0;
+	width: 100%;
+}
+
+div.right div.addressVCard {
+	width: 45%;
+}
+
+div.right div.addressVCard img {
+	display: inline-block;
+	width: 64px;
+	height: auto;
+}
+
+div.right div.addressVCard p {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+div.right p.quote {
+	font-family: 'Georgia', serif;
+	font-size: 0.9em
+}
+
+div.right div.item {
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 120px;
+}
+
+div.right div.item img {
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 0 2px #777;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+}
+
+div.right div.item div.itemText {
+	margin-left: 120px;
+	line-height: 1.6em;
+}
+
+div.right div.item div.itemText h3 {
+}
+
+div.right div.item div.itemText p {
+	font-size: 0.9em;
+	line-height: 1.6em;
+}
+
+div.right iframe.map {
+	width: 100%;
+	height: 300px;
+	margin: 10px auto;
+	display: block;
+	border: 0;
+}
+
+span.mail {
+	font-family: 'PragmataPro';
+	background-color: #45A4F8;
+	border: 1px solid #45A4F8;
+	padding: 1px 3px;
+	border-radius: 3px;
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+div.bottom {
+	margin: 80px auto 20px auto;
+	text-align: center;
+	width: 320px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+	font-size: 0.7em;
+	color: #888;
+	font-family: 'PragmataPro';
+}
+
+@media all and (max-width: 800px) {
+	body {
+		line-height: 26px;
+	}
+	div.main {
+		width: 90%;
+	}
+	div.left {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	div.left img.symbolic {
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	div.left div.nav {
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 0 15%;
+	}
+	div.right {
+		width: 95%;
+		display: block;
+		margin: 0 auto;
+	}
+	div.right p.intro {
+	}
+	div.right div.item {
+	}
+	div.right div.item div.itemText {
+	}
+	.hideOnMobile {
+		display: none;
+	}
+	:focus {
+		outline-color: transparent;
+		outline-style: none;
+	}
+}
