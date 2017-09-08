@@ -15,6 +15,29 @@ body {
 	margin: 10px 0 0 0;
 }
 
+div.header {
+	width: 100%;
+}
+
+div.header h1 {
+/* MORE MATERIALS: */
+width: 500px;
+font-family: Helvetica;
+font-size: 44px;
+color: #000000;
+letter-spacing: 5px;
+}
+
+div.header h2 {
+/* Rosy Lamb: */
+width: 200px;
+font-family: Helvetica;
+font-size: 24px;
+color: #000000;
+letter-spacing: 3px;
+}
+
+
 
 strong {
 	font-weight: bold;
@@ -82,22 +105,6 @@ hr {
 	outline: none;
 	width: 80%;
 	margin: 20px auto;
-}
-
-div.header h1 {
-/* MORE MATERIALS: */
-font-family: Helvetica;
-font-size: 44px;
-color: #000000;
-letter-spacing: 5px;
-}
-
-div.header h2 {
-/* Rosy Lamb: */
-font-family: Helvetica;
-font-size: 24px;
-color: #000000;
-letter-spacing: 3px;
 }
 
 div.main {
