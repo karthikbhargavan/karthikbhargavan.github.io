@@ -56,17 +56,28 @@ div.full div.home {
 	display:block;
 }
 
-div.full div.viewport {
+div.full div.fullpic {
 	width: 100%;
 	display:none;
+	height: auto;
+	width: auto;
+	max-width: 1200px;
+	max-height: 1200px;
+	overflow: hidden;
 }
 
-div.full img{
+div.full div.home img{
 	height: auto;
 	width: auto;
 	max-width: 1200px;
 	max-height: 1200px;
 	display: block;
+}
+
+div.full div.fullpic img{
+	height: auto;
+	width: auto;
+	max-width: none;
 }
 	 
 div.normal {

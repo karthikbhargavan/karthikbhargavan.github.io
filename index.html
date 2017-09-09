@@ -46,7 +46,7 @@
 <div id="home" onclick="switchDiv('normal','intro')" >
 <img src="images/surface-details/surface1.jpg"/>
 </div>
-<div id="viewport" onclick="switchDiv('normal',window.currentTarget)" >
+<div id="fullpic" onclick="switchDiv('normal',window.currentTarget)" >
 <img id="currentFullPic" src=""/>
 </div>
 </div>
@@ -74,8 +74,8 @@
 
 <div class="right">
 <div class="piece" id="plate"> 
-<div class="picview" id="plate-view" onclick="switchDiv('full','viewport')">
-  <a href="#"><img id="plate-img" src="images/the-plate-throwers/plate10.jpg" /></a>
+<div class="picview" id="plate-view" onclick="switchDiv('full','fullpic')">
+  <a href="#"><img id="plate-img" onclick="switchPic('currentFullPic','images/the-plate-throwers/plate10.jpg')" src="images/the-plate-throwers/plate10.jpg" /></a>
 </div>
 <div class="picmenu" id="plate-menu">
 <a href="#" onclick=""><img src ="images/the-plate-throwers/plate10.jpg" /></a>
