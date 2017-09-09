@@ -13,15 +13,90 @@
   <script type="application/javascript">
     window.addEventListener('load', function() {
     smoothScroll.init();
-    document.getElementById('bottomYear').innerText = (new Date()).getFullYear();
     });
+
+    window.currentMode = "full"
+    window.currentTarget = "home";
+    function switchDiv(mode,target) {
+    if (window.currentMode !== mode) {
+       document.getElementById(window.currentMode).style.display='none';
+       document.getElementById(mode).style.display='block';
+       window.currentMode = mode;
+    }
+    if (window.currentTarget !== target) {
+       document.getElementById(window.currentTarget).style.display='none';
+       document.getElementById(target).style.display='block';
+       window.currentTarget = target;
+    }
+    }
+
+    function switchPic(target,src) {
+       document.getElementById(target).src = src;
+    }
     </script>
 </head>
 <body>
 
-<div class="header">
-<h1> MORE MATERIAL </h1>
-<h2> Rosy Lamb </h2>
+<div class="header" onclick="switchDiv('normal','intro')">
+<div class="title"> MORE MATERIAL </div>
+<div class="author"> Rosy Lamb </div>
 </div>
+
+<div class="full" id="full" onclick="switchDiv('normal','intro')" >
+<div id="home" onclick="switchDiv('normal','intro')" >
+<img src="images/surface-details/surface1.jpg"/>
+</div>
+<div id="viewport" onclick="switchDiv('normal',window.currentTarget)" >
+<img id="currentFullPic" src=""/>
+</div>
+</div>
+
+
+<div class="normal" id="normal">
+<div class="left">
+<div class="bigmenu">
+<a href="#intro">Introduction</a>
+</div>
+<div class="smallmenu">
+<a href="#" onclick="switchDiv('normal','plate')">The Plate Throwers</a>
+<a href="#" onclick="switchDiv('normal','oceans')">Oceans of Notions</a>
+<a href="#" onclick="switchDiv('normal','lumieres')">Les Lumières</a>
+<a href="#" onclick="switchDiv('normal','parchemins')">Parchemins</a>
+<a href="#" onclick="switchDiv('normal','return')">Return to Form</a>
+<a href="#" onclick="switchDiv('normal','surface')">Surface Details</a>
+</div>
+<div class="bigmenu">
+<a href="#background" onclick="switchDiv('normal','background')">Background</a>
+<a href="#contact" onclick="switchDiv('normal','contact')">Contact</a>
+</div>
+</div> 
+
+
+<div class="right">
+<div class="piece" id="plate"> 
+<div class="picview" id="plate-view" onclick="switchDiv('full','viewport')">
+  <a href="#"><img id="plate-img" src="images/the-plate-throwers/plate10.jpg" /></a>
+</div>
+<div class="picmenu" id="plate-menu">
+<a href="#" onclick=""><img src ="images/the-plate-throwers/plate10.jpg" /></a>
+</div>
+</div>
+
+<div class="piece" id="oceans"> 
+</div>
+<div class="piece" id="lumieres"> 
+</div>
+<div class="piece" id="parchemins"> 
+</div>
+<div class="piece" id="return"> 
+</div>
+<div class="text" id="intro"> 
+</div>
+<div class="text" id="background"> 
+</div>
+<div class="text" id="contact"> 
+</div>
+</div> 
+</div> 
 
 </body>
