@@ -51,22 +51,13 @@ div.full {
 	position: relative;
 	}
 
-div.full div.home {
+div.full div#home {
 	width: 100%;
 	display:block;
 }
 
-div.full div.fullpic {
-	width: 100%;
-	display:none;
-	height: auto;
-	width: auto;
-	max-width: 1200px;
-	max-height: 1200px;
-	overflow: hidden;
-}
 
-div.full div.home img{
+div.full div#home img{
 	height: auto;
 	width: auto;
 	max-width: 1200px;
@@ -74,10 +65,17 @@ div.full div.home img{
 	display: block;
 }
 
-div.full div.fullpic img{
+div.full div#fullpic {
+	width: 1200px;
+	height: auto;
+	overflow:scroll;
+	display:none;
+}
+
+div.full div#fullpic img{
 	height: auto;
 	width: auto;
-	max-width: none;
+	max-width: 3000px;
 }
 	 
 div.normal {

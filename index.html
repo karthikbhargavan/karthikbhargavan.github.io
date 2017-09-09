@@ -17,6 +17,7 @@
 
     window.currentMode = "full"
     window.currentTarget = "home";
+    window.prevTarget = "home";
     function switchDiv(mode,target) {
     if (window.currentMode !== mode) {
        document.getElementById(window.currentMode).style.display='none';
@@ -26,6 +27,7 @@
     if (window.currentTarget !== target) {
        document.getElementById(window.currentTarget).style.display='none';
        document.getElementById(target).style.display='block';
+       window.prevTarget = window.currentTarget;
        window.currentTarget = target;
     }
     }
@@ -42,11 +44,11 @@
 <div class="author"> Rosy Lamb </div>
 </div>
 
-<div class="full" id="full" onclick="switchDiv('normal','intro')" >
+<div class="full" id="full">
 <div id="home" onclick="switchDiv('normal','intro')" >
 <img src="images/surface-details/surface1.jpg"/>
 </div>
-<div id="fullpic" onclick="switchDiv('normal',window.currentTarget)" >
+<div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
 <img id="currentFullPic" src=""/>
 </div>
 </div>
@@ -74,8 +76,8 @@
 
 <div class="right">
 <div class="piece" id="plate"> 
-<div class="picview" id="plate-view" onclick="switchDiv('full','fullpic')">
-  <a href="#"><img id="plate-img" onclick="switchPic('currentFullPic','images/the-plate-throwers/plate10.jpg')" src="images/the-plate-throwers/plate10.jpg" /></a>
+<div class="picview" id="plate-view">
+  <a href="#"><img id="plate-img" onclick="switchPic('currentFullPic','images/the-plate-throwers/plate10.jpg');switchDiv('full','fullpic');" src="images/the-plate-throwers/plate10.jpg" /></a>
 </div>
 <div class="picmenu" id="plate-menu">
 <a href="#" onclick=""><img src ="images/the-plate-throwers/plate10.jpg" /></a>
