@@ -32,17 +32,41 @@
     }
     }
 
-    function switchViewPic(target,src) {
+    function switchViewPic(id,target,src) {
        document.getElementById(target).src = src;
+       document.getElementById(currentPic).className = "";
+       document.getElementById(id).className = "currentPic";
+       window.currentPic = id;
     }
 
     function switchFullPic(src) {
        document.getElementById('currentFullPic').src = src;
        switchDiv('full','fullpic');
     }
+
+    function displayMenu(piece,picsDir,picsList) {
+       let m = document.getElementById(piece+"-menu");
+       window.currentPic = piece+0;
+       for (p in picsList) {
+          let a = document.createElement('a');
+          a.href="#";
+          let i = document.createElement('img');
+          i.src = picsDir+piece+picsList[p]+".jpg";
+          i.id = piece+p;
+          i.onclick = function(){switchViewPic(i.id,piece+"-img",this.src)};
+          if (p == 0) i.className = "currentPic";
+          a.appendChild(i);
+          m.appendChild(a);
+        }
+    }
     </script>
 </head>
 <body>
+
+<script>
+/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY */
+window.platePics = [10,20,30,40,50,60,70,80,90,92,94,96,98,100];
+</script>
 
 <div class="header" onclick="switchDiv('normal','intro')">
 <div class="title"> MORE MATERIAL </div>
@@ -86,19 +110,7 @@
 </div>
 <div class="picmenu" id="plate-menu">
 <script>
-(function () {
-   let pics = [10,20,30,40,50,60,70,80,90,92,94,96,98,100];
-   let m = document.getElementById('plate-menu');
-   for (p in pics) {
-     let a = document.createElement('a');
-     a.href="#";
-     let i = document.createElement('img');
-     i.src = "images/the-plate-throwers/plate"+pics[p]+".jpg";
-     i.onclick = function(){switchViewPic('plate-img',this.src)};
-     a.appendChild(i);
-     m.appendChild(a);
-   }
-})();
+displayMenu("plate","images/the-plate-throwers/",window.platePics);
 </script>
 </div>
 <p>
