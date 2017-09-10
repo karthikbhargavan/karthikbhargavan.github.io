@@ -76,6 +76,7 @@ div.full div#fullpic img{
 	height: auto;
 	width: auto;
 	max-width: 3000px;
+        margin: auto; 
 }
 	 
 div.normal {
@@ -164,6 +165,27 @@ div.piece div.picmenu a img {
 	max-height: 100px;
 	display: block;
 }
+
+div.text {
+       display:none
+       width: auto;
+       max-width:620px;
+}
+
+div.text img {
+       display:block
+       width: 100%;
+}
+
+div.text p{
+/* Lorem ipsum dolor si: */
+font-family: Helvetica;
+font-size: 21px;
+color: #000000;
+letter-spacing: 0.95px;
+line-height: 30px;
+}
+
 /*
 strong {
 	font-weight: bold;
