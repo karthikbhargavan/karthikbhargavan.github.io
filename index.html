@@ -32,8 +32,13 @@
     }
     }
 
-    function switchPic(target,src) {
+    function switchViewPic(target,src) {
        document.getElementById(target).src = src;
+    }
+
+    function switchFullPic(src) {
+       document.getElementById('currentFullPic').src = src;
+       switchDiv('full','fullpic');
     }
     </script>
 </head>
@@ -77,11 +82,30 @@
 <div class="right">
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
-  <a href="#"><img id="plate-img" onclick="switchPic('currentFullPic','images/the-plate-throwers/plate10.jpg');switchDiv('full','fullpic');" src="images/the-plate-throwers/plate10.jpg" /></a>
+  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="images/the-plate-throwers/plate10.jpg" /></a>
 </div>
 <div class="picmenu" id="plate-menu">
-<a href="#" onclick=""><img src ="images/the-plate-throwers/plate10.jpg" /></a>
+<script>
+(function () {
+   let pics = [10,20,30,40,50,60,70,80,90,92,94,96,98,100];
+   let m = document.getElementById('plate-menu');
+   for (p in pics) {
+     let a = document.createElement('a');
+     a.href="#";
+     let i = document.createElement('img');
+     i.src = "images/the-plate-throwers/plate"+pics[p]+".jpg";
+     i.onclick = function(){switchViewPic('plate-img',this.src)};
+     a.appendChild(i);
+     m.appendChild(a);
+   }
+})();
+</script>
 </div>
+<p>
+The Plate Throwers Cupboard <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
+
 </div>
 
 <div class="piece" id="oceans"> 
