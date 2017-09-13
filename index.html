@@ -60,6 +60,23 @@
           m.appendChild(a);
         }
     }
+    window.currentPiece = "";
+    function switchPiece(id,piece) {
+      switchDiv('normal',piece);
+      if (window.currentPiece != "") {
+         document.getElementById(window.currentPiece).className = "";
+      }
+      document.getElementById(id).className="currentPiece";
+      window.currentPiece = id;
+    }
+
+    function switchText(piece) {
+      switchDiv('normal',piece);
+      if (window.currentPiece != "") {
+         document.getElementById(window.currentPiece).className = "";
+      }
+      window.currentPiece = "";
+    }
     </script>
 </head>
 <body>
@@ -229,20 +246,19 @@ window.surfacePics = [
 
 <div class="normal" id="normal">
 <div class="left">
-<div class="bigmenu">
-<a href="#intro">Introduction</a>
-</div>
 <div class="smallmenu">
-<a href="#" onclick="switchDiv('normal','plate')">The Plate Throwers</a>
-<a href="#" onclick="switchDiv('normal','oceans')">Oceans of Notions</a>
-<a href="#" onclick="switchDiv('normal','lumieres')">Les Lumières</a>
-<a href="#" onclick="switchDiv('normal','parchemins')">Parchemins</a>
-<a href="#" onclick="switchDiv('normal','return')">Return to Form</a>
-<a href="#" onclick="switchDiv('normal','surface')">Surface Details</a>
+<a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">The Plate Throwers</a>
+<a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">Oceans of Notions</a>
+<a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">Les Lumières</a>
+<a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">Parchemins</a>
+<a href="#" id="piece5" onclick="switchPiece(this.id,'return')">Return to Form</a>
+<a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">Surface Details</a>
 </div>
 <div class="bigmenu">
-<a href="#background" onclick="switchDiv('normal','background')">Background</a>
-<a href="#contact" onclick="switchDiv('normal','contact')">Contact</a>
+<a href="#intro" onclick="switchText('intro')">Introduction</a>
+<a href="#background" onclick="switchText('background')">Background</a>
+<a href="#video" onclick="switchText('video')">Video</a>
+<a href="#contact" onclick="switchText('contact')">Contact</a>
 </div>
 </div> 
 
@@ -361,6 +377,8 @@ To make More Material the foundry has been my studio and my laboratory. David de
 
 </div>
 <div class="text" id="background"> 
+</div>
+<div class="text" id="video"> 
 </div>
 <div class="text" id="contact"> 
 </div>
