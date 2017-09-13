@@ -51,7 +51,7 @@
           let a = document.createElement('a');
           a.href="#";
           let i = document.createElement('img');
-          i.src = picsDir+piece+picsList[p]+".jpg";
+          i.src = picsDir+piece+picsList[p].num+".jpg";
           i.id = piece+p;
           i.onclick = function(){switchViewPic(i.id,piece+"-img",this.src)};
           if (p == 0) i.className = "currentPic";
@@ -64,8 +64,151 @@
 <body>
 
 <script>
-/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY */
-window.platePics = [10,20,30,40,50,60,70,80,90,92,94,96,98,100];
+/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
+window.platePics = [
+   {num : 10,
+    caption : ""},
+   {num : 20,
+    caption : ""},
+   {num : 30,
+    caption : ""},
+   {num : 40,
+    caption : ""},
+   {num : 50,
+    caption : ""},
+   {num : 60,
+    caption : ""},
+   {num : 70,
+    caption : ""},
+   {num : 80,
+    caption : ""},
+   {num : 90,
+    caption : ""},
+   {num : 92,
+    caption : ""},
+   {num : 94,
+    caption : ""},
+   {num : 96,
+    caption : ""},
+   {num : 98,
+    caption : ""},
+   {num : 100,
+    caption : ""}
+];
+
+window.oceansPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""},
+   {num : 9,
+    caption : ""},
+   {num : 10,
+    caption : ""},
+   {num : 11,
+    caption : ""},
+   {num : 12,
+    caption : ""}
+];
+
+window.lumieresPics = [
+   {num : 10,
+    caption : ""},
+   {num : 20,
+    caption : ""},
+   {num : 30,
+    caption : ""},
+   {num : 40,
+    caption : ""},
+   {num : 50,
+    caption : ""},
+   {num : 60,
+    caption : ""},
+   {num : 70,
+    caption : ""},
+   {num : 80,
+    caption : ""}
+];
+
+window.parcheminsPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""}
+];
+
+window.returnPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""}
+];
+
+window.surfacePics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+// NOT IN DROPBOX:
+//   {num : 5,
+//    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""},
+   {num : 9,
+    caption : ""},
+   {num : 10,
+    caption : ""},
+   {num : 11,
+    caption : ""},
+   {num : 12,
+    caption : ""},
+   {num : 13,
+    caption : ""}
+];
+
+
 </script>
 
 <div class="header" onclick="switchDiv('normal','intro')">
@@ -117,20 +260,82 @@ displayMenu("plate","images/the-plate-throwers/",window.platePics);
 The Plate Throwers Cupboard <br/>
 bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
 </p>
-
 </div>
 
 <div class="piece" id="oceans"> 
+<div class="picview" id="oceans-view">
+  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="images/oceans-of-notions/oceans1.jpg" /></a>
+</div>
+<div class="picmenu" id="oceans-menu">
+<script>
+displayMenu("oceans","images/oceans-of-notions/",window.oceansPics);
+</script>
+</div>
+<p>
+Oceans of Notions <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
 </div>
 <div class="piece" id="lumieres"> 
+<div class="picview" id="lumieres-view">
+  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres10.jpg" /></a>
+</div>
+<div class="picmenu" id="lumieres-menu">
+<script>
+displayMenu("lumieres","images/les-lumieres/",window.lumieresPics);
+</script>
+</div>
+<p>
+Les Lumières <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
 </div>
 <div class="piece" id="parchemins"> 
+<div class="picview" id="parchemins-view">
+  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="images/parchemins/parchemins1.jpg" /></a>
+</div>
+<div class="picmenu" id="parchemins-menu">
+<script>
+displayMenu("parchemins","images/parchemins/",window.parcheminsPics);
+</script>
+</div>
+<p>
+Parchemins <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
 </div>
 <div class="piece" id="return"> 
+<div class="picview" id="return-view">
+  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="images/return-to-form/return1.jpg" /></a>
+</div>
+<div class="picmenu" id="return-menu">
+<script>
+displayMenu("return","images/return-to-form/",window.returnPics);
+</script>
+</div>
+<p>
+Return to Form <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
+</div>
+
+<div class="piece" id="surface"> 
+<div class="picview" id="surface-view">
+  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="images/surface-details/surface1.jpg" /></a>
+</div>
+<div class="picmenu" id="surface-menu">
+<script>
+displayMenu("surface","images/surface-details/",window.surfacePics);
+</script>
+</div>
+<p>
+Surface Details <br/>
+bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
 </div>
 <div class="text" id="intro"> 
 
-<img src="images/intro/Rosy-Foundry.jpg" />
+<img src="images/introduction/intro1.jpg" />
 
 <p>
 I have come to realize that most paintings and sculptures do not end up in museums but rather in private homes, where they live and change as we, their co-habitants and viewers, live and change. With “More Material” my aim is to make sculptures which are visual objects that can be thought upon or eaten upon in the sanctuaries of our homes. These new sculptures use brushstrokes, broken forms and double takes to harness bronze’s unique potential to balance strength with visual fragility. 
