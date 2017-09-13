@@ -1,7 +1,5 @@
 html {}
 
-
-
 body {
 	background: #FFF;
 	color: #000000;
@@ -160,30 +158,30 @@ div.piece div.picmenu {
 }
 
 div.piece div.picmenu a {
-	height: auto;
-	width: auto;
-	max-height: 80px;
-	max-width: 120px;
-	overflow: hidden;
+	height: 80px;
+	width: 100px;
 	display: block;
 	float: left;
 	margin: 5px 20px 0px 0px;
 }
 
 div.piece div.picmenu a img {
-	max-height: 80px;
+	width: 100px;
+	height: 80px;
 	width: auto;
 	opacity: 0.37;
 }
 
 div.piece div.picmenu a img:hover {
-	max-height: 80px;
+	width: 100px;
+	height: 80px;
 	width: auto;
 	opacity: 1;
 }
 
 div.piece div.picmenu a img.currentPic {
-	max-height: 80px;
+	width: 100px;
+	height: 80px;
 	width: auto;
 	opacity: 1;
 }
