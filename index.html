@@ -246,19 +246,47 @@ window.surfacePics = [
 
 <div class="normal" id="normal">
 <div class="left">
+<div class="bigmenu">
+<a href="#" onclick="switchText('collection')">The Collection</a>
+</div>
 <div class="smallmenu">
-<a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">The Plate Throwers</a>
-<a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">Oceans of Notions</a>
-<a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">Les Lumières</a>
-<a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">Parchemins</a>
-<a href="#" id="piece5" onclick="switchPiece(this.id,'return')">Return to Form</a>
-<a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">Surface Details</a>
+<div class="smallmenu-item">
+<a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">
+<img src="images/the-plate-throwers/plate10.jpg"></img>
+The Plate Throwers
+</a>
+</div>
+<div class="smallmenu-item">
+<a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">
+<img src="images/oceans-of-notions/oceans1.jpg"></img>
+Oceans of Notions</a>
+</div>
+<div class="smallmenu-item">
+<a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">
+<img src="images/les-lumieres/lumieres10.jpg"></img>
+Les Lumières</a>
+</div>
+<div class="smallmenu-item">
+<a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">
+<img src="images/parchemins/parchemins1.jpg"></img>
+Parchemins</a>
+</div>
+<div class="smallmenu-item">
+<a href="#" id="piece5" onclick="switchPiece(this.id,'return')">
+<img src="images/return-to-form/return1.jpg"></img>
+Return to Form</a>
+</div>
+<div class="smallmenu-item">
+<a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">
+<img src="images/surface-details/surface1.jpg"></img>
+Surface Details</a>
+</div>
 </div>
 <div class="bigmenu">
-<a href="#intro" onclick="switchText('intro')">Introduction</a>
-<a href="#background" onclick="switchText('background')">Background</a>
-<a href="#video" onclick="switchText('video')">Video</a>
-<a href="#contact" onclick="switchText('contact')">Contact</a>
+<a href="#" onclick="switchText('intro')">About</a>
+<a href="#" onclick="switchText('background')">Artist Bio</a>
+<a href="#" onclick="switchText('video')">Video</a>
+<a href="#" onclick="switchText('contact')">Contact</a>
 </div>
 </div> 
 
@@ -273,10 +301,14 @@ window.surfacePics = [
 displayMenu("plate","the-plate-throwers",window.platePics);
 </script>
 </div>
-<p>
-The Plate Throwers Cupboard <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+<div class="caption">
+<p class="title">
+The Plate Throwers
 </p>
+<p class="description">
+console, bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+</p>
+</div>
 </div>
 
 <div class="piece" id="oceans"> 
@@ -288,11 +320,12 @@ bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
 displayMenu("oceans","oceans-of-notions",window.oceansPics);
 </script>
 </div>
-<p>
-Oceans of Notions <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+<div class="caption">
+<p class="title"> Oceans of Notions
 </p>
 </div>
+</div>
+
 <div class="piece" id="lumieres"> 
 <div class="picview" id="lumieres-view">
   <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres10.jpg" /></a>
@@ -302,11 +335,13 @@ bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
 displayMenu("lumieres","les-lumieres",window.lumieresPics);
 </script>
 </div>
-<p>
-Les Lumières <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+<div class="caption">
+<p class = "title"> 
+Les Lumières 
 </p>
 </div>
+</div>
+
 <div class="piece" id="parchemins"> 
 <div class="picview" id="parchemins-view">
   <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="images/parchemins/parchemins1.jpg" /></a>
@@ -316,10 +351,11 @@ bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
 displayMenu("parchemins","parchemins",window.parcheminsPics);
 </script>
 </div>
-<p>
-Parchemins <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+<div class="caption">
+<p class="title">
+Parchemins 
 </p>
+</div>
 </div>
 <div class="piece" id="return"> 
 <div class="picview" id="return-view">
@@ -345,10 +381,11 @@ bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
 displayMenu("surface","surface-details",window.surfacePics);
 </script>
 </div>
-<p>
-Surface Details <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
+<div class="caption">
+<p class="title">
+Surface Details 
 </p>
+</div>
 </div>
 <div class="text" id="intro"> 
 
