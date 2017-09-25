@@ -15,9 +15,9 @@
     smoothScroll.init();
     });
 
-    window.currentMode = "full"
-    window.currentTarget = "home";
-    window.prevTarget = "home";
+    window.currentMode = "normal"
+    window.currentTarget = "collection";
+    window.prevTarget = "collection";
     function switchDiv(mode,target) {
     if (window.currentMode !== mode) {
        document.getElementById(window.currentMode).style.display='none';
@@ -202,13 +202,13 @@ window.surfacePics = [
 
 </script>
 
-<div class="header" onclick="switchDiv('normal','intro')">
+<div class="header" onclick="switchDiv('normal','collection')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
 </div>
 
 <div class="full" id="full">
-<div id="home" onclick="switchDiv('normal','intro')" >
+<div id="home" onclick="switchDiv('normal','collection')" >
 <img src="images/surface-details/surface1.jpg"/>
 </div>
 <div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
@@ -264,100 +264,146 @@ Surface Details</a>
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
   <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="images/the-plate-throwers/plate10.jpg" /></a>
+<div class="caption">
+<p class="title">
+The Plate Throwers, 2017
+</p>
+<p class="description">
+console, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique.
+</p>
+<p class="note" id="plate-note">
+</p>
+</div>
 </div>
 <div class="picmenu" id="plate-menu">
 <script>
 displayMenu("plate","the-plate-throwers",window.platePics);
 </script>
 </div>
-<div class="caption">
-<p class="title">
-The Plate Throwers
-</p>
-<p class="description">
-console, bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
-</p>
-</div>
 </div>
 
 <div class="piece" id="oceans"> 
 <div class="picview" id="oceans-view">
   <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="images/oceans-of-notions/oceans1.jpg" /></a>
+<div class="caption">
+<p class="title"> Oceans of Notions, 2017
+</p>
+<p class="description">
+6 piece modular coffee table, bronze, H 40-50 L 150  W 138 cm, unique.
+</p>
+<p class="note" id="oceans-note">
+</p>
+</div>
 </div>
 <div class="picmenu" id="oceans-menu">
 <script>
 displayMenu("oceans","oceans-of-notions",window.oceansPics);
 </script>
 </div>
-<div class="caption">
-<p class="title"> Oceans of Notions
-</p>
-</div>
 </div>
 
 <div class="piece" id="lumieres"> 
 <div class="picview" id="lumieres-view">
   <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres10.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+Les Lumières, 2017
+</p>
+<p class = "description">
+table lamps, vapour patinated bronze <br/>
+hommage #1 (blocks) H 80 W 21 D 16 cm, unique <br/>
+hommage #2 (tree), H 95 W 21.5 D 20 cm, unique <br/>
+hommage #3 (cone), H 70 W 26.5 D 15 cm, unique <br/>
+hommage #4  (loops),  H 26 W 28 D 19 cm, unique
+</p>
+<p class="note" id="lumieres-note">
+Sometimes I imagine to myself that if I were a man my work would be more visible to others. This is wrong, of course, because the fact that I am free to make my work is everything, really, and to hold the belief that I can see clearly and understand the perception of others is pure fantasy. Still, such projections can begin to feel very real and dominate our daily experiences of one another, and of what we make, do and say.  “Les Lumières”  which translates in English as “The Luminaries", is made up of four unique bronze sculptures lit from within. I call the individual pieces “blocks”, "tree”, “cone”, and “circuit”. This work lays bare my own little fears and apprehensions about working in an art world that is still dominated by male intellectuals, artists, and collectors. To make the one-of-a-kind sculptures, I started with four studies I had made of different male models over the years, marrying the legs and torsos of the original sculptures to a variety of light filtering abstract structures built in direct wax. For the finish, I explored new ways of creating a patina with chemical vapours that resulted in this unusual blue/grey/black color and texture.
+</p>
+</div>
 </div>
 <div class="picmenu" id="lumieres-menu">
 <script>
 displayMenu("lumieres","les-lumieres",window.lumieresPics);
 </script>
 </div>
-<div class="caption">
-<p class = "title"> 
-Les Lumières 
-</p>
-</div>
 </div>
 
 <div class="piece" id="parchemins"> 
 <div class="picview" id="parchemins-view">
   <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="images/parchemins/parchemins1.jpg" /></a>
+<div class="caption">
+<p class="title">
+Parchemins, 2017
+</p>
+<p class = "description">
+side table,  bronze, H 48 L 60 w 58, unique
+</p>
+<p class="note" id="parchemins-note">
+</p>
+</div>
 </div>
 <div class="picmenu" id="parchemins-menu">
 <script>
 displayMenu("parchemins","parchemins",window.parcheminsPics);
 </script>
 </div>
-<div class="caption">
-<p class="title">
-Parchemins 
-</p>
 </div>
-</div>
+
 <div class="piece" id="return"> 
 <div class="picview" id="return-view">
   <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="images/return-to-form/return1.jpg" /></a>
+<div class="caption">
+<p class="title">
+Return to Form, 2017
+</p>
+<p class="description">
+sand etched mirror, brass, bronze, and tarnished white gold leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP
+</p>
+<p class="note" id="return-note">
+</p>
+</div>
 </div>
 <div class="picmenu" id="return-menu">
 <script>
 displayMenu("return","return-to-form",window.returnPics);
 </script>
 </div>
-<p>
-Return to Form <br/>
-bronze with tarnished silver leaf, H 97 D 146 W 46 cm, unique, 2017.
-</p>
 </div>
 
 <div class="piece" id="surface"> 
 <div class="picview" id="surface-view">
   <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="images/surface-details/surface1.jpg" /></a>
+<div class="caption">
+<p class="title">
+Material detail (<i>The Plate Throwers</i>)
+</p>
+<p class="note" id="surface-note">
+</p>
+</div>
 </div>
 <div class="picmenu" id="surface-menu">
 <script>
 displayMenu("surface","surface-details",window.surfacePics);
 </script>
 </div>
-<div class="caption">
-<p class="title">
-Surface Details 
-</p>
 </div>
-</div>
-<div class="text" id="intro"> 
 
+<div class="collection" id="collection">
+<a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
+   onmouseout="document.getElementById('piece1').className='';"><img src="images/the-plate-throwers/plate10.jpg" /></a>
+<a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
+   onmouseout="document.getElementById('piece2').className='';"><img src="images/oceans-of-notions/oceans1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
+   onmouseout="document.getElementById('piece3').className='';"><img src="images/les-lumieres/lumieres10.jpg" /></a>
+<a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
+   onmouseout="document.getElementById('piece4').className='';"><img src="images/parchemins/parchemins1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
+   onmouseout="document.getElementById('piece5').className='';"><img src="images/return-to-form/return1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
+   onmouseout="document.getElementById('piece6').className='';"><img src="images/surface-details/surface1.jpg" /></a>
+</div>
+
+<div class="text" id="intro"> 
 <img src="images/about/intro1.jpg" />
 
 <p>
