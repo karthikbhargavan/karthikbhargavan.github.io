@@ -40,7 +40,7 @@
     }
 
     function switchFullPic(src) {
-       document.getElementById('currentFullPic').src = src;
+       document.getElementById('currentFullPic').src = src.replace("smaller","images");
        switchDiv('full','fullpic');
     }
 
@@ -54,7 +54,7 @@
           let picfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
           i.src = "thumbs/"+picfile;
           i.id = piece+p;
-          i.onclick = function(){switchViewPic(i.id,piece+"-img","images/"+picfile)};
+          i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile)};
           if (p == 0) i.className = "currentPic";
           a.appendChild(i);
           m.appendChild(a);
@@ -235,33 +235,33 @@ window.surfacePics = [
 <div class="smallmenu">
 <div class="smallmenu-item">
 <a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">
-<img src="images/the-plate-throwers/plate1.jpg"></img>
+<img src="smaller/the-plate-throwers/plate1.jpg"></img>
 The Plate Throwers
 </a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">
-<img src="images/oceans-of-notions/oceans1.jpg"></img>
+<img src="smaller/oceans-of-notions/oceans1.jpg"></img>
 Oceans of Notions</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">
-<img src="images/les-lumieres/lumieres1.jpg"></img>
+<img src="smaller/les-lumieres/lumieres1.jpg"></img>
 Les Lumières</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">
-<img src="images/parchemins/parchemins1.jpg"></img>
+<img src="smaller/parchemins/parchemins1.jpg"></img>
 Parchemins</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece5" onclick="switchPiece(this.id,'return')">
-<img src="images/return-to-form/return1.jpg"></img>
+<img src="smaller/return-to-form/return1.jpg"></img>
 Return to Form</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">
-<img src="images/surface-details/surface1.jpg"></img>
+<img src="smaller/surface-details/surface1.jpg"></img>
 Surface Details</a>
 </div>
 </div>
@@ -271,7 +271,7 @@ Surface Details</a>
 <div class="right">
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
-  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="images/the-plate-throwers/plate1.jpg" /></a>
+  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="smaller/the-plate-throwers/plate1.jpg" /></a>
 <div class="caption">
 <p class="title">
 The Plate Throwers, 2017
@@ -292,7 +292,7 @@ displayMenu("plate","the-plate-throwers",window.platePics);
 
 <div class="piece" id="oceans"> 
 <div class="picview" id="oceans-view">
-  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="images/oceans-of-notions/oceans1.jpg" /></a>
+  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="smaller/oceans-of-notions/oceans1.jpg" /></a>
 <div class="caption">
 <p class="title"> Oceans of Notions, 2017
 </p>
@@ -312,7 +312,7 @@ displayMenu("oceans","oceans-of-notions",window.oceansPics);
 
 <div class="piece" id="lumieres"> 
 <div class="picview" id="lumieres-view">
-  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres1.jpg" /></a>
+  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="smaller/les-lumieres/lumieres1.jpg" /></a>
 <div class="caption">
 <p class = "title"> 
 Les Lumières, 2017
@@ -338,7 +338,7 @@ displayMenu("lumieres","les-lumieres",window.lumieresPics);
 
 <div class="piece" id="parchemins"> 
 <div class="picview" id="parchemins-view">
-  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="images/parchemins/parchemins1.jpg" /></a>
+  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="smaller/parchemins/parchemins1.jpg" /></a>
 <div class="caption">
 <p class="title">
 Parchemins, 2017
@@ -359,7 +359,7 @@ displayMenu("parchemins","parchemins",window.parcheminsPics);
 
 <div class="piece" id="return"> 
 <div class="picview" id="return-view">
-  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="images/return-to-form/return1.jpg" /></a>
+  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="smaller/return-to-form/return1.jpg" /></a>
 <div class="caption">
 <p class="title">
 Return to Form, 2017
@@ -380,7 +380,7 @@ displayMenu("return","return-to-form",window.returnPics);
 
 <div class="piece" id="surface"> 
 <div class="picview" id="surface-view">
-  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="images/surface-details/surface1.jpg" /></a>
+  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="smaller/surface-details/surface1.jpg" /></a>
 <div class="caption">
 <p class="title">
 Material detail (<i>The Plate Throwers</i>)
@@ -398,21 +398,21 @@ displayMenu("surface","surface-details",window.surfacePics);
 
 <div class="collection" id="collection">
 <a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
-   onmouseout="document.getElementById('piece1').className='';"><img src="images/the-plate-throwers/plate1.jpg" /></a>
+   onmouseout="document.getElementById('piece1').className='';"><img src="smaller/the-plate-throwers/plate1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
-   onmouseout="document.getElementById('piece2').className='';"><img src="images/oceans-of-notions/oceans1.jpg" /></a>
+   onmouseout="document.getElementById('piece2').className='';"><img src="smaller/oceans-of-notions/oceans1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
-   onmouseout="document.getElementById('piece3').className='';"><img src="images/les-lumieres/lumieres1.jpg" /></a>
+   onmouseout="document.getElementById('piece3').className='';"><img src="smaller/les-lumieres/lumieres1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
-   onmouseout="document.getElementById('piece4').className='';"><img src="images/parchemins/parchemins1.jpg" /></a>
+   onmouseout="document.getElementById('piece4').className='';"><img src="smaller/parchemins/parchemins1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
-   onmouseout="document.getElementById('piece5').className='';"><img src="images/return-to-form/return1.jpg" /></a>
+   onmouseout="document.getElementById('piece5').className='';"><img src="smaller/return-to-form/return1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
-   onmouseout="document.getElementById('piece6').className='';"><img src="images/surface-details/surface1.jpg" /></a>
+   onmouseout="document.getElementById('piece6').className='';"><img src="smaller/surface-details/surface1.jpg" /></a>
 </div>
 
 <div class="text" id="intro"> 
-<img src="images/about/intro1.jpg" />
+<img src="smaller/about/intro1.jpg" />
 
 <p>
 I have come to realize that most paintings and sculptures do not end up in museums but rather in private homes, where they live and change as we, their co-habitants and viewers, live and change. With “More Material” my aim is to make sculptures which are visual objects that can be thought upon or eaten upon in the sanctuaries of our homes. These new sculptures use brushstrokes, broken forms and double takes to harness bronze’s unique potential to balance strength with visual fragility. 
