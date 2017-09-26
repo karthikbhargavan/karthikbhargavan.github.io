@@ -192,9 +192,9 @@ div.normal div.right div.piece {
 div.piece div.picview {
 	display:block;
 	height: auto;
-	width:calc(100% - 250px);
+	width:auto;
 	float:left;
-	max-width: 700px;
+	max-width: calc(100% - 250px);
 }
 
 
@@ -205,13 +205,15 @@ div.piece div.picview a {
 
 div.piece div.picview a img {
 	height: auto;
-	width: 100%;	
+	width: auto;
 	max-width: 700px;
 	max-height: 500px;
         display: block;
 	float:left;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
 }
-
 
 div.piece div.picview div.caption {
 	width: auto;
@@ -288,15 +290,12 @@ div.collection img {
 div.text {
        display:none;
        width: auto;
-       max-width:650px;
+       max-width:500px;
 }
 
 div.text img {
        display:block;
-       max-width: 500px;
-       margin-left:auto;
-       margin-right:auto;
-
+       max-width: 100%;
 }
 
 
@@ -305,10 +304,10 @@ div.text p{
 max-width:650px;
 /* Lorem ipsum dolor si: */
 font-family: OpenSans;
-font-size: 18px;
+font-size: 16px;
 color: #000000;
 /* letter-spacing: 0.75px; */
-line-height: 24px;
+/* line-height: 24px; */
 }
 
 @media all and (max-width: 800px) {
@@ -432,19 +431,21 @@ div.normal div.left div.bigmenu a{
 
 	div.piece div.picview {
 	  width: calc(100% - 10px);
-	  max-width: 600px;
-	}
+	  max-width: 600px;	
+	  height: auto;
+	  }
 
 	div.piece div.picview a {
 	  width:100%;
 	  float:left;
+	  height: auto;
 	  }
 
 	div.piece div.picview a img {
-	  width: calc(100% - 10px);
+	  width: auto;
   	  height: auto;	
-	  max-width: 490px;
-	  max-height: 490px;
+	  max-width: calc(100% - 10px);
+	  max-height: 500px;
           display: block;
 	  float:left;
 	  }
