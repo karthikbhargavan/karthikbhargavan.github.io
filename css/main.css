@@ -127,6 +127,9 @@ div.full div#fullpic img{
 	width: auto;
 	max-width: 2000px;
         margin: auto;
+        cursor: -moz-zoom-out; 
+        cursor: -webkit-zoom-out; 
+        cursor: zoom-out;
 }
 	 
 div.normal {
