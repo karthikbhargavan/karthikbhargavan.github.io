@@ -221,15 +221,16 @@ div.normal div.right div.piece {
 div.piece div.picview {
 	display:block;
 	height: auto;
-	width:auto;
+	width:650px;
 	float:left;
 	max-width: calc(100% - 250px);
 }
 
 
 div.piece div.picview a {
-	width:100%;
+	width:auto;
 	float:left;
+	max-width: 600px;
 }
 
 div.piece div.picview a img {
@@ -238,10 +239,10 @@ div.piece div.picview a img {
 	max-width: 100%;
 	max-height: 500px;
         display: block;
-	float:left;
-    cursor: -moz-zoom-in; 
-    cursor: -webkit-zoom-in; 
-    cursor: zoom-in;
+ 	float:left;
+        cursor: -moz-zoom-in; 
+        cursor: -webkit-zoom-in; 
+        cursor: zoom-in;
 }
 
 div.piece div.picview div.caption {
