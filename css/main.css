@@ -362,6 +362,7 @@ line-height: 24px;
 		width: 100%;
 		display:block;
 		float:left;
+		margin-top: 20px;
         }
 
 	div.normal div.left div.bigmenu{
@@ -391,8 +392,7 @@ div.normal div.left div.bigmenu a{
 	 width: 150px;
          height: auto;
 	 float: left; 
-	 margin-top: 0px;
-	 margin-right: 20px;
+	 margin: 0px 20px 0px 0px;
 /*	 letter-spacing: 0.75px; */
 	 text-align: center;
        }
@@ -408,8 +408,14 @@ div.normal div.left div.bigmenu a{
 	 color: #000000;
 	 display: block;
 	 text-decoration: none;
-	 margin-top: 0px;
-	 margin-right: 20px;
+	 margin: 0px 20px 0px 0px;
+	 }
+
+	div.normal div.left div.smallmenu div.smallmenu-item a:hover {
+	 color: #000000;
+	 display: block;
+	 text-decoration: none;
+	 margin: 0px 20px 0px 0px;
 	 }
 
 	div.normal div.right {

@@ -30,7 +30,13 @@
        window.prevTarget = window.currentTarget;
        window.currentTarget = target;
     }
-    document.getElementById(target).scrollIntoView();
+    let w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    if (x <= 800) document.getElementById("view").scrollIntoView();
     }
 
     function switchViewPic(id,target,src) {
@@ -236,37 +242,37 @@ window.surfacePics = [
 </div>
 <div class="smallmenu">
 <div class="smallmenu-item">
-<a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">
+<a id="piece1" onclick="switchPiece(this.id,'plate')">
 <img src="smaller/the-plate-throwers/plate1.jpg"></img>
 The Plate Throwers
 </a>
 </div>
 <div class="smallmenu-item">
-<a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">
+<a id="piece2" onclick="switchPiece(this.id,'oceans')">
 <img src="smaller/oceans-of-notions/oceans1.jpg"></img>
 Oceans of Notions
 </a>
 </div>
 <div class="smallmenu-item">
-<a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">
+<a id="piece3" onclick="switchPiece(this.id,'lumieres')">
 <img src="smaller/les-lumieres/lumieres1.jpg"></img>
 Les Lumières
 </a>
 </div>
 <div class="smallmenu-item">
-<a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">
+<a id="piece4" onclick="switchPiece(this.id,'parchemins')">
 <img src="smaller/parchemins/parchemins1.jpg"></img>
 Parchemins
 </a>
 </div>
 <div class="smallmenu-item">
-<a href="#" id="piece5" onclick="switchPiece(this.id,'return')">
+<a id="piece5" onclick="switchPiece(this.id,'return')">
 <img src="smaller/return-to-form/return1.jpg"></img>
 Return to Form
 </a>
 </div>
 <div class="smallmenu-item">
-<a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">
+<a id="piece6" onclick="switchPiece(this.id,'surface')">
 <img src="smaller/surface-details/surface1.jpg"></img>
 Surface Details</a>
 </div>
@@ -443,8 +449,6 @@ To make More Material the foundry has been my studio and my laboratory. David de
 
 </div>
 <div class="text" id="background"> 
-</div>
-<div class="text" id="video"> 
 </div>
 <div class="text" id="contact"> 
 </div>
