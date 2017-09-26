@@ -125,8 +125,8 @@ div.full div#fullpic {
 div.full div#fullpic img{
 	height: auto;
 	width: auto;
-	max-width: 3000px;
-        margin: auto; 
+	max-width: 2000px;
+        margin: auto;
 }
 	 
 div.normal {
