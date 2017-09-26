@@ -53,7 +53,6 @@
 
     function displayMenu(piece,picsDir,picsList) {
        let m = document.getElementById(piece+"-menu");
-       window.currentPic = piece+0;
        for (p in picsList) {
           let a = document.createElement('a');
           a.href="#";
@@ -81,6 +80,7 @@
       }
       document.getElementById(id).className="currentPiece";
       window.currentPiece = id;
+      window.currentPic = piece+0;
     }
 	     
     window.currentText = "";
@@ -343,7 +343,7 @@ displayMenu("oceans","oceans-of-notions",window.oceansPics);
 <p class = "title"> 
 Les Lumières, 2017
 </p>
-<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">Read More &darr;</button>
+<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">about</button>
 <p class = "description">
 table lamps, vapour patinated bronze <br/>
 hommage #1 (blocks) H 80 W 21 D 16 cm, unique <br/>

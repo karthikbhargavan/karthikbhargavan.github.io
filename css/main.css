@@ -126,6 +126,7 @@ div.full div#fullpic img{
 	height: auto;
 	width: auto;
 	max-width: 2000px;
+	max-height: 2000px;
         margin: auto;
         cursor: -moz-zoom-out; 
         cursor: -webkit-zoom-out; 
@@ -261,20 +262,21 @@ div.piece div.picview div.caption p.title {
 	margin: 0px;
 	float:left;
 	display:block;
-	width: calc(100% - 110px);
+	width: calc(100% - 120px);
 }
 
 div.piece div.picview div.caption button.viewmore {
-	font-family: OpenSansLight;
+	font-family: OpenSansLightBold;
 	font-size: 16px;
-	margin: 0px;
-        width: 110px;
+	color: #797879;
+	margin: 0px 10px;
+        width: 100px;
 	float:left;
 	display:block;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
-	border:1px solid #000000;
+	border:1px solid #797879;
 }
 
 div.piece div.picview div.caption p.description {
@@ -380,6 +382,17 @@ color: #000000;
 		margin-top: 10px;
 		margin-left: 10px;
 	}
+
+div.full div#fullpic img{
+	height: auto;
+	width: auto;
+	max-width: 1000px;
+	max-height: 1000px;
+        margin: auto;
+        cursor: -moz-zoom-out; 
+        cursor: -webkit-zoom-out; 
+        cursor: zoom-out;
+}
 
         div.header {
             height: 40px;
