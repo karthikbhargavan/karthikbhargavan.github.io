@@ -123,14 +123,14 @@ div.normal {
 }
 
 div.normal div.left {
-	width: 220px;
+	width: 200px;
 	display:block;
 	float:left;
 }
 
 div.normal div.right {
 	width: auto;
-	max-width: calc(100% - 220px);
+	max-width: calc(100% - 200px);
 	display:block;
 	float:left;
 }
@@ -185,15 +185,14 @@ div.normal div.left div.smallmenu div.smallmenu-item a.currentPiece {
 
 div.normal div.right div.piece {
 	height: auto;
-	width:auto;
-	max-width: 980px;
+	width:100%;
 	display:none;
 }
 
 div.piece div.picview {
 	display:block;
 	height: auto;
-	width:auto;
+	width:calc(100% - 250px);
 	float:left;
 	max-width: 700px;
 }
@@ -206,7 +205,7 @@ div.piece div.picview a {
 
 div.piece div.picview a img {
 	height: auto;
-	width: auto;	
+	width: 100%;	
 	max-width: 700px;
 	max-height: 500px;
         display: block;
@@ -390,6 +389,7 @@ div.normal div.left div.bigmenu a{
 
 	div.normal div.left div.smallmenu div.smallmenu-item a {
 	 width: 150px;
+         height: auto;
 	 float: left; 
 	 margin-top: 0px;
 	 margin-right: 20px;
@@ -399,8 +399,21 @@ div.normal div.left div.bigmenu a{
 
 	div.normal div.left div.smallmenu div.smallmenu-item a img {
 	 display:block;
-	 width: 100%;
-	 height: auto;
+	 width: 150px;
+         height: 125px;
+	 overflow: hidden;
+	}
+
+	div.normal div.left div.smallmenu div.smallmenu-item a.currentPiece {
+	 color: #000000;
+	 display: block;
+	 text-decoration: none;
+	 margin-top: 0px;
+	 margin-right: 20px;
+	 }
+
+	div.normal div.right {
+	 max-width: calc(100% - 10px);
 	}
 
 	div.collection {
@@ -411,9 +424,29 @@ div.normal div.left div.bigmenu a{
 	 display: none;
 	}
 
+	div.piece div.picview {
+	  width: calc(100% - 10px);
+	  max-width: 600px;
+	}
+
+	div.piece div.picview a {
+	  width:100%;
+	  float:left;
+	  }
+
+	div.piece div.picview a img {
+	  width: calc(100% - 10px);
+  	  height: auto;	
+	  max-width: 490px;
+	  max-height: 490px;
+          display: block;
+	  float:left;
+	  }
+
+
 	div.piece div.picmenu {
-	  width: 100%;
-	  max-width: 700px;
+	  width: calc(100% - 10px);
+	  max-width: 500px;
 	}
 
 	div.piece div.picmenu a {

@@ -30,6 +30,7 @@
        window.prevTarget = window.currentTarget;
        window.currentTarget = target;
     }
+    document.getElementById(target).scrollIntoView();
     }
 
     function switchViewPic(id,target,src) {
@@ -243,22 +244,26 @@ The Plate Throwers
 <div class="smallmenu-item">
 <a href="#" id="piece2" onclick="switchPiece(this.id,'oceans')">
 <img src="smaller/oceans-of-notions/oceans1.jpg"></img>
-Oceans of Notions</a>
+Oceans of Notions
+</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">
 <img src="smaller/les-lumieres/lumieres1.jpg"></img>
-Les Lumières</a>
+Les Lumières
+</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece4" onclick="switchPiece(this.id,'parchemins')">
 <img src="smaller/parchemins/parchemins1.jpg"></img>
-Parchemins</a>
+Parchemins
+</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece5" onclick="switchPiece(this.id,'return')">
 <img src="smaller/return-to-form/return1.jpg"></img>
-Return to Form</a>
+Return to Form
+</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece6" onclick="switchPiece(this.id,'surface')">
@@ -269,7 +274,7 @@ Surface Details</a>
 </div> 
 
 
-<div class="right">
+<div class="right" id="view">
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
   <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="smaller/the-plate-throwers/plate1.jpg" /></a>
