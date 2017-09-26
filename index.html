@@ -51,8 +51,9 @@
           let a = document.createElement('a');
           a.href="#";
           let i = document.createElement('img');
-          let picfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
-          i.src = "thumbs/"+picfile;
+          let thumbfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
+          let picfile = picsDir+"/"+piece+picsList[p].num+".jpg";
+          i.src = "thumbs/"+thumbfile;
           i.id = piece+p;
           i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile)};
           if (p == 0) i.className = "currentPic";
