@@ -21,8 +21,24 @@ html {}
 }
 
 @font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
     font-family: 'OpenSansBold';
     src: url('/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -147,15 +163,28 @@ div.normal div.left div.bigmenu a{
  text-decoration: none;
 }
 
-div.normal div.left div.bigmenu a:link a:visited: a:hover: a:active a:-webkit-any-link{
+div.normal div.left div.bigmenu a:hover{
+font-family: OpenSansSemiBold;
  color: #000000;
+ margin: 0px 0px 10px 0px;
+ display: block;
+ text-decoration: none;
 }
+
+div.normal div.left div.bigmenu a.active{
+font-family: OpenSansSemiBold;
+ color: #000000;
+ margin: 0px 0px 10px 0px;
+ display: block;
+ text-decoration: none;
+}
+
 
 div.normal div.left div.smallmenu{
  font-size: 14px;
 /* letter-spacing: 2px; */
  line-heght: 40px;
- margin: 0px 0px 30px 0px;
+ margin: 30px 0px 30px 0px;
 }
 
 div.normal div.left div.smallmenu div.smallmenu-item a{
@@ -206,7 +235,7 @@ div.piece div.picview a {
 div.piece div.picview a img {
 	height: auto;
 	width: auto;
-	max-width: 700px;
+	max-width: 100%;
 	max-height: 500px;
         display: block;
 	float:left;
@@ -217,7 +246,7 @@ div.piece div.picview a img {
 
 div.piece div.picview div.caption {
 	width: auto;
-	max-width: 500px;
+	max-width: 600px;
 	float:left;
 	margin-top:20px;
 }
@@ -229,9 +258,16 @@ div.piece div.picview div.caption p.title {
 }
 
 div.piece div.picview div.caption p.description {
-	font-family: OpenSans;
-	font-size: 18px;
+	font-family: OpenSansLight;
+	color:#707879;
+	font-size: 16px;
 	margin: 0px;
+}
+
+div.piece div.picview div.caption p.note {
+	font-family: OpenSans;
+	color:#000000;
+	font-size: 16px;
 }
 
 div.piece div.picmenu {

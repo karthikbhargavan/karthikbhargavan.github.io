@@ -68,22 +68,34 @@
           m.appendChild(a);
         }
     }
+
     window.currentPiece = "";
     function switchPiece(id,piece) {
       switchDiv('normal',piece);
+      if (window.currentText != "") {
+         document.getElementById(window.currentText+"-menu").className="";     
+      }
+      window.currentText = "";
       if (window.currentPiece != "") {
          document.getElementById(window.currentPiece).className = "";
       }
       document.getElementById(id).className="currentPiece";
       window.currentPiece = id;
     }
-
+	     
+    window.currentText = "";
     function switchText(piece) {
       switchDiv('normal',piece);
       if (window.currentPiece != "") {
          document.getElementById(window.currentPiece).className = "";
       }
       window.currentPiece = "";
+
+      if (window.currentText != "") {
+         document.getElementById(window.currentText+"-menu").className="";     
+      }
+      window.currentText = piece;
+      document.getElementById(piece+"-menu").className="active";     
     }
     </script>
 </head>
@@ -236,9 +248,9 @@ window.surfacePics = [
 <div class="normal" id="normal">
 <div class="left">
 <div class="bigmenu">
-<a href="#" onclick="switchText('intro')">About</a>
-<a href="#" onclick="switchText('background')">Artist Bio</a>
-<a href="#" onclick="switchText('contact')">Contact</a>
+<a href="#" id="intro-menu" onclick="switchText('intro')">About</a>
+<a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
+<a href="#" id="contact-menu" onclick="switchText('contact')">Contact</a>
 </div>
 <div class="smallmenu">
 <div class="smallmenu-item">
