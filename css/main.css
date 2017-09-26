@@ -35,7 +35,7 @@ body {
 	color: #000000;
 	font-family: 'OpenSans';
 	font-size: 18px;
-	letter-spacing: 0.95px;
+/*	letter-spacing: 0.95px; */
 	line-height: 30px;
 	width: 100%;
 	height: 100%;
@@ -136,7 +136,7 @@ div.normal div.right {
 
 div.normal div.left div.bigmenu{
  font-size: 24px;
- letter-spacing: 3px;
+/* letter-spacing: 3px; */
 }
 
 div.normal div.left div.bigmenu a{
@@ -152,7 +152,7 @@ div.normal div.left div.bigmenu a:link a:visited: a:hover: a:active a:-webkit-an
 
 div.normal div.left div.smallmenu{
  font-size: 14px;
- letter-spacing: 2px;
+/* letter-spacing: 2px; */
  line-heght: 40px;
  margin: 0px 0px 30px 0px;
 }
@@ -306,7 +306,7 @@ max-width:650px;
 font-family: OpenSans;
 font-size: 18px;
 color: #000000;
-letter-spacing: 0.75px;
+/* letter-spacing: 0.75px; */
 line-height: 24px;
 }
 
@@ -390,7 +390,7 @@ div.normal div.left div.bigmenu a{
 	 float: left; 
 	 margin-top: 0px;
 	 margin-right: 20px;
-	 letter-spacing: 0.75px;
+/*	 letter-spacing: 0.75px; */
 	 text-align: center;
        }
 
