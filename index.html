@@ -51,7 +51,7 @@
           let a = document.createElement('a');
           a.href="#";
           let i = document.createElement('img');
-          let picfile = picsDir+"/"+piece+picsList[p].num+".jpg";
+          let picfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
           i.src = "thumbs/"+picfile;
           i.id = piece+p;
           i.onclick = function(){switchViewPic(i.id,piece+"-img","images/"+picfile)};
@@ -84,7 +84,7 @@
 <script>
 /* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
 window.platePics = [
-   {num : 10,
+   {num : 1,
     caption : ""},
    {num : 15,
     caption : ""},
@@ -98,13 +98,15 @@ window.platePics = [
     caption : ""},
    {num : 80,
     caption : ""},
-   {num : 85,
+   {num : 82,
     caption : ""},
-   {num : 86,
-    caption : ""},
-   {num : 88,
+   {num : 84,
     caption : ""},
    {num : 90,
+    caption : ""},
+   {num : 91,
+    caption : ""},
+   {num : 92,
     caption : ""}
 ];
 
@@ -130,7 +132,7 @@ window.oceansPics = [
 ];
 
 window.lumieresPics = [
-   {num : 10,
+   {num : 1,
     caption : ""},
    {num : 20,
     caption : ""},
@@ -138,12 +140,16 @@ window.lumieresPics = [
     caption : ""},
    {num : 40,
     caption : ""},
-   {num : 45,
+   {num : 41,
+    caption : ""},
+   {num : 48,
     caption : ""},
    {num : 50,
     caption : ""},
-   {num : 60,
-    caption : ""}
+   {num : 52,
+    caption : ""},
+   {num : 54,
+    caption : ""},
 ];
 
 window.parcheminsPics = [
@@ -164,15 +170,17 @@ window.parcheminsPics = [
 ];
 
 window.returnPics = [
+   {num : 1,
+    caption : ""},
    {num : 2,
     caption : ""},
    {num : 3,
     caption : ""},
-   {num : 4,
-    caption : ""},
-   {num : 6,
+   {num : 5,
     caption : ""},
    {num : 7,
+    caption : ""},
+   {num : 8,
     caption : ""}
 ];
 
@@ -227,7 +235,7 @@ window.surfacePics = [
 <div class="smallmenu">
 <div class="smallmenu-item">
 <a href="#" id="piece1" onclick="switchPiece(this.id,'plate')">
-<img src="images/the-plate-throwers/plate10.jpg"></img>
+<img src="images/the-plate-throwers/plate1.jpg"></img>
 The Plate Throwers
 </a>
 </div>
@@ -238,7 +246,7 @@ Oceans of Notions</a>
 </div>
 <div class="smallmenu-item">
 <a href="#" id="piece3" onclick="switchPiece(this.id,'lumieres')">
-<img src="images/les-lumieres/lumieres10.jpg"></img>
+<img src="images/les-lumieres/lumieres1.jpg"></img>
 Les Lumières</a>
 </div>
 <div class="smallmenu-item">
@@ -263,7 +271,7 @@ Surface Details</a>
 <div class="right">
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
-  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="images/the-plate-throwers/plate10.jpg" /></a>
+  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="images/the-plate-throwers/plate1.jpg" /></a>
 <div class="caption">
 <p class="title">
 The Plate Throwers, 2017
@@ -304,7 +312,7 @@ displayMenu("oceans","oceans-of-notions",window.oceansPics);
 
 <div class="piece" id="lumieres"> 
 <div class="picview" id="lumieres-view">
-  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres10.jpg" /></a>
+  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="images/les-lumieres/lumieres1.jpg" /></a>
 <div class="caption">
 <p class = "title"> 
 Les Lumières, 2017
@@ -390,11 +398,11 @@ displayMenu("surface","surface-details",window.surfacePics);
 
 <div class="collection" id="collection">
 <a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
-   onmouseout="document.getElementById('piece1').className='';"><img src="images/the-plate-throwers/plate10.jpg" /></a>
+   onmouseout="document.getElementById('piece1').className='';"><img src="images/the-plate-throwers/plate1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
    onmouseout="document.getElementById('piece2').className='';"><img src="images/oceans-of-notions/oceans1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
-   onmouseout="document.getElementById('piece3').className='';"><img src="images/les-lumieres/lumieres10.jpg" /></a>
+   onmouseout="document.getElementById('piece3').className='';"><img src="images/les-lumieres/lumieres1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
    onmouseout="document.getElementById('piece4').className='';"><img src="images/parchemins/parchemins1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"

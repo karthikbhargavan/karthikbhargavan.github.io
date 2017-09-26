@@ -277,8 +277,9 @@ div.collection {
 div.collection img {
        display:block;
        float:left;
-       max-width:280px;
-       max-height:200px;
+       width:240px;
+       height:200px;
+       overflow: hidden;
        margin-right:20px;
        margin-bottom:20px;
 }
