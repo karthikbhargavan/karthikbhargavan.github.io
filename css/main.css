@@ -259,19 +259,41 @@ div.piece div.picview div.caption p.title {
 	font-family: OpenSansBold;
 	font-size: 18px;
 	margin: 0px;
+	float:left;
+	display:block;
+	width: calc(100% - 110px);
+}
+
+div.piece div.picview div.caption button.viewmore {
+	font-family: OpenSansLight;
+	font-size: 16px;
+	margin: 0px;
+        width: 110px;
+	float:left;
+	display:block;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #000000;
 }
 
 div.piece div.picview div.caption p.description {
+	width: 100%;
 	font-family: OpenSansLight;
 	color:#707879;
 	font-size: 16px;
 	margin: 0px;
+	display:block;
+	float:left;
 }
 
 div.piece div.picview div.caption p.note {
+	width: 100%;
 	font-family: OpenSans;
 	color:#000000;
 	font-size: 16px;
+	display:block;
+	float:left;
 }
 
 div.piece div.picmenu {
