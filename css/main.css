@@ -123,13 +123,13 @@ div.normal {
 }
 
 div.normal div.left {
-	width: 250px;
+	width: 220px;
 	display:block;
 	float:left;
 }
 
 div.normal div.right {
-	max-width: 950px;
+	max-width: 980px;
 	display:block;
 	float:left;
 }
