@@ -52,7 +52,7 @@ body {
 	font-family: 'OpenSans';
 	font-size: 18px;
 /*	letter-spacing: 0.95px; */
-	line-height: 30px;
+	line-height: 23px;
 	width: 100%;
 	height: 100%;
 	margin: 0px 0px 0px 0px;
@@ -282,7 +282,7 @@ div.piece div.picview div.caption button.viewmore {
 div.piece div.picview div.caption p.description {
 	width: 100%;
 	font-family: OpenSansLight;
-	color:#707879;
+	color:#797879;
 	font-size: 16px;
 	margin: 0px;
 	display:block;
@@ -357,9 +357,37 @@ div.text {
        max-width:500px;
 }
 
-div.text img {
+div.text div.wide-image {
        display:block;
        max-width: 100%;
+}
+
+div.text div.wide-image img {
+       display:block;
+       max-width: 100%;
+}
+
+
+div.text div.half-image {
+       display:block;
+       max-width: 50%;
+       float:left;
+       margin: 5px 5px 5px 5px;
+}
+
+div.text div.half-image img {
+       display:block;
+       max-width: 100%;
+}
+
+div.text p.caption {
+       display:block;
+       max-width: 100%;
+       font-size: 14px;
+       color: #797879;
+       margin-top:0px;
+       line-height: 20px;
+       text-aligh: center;
 }
 
 
