@@ -372,7 +372,7 @@ div.text div.half-image {
        display:block;
        max-width: 50%;
        float:left;
-       margin: 5px 5px 5px 5px;
+       margin: 5px 10px 5px 0px;
 }
 
 div.text div.half-image img {
