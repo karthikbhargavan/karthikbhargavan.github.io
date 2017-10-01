@@ -375,6 +375,13 @@ div.text div.half-image {
        margin: 5px 10px 5px 0px;
 }
 
+div.text div.quarter-image {
+       display:block;
+       max-width: 30%;
+       float:left;
+       margin: 5px 10px 5px 0px;
+}
+
 div.text div.half-image img {
        display:block;
        max-width: 100%;
