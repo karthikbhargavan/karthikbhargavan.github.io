@@ -387,6 +387,11 @@ div.text div.half-image img {
        max-width: 100%;
 }
 
+div.text div.quarter-image img {
+       display:block;
+       max-width: 100%;
+}
+
 div.text p.caption {
        display:block;
        max-width: 100%;
