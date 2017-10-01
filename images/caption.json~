@@ -1,0 +1,127 @@
+/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
+window.platePics = [
+   {num : 1,
+    caption : ""},
+   {num : 15,
+    caption : ""},
+   {num : 20,
+    caption : ""},
+   {num : 25,
+    caption : ""},
+   {num : 30,
+    caption : ""},
+   {num : 50,
+    caption : ""},
+   {num : 80,
+    caption : ""},
+   {num : 82,
+    caption : ""},
+   {num : 84,
+    caption : ""},
+   {num : 91,
+    caption : ""},
+   {num : 92,
+    caption : ""}
+];
+
+window.oceansPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""},
+   {num : 9,
+    caption : ""},
+   {num : 10,
+    caption : ""},
+   {num : 12,
+    caption : ""},
+   {num : 14,
+    caption : ""},
+   {num : 15,
+    caption : ""}
+];
+
+window.lumieresPics = [
+   {num : 1,
+    caption : ""},
+   {num : 20,
+    caption : ""},
+   {num : 30,
+    caption : ""},
+   {num : 40,
+    caption : ""},
+   {num : 41,
+    caption : ""},
+   {num : 48,
+    caption : ""},
+   {num : 50,
+    caption : ""},
+   {num : 52,
+    caption : ""},
+   {num : 54,
+    caption : ""},
+];
+
+window.parcheminsPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""}
+];
+
+window.returnPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""}
+];
+
+window.surfacePics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""},
+   {num : 11,
+    caption : ""},
+   {num : 12,
+    caption : ""},
+   {num : 13,
+    caption : ""}
+];
+

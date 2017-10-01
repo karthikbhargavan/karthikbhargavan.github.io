@@ -1,0 +1,139 @@
+/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
+window.platePics = [
+   {num : 1,
+    caption : "
+The Plate Throwers Cupboard  [front view with doors closed], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, Unique 
+photo © Steve Murez"},
+   {num : 15,
+    caption : "The Plate Throwers Cupboard  [front view with doors open], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, Unique 
+photo © Steve Murez"},
+   {num : 20,
+    caption : "The Plate Throwers Cupboard  [front view with doors open and plates], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, Unique 
+photo © Steve Murez"},
+   {num : 25,
+    caption : "The Plate Throwers Cupboard  [back view plates], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, Unique 
+photo © Steve Murez"},
+   {num : 30,
+    caption : "The Plate Throwers Cupboard  [backview from above with broken plates], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, Unique 
+photo © Steve Murez"},
+   {num : 50,
+    caption : "The Plate Throwers [detail], 2017, photo © Steve Murez"},
+   {num : 80,
+    caption : "Foundry snapshot: The Plate Throwers, 2017"},
+   {num : 82,
+    caption : "Foundry snapshot: The Plate Throwers, 2017"},
+   {num : 84,
+    caption : "Foundry snapshot: The Plate Throwers, 2017"},
+   {num : 91,
+    caption : "Foundry snapshot: The Plate Throwers (in progress), 2017"},
+   {num : 92,
+    caption : "Studio snapshot: The Plate Throwers, the photoshoot with broken plates, 2017"}
+];
+
+window.oceansPics = [
+   {num : 1,
+    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, uniquephoto © Steve Murez
+"},
+   {num : 2,
+    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique,photo © Steve Murez
+"},
+   {num : 3,
+    caption : "Oceans of Notions [detail of two modules, 2017, bronze, H 40-50 L 150 W 138 cm, unique, photo © Steve Murez
+"},
+   {num : 4,
+    caption : " Oceans of Notions, surface detail, 2017, photo © Steve Murez
+"},
+   {num : 7,
+    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique,photo © Steve Murez
+"},
+   {num : 8,
+    caption : "Studio snapshot, Oceans of Notions, 2017, the endless notes"},
+   {num : 9,
+    caption : "Foundry snapshot, Oceans of Notions (in progress), 2016"},
+   {num : 10,
+    caption : "Foundry snapshot, Oceans of Notions (in progress), 2016"},
+   {num : 12,
+    caption : "Foundry snapshot, Oceans of Notions (almosed finished), 2016"},
+   {num : 14,
+    caption : "Studio snapshot, Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm"},
+   {num : 15,
+    caption : "Studio snapshot, Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm"}
+];
+
+window.lumieresPics = [
+   {num : 1,
+    caption : ""},
+   {num : 20,
+    caption : ""},
+   {num : 30,
+    caption : ""},
+   {num : 40,
+    caption : ""},
+   {num : 41,
+    caption : ""},
+   {num : 48,
+    caption : ""},
+   {num : 50,
+    caption : ""},
+   {num : 52,
+    caption : ""},
+   {num : 54,
+    caption : ""},
+];
+
+window.parcheminsPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 4,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 6,
+    caption : ""},
+   {num : 7,
+    caption : ""}
+];
+
+window.returnPics = [
+   {num : 1,
+    caption : ""},
+   {num : 2,
+    caption : ""},
+   {num : 3,
+    caption : ""},
+   {num : 5,
+    caption : ""},
+   {num : 7,
+    caption : ""},
+   {num : 8,
+    caption : ""}
+];
+
+window.surfacePics = [
+   {num : 1,
+    caption : "The plate Throwers (surface detail), 2017, patinated bronze, 2017,photo © Steve Murez"},
+   {num : 2,
+    caption : "Parchemins (surface detail), 2017, patinated bronze, 2017,photo © Steve Murez"},
+   {num : 3,
+    caption : "Oceans of Notions (surface detail), 2017, patinated bronze, 2017,photo © Steve Murez"},
+   {num : 4,
+    caption : "The Plate Throwers (surface detail), 2017, vapour tarnished silver leaf on bronze, 2017,photo © Steve Murez"},
+   {num : 5,
+    caption : "Oceans of Notions (surface detail), 2017, patinated bronze,photo © Steve Murez"},
+   {num : 6,
+    caption : "Sculpture patinas: Pauline, 2015, clay, plaster and pure pigment patina on bronze"},
+   {num : 7,
+    caption : "Sculpture patinas: Armour, 2015, clay, fire scale and pure pigment patina on bronze"},
+   {num : 8,
+    caption : "patina test"},
+   {num : 11,
+    caption : "new motifs in wax"},
+   {num : 12,
+    caption : "color tests in oil paint on sample wax motifs"}
+    {num : 13,
+    caption : "color tests in oil paint on sample wax motifs"}
+];
