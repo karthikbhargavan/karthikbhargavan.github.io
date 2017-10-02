@@ -61,7 +61,9 @@
           let picfile = picsDir+"/"+piece+picsList[p].num+".jpg";
           i.src = "thumbs/"+thumbfile;
           i.id = piece+p;
-          i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile)};
+	  let caption = picsList[p].caption;
+          i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile);
+	                            document.getElementById(piece+"-caption").innerHTML=caption;};
           if (p == 0) i.className = "currentPic";
           a.appendChild(i);
           m.appendChild(a);
@@ -101,7 +103,9 @@
 </head>
 <body>
 
-<script>
+<script src="caption.json"></script>
+  
+<!-- <script>
 /* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
 window.platePics = [
    {num : 1,
@@ -223,8 +227,7 @@ window.surfacePics = [
     caption : ""}
 ];
 
-
-</script>
+</script>-->
 
 <div class="header" onclick="switchDiv('normal','collection')">
 <div class="title"> MORE MATERIAL </div>
@@ -296,7 +299,7 @@ Surface Details</a>
 <p class="title">
 The Plate Throwers, 2017
 </p>
-<p class="description">
+<p class="description" id="plate-caption">
 console, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique.
 </p>
 <p class="note" id="plate-note">
@@ -316,7 +319,7 @@ displayMenu("plate","the-plate-throwers",window.platePics);
 <div class="caption">
 <p class="title"> Oceans of Notions, 2017
 </p>
-<p class="description">
+<p class="description" id="oceans-caption">
 6 piece modular coffee table, bronze, H 40-50 L 150  W 138 cm, unique.
 </p>
 <p class="note" id="oceans-note">
@@ -338,7 +341,7 @@ displayMenu("oceans","oceans-of-notions",window.oceansPics);
 Les Lumières, 2017
 </p>
 <!--<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">about</button> -->
-<p class = "description">
+<p class = "description" id="lumieres-caption">
 table lamps, vapour patinated bronze <br/>
 hommage #1 (blocks) H 80 W 21 D 16 cm, unique <br/>
 hommage #2 (tree), H 95 W 21.5 D 20 cm, unique <br/>
@@ -364,7 +367,7 @@ displayMenu("lumieres","les-lumieres",window.lumieresPics);
 <p class="title">
 Parchemins, 2017
 </p>
-<p class = "description">
+<p class = "description" id="parchemins-caption">
 side table,  bronze, H 48 L 60 w 58, unique
 </p>
 <p class="note" id="parchemins-note">
@@ -385,7 +388,7 @@ displayMenu("parchemins","parchemins",window.parcheminsPics);
 <p class="title">
 Return to Form, 2017
 </p>
-<p class="description">
+<p class="description" id="return-caption">
 sand etched mirror, brass, bronze, and tarnished white gold leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP
 </p>
 <p class="note" id="return-note">
@@ -405,6 +408,8 @@ displayMenu("return","return-to-form",window.returnPics);
 <div class="caption">
 <p class="title">
 Material detail (<i>The Plate Throwers</i>)
+</p>
+<p class="description" id="surface-caption">
 </p>
 <p class="note" id="surface-note">
 </p>
