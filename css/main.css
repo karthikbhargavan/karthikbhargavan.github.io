@@ -191,11 +191,16 @@ div.normal div.left div.smallmenu{
  margin: 30px 0px 30px 0px;
 }
 
+div.normal div.left div.smallmenu button{
+    display: none;
+}
+
 div.normal div.left div.smallmenu div.smallmenu-item a{
  color: #797879;
  margin: 0px 0px 10px 0px;
  display: block;
  text-decoration: none;
+ cursor:pointer;
 }
 
 div.normal div.left div.smallmenu div.smallmenu-item a:hover{
@@ -203,6 +208,7 @@ div.normal div.left div.smallmenu div.smallmenu-item a:hover{
  margin: 0px 0px 10px 0px;
  display: block;
  text-decoration: none;
+ cursor:pointer;
 }
 
 div.normal div.left div.smallmenu div.smallmenu-item a img{
@@ -214,6 +220,7 @@ div.normal div.left div.smallmenu div.smallmenu-item a.currentPiece {
  margin: 0px 0px 10px 0px;
  display: block;
  text-decoration: none;
+ cursor:pointer;
 }
 
 div.normal div.right div.piece {
@@ -487,7 +494,18 @@ div.full div#fullpic img{
 	  margin: 10px 0px 0px 0px;
 	}
 
+
 div.normal div.left div.bigmenu a{
+ color: #000000;
+ margin: 0px 30px 0px 0px;
+ display: block;
+ text-decoration: none;
+ width:auto;
+ float:left
+}
+
+div.normal div.left div.bigmenu a:hover{
+ font-family: OpenSansSemiBold;
  color: #000000;
  margin: 0px 30px 0px 0px;
  display: block;
@@ -504,6 +522,13 @@ div.normal div.left div.bigmenu a{
          margin: 30px 0px 0px 0px;
 	}
 
+
+	div.normal div.left div.smallmenu button{
+         display:block;
+	 font-size: 14px;
+	 float:right;
+	}
+
 	div.normal div.left div.smallmenu div.smallmenu-item a {
 	 width: 150px;
          height: auto;
@@ -511,6 +536,7 @@ div.normal div.left div.bigmenu a{
 	 margin: 0px 20px 0px 0px;
 /*	 letter-spacing: 0.75px; */
 	 text-align: center;
+	 cursor:pointer;
        }
 
 	div.normal div.left div.smallmenu div.smallmenu-item a img {
@@ -525,6 +551,7 @@ div.normal div.left div.bigmenu a{
 	 display: block;
 	 text-decoration: none;
 	 margin: 0px 20px 0px 0px;
+	 cursor:pointer;
 	 }
 
 	div.normal div.left div.smallmenu div.smallmenu-item a:hover {

@@ -25,17 +25,17 @@ photo © Steve Murez"},
    {num : 84,
     caption : "Foundry snapshot: The Plate Throwers, 2017"},
    {num : 91,
-    caption : "Foundry snapshot: The Plate Throwers (in progress), 2017"},
+    caption : "Foundry snapshot: The Plate Throwers, in progress"},
    {num : 92,
-    caption : "Studio snapshot: The Plate Throwers, the photoshoot with broken plates, 2017"}
+    caption : "Studio snapshot: The Plate Throwers, the day of the photoshoot, 2017"}
 ];
 
 window.oceansPics = [
    {num : 1,
-    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, uniquephoto © Steve Murez
+    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique, photo © Steve Murez
 "},
    {num : 2,
-    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique,photo © Steve Murez
+    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique, photo © Steve Murez
 "},
    {num : 3,
     caption : "Oceans of Notions [detail of two modules, 2017, bronze, H 40-50 L 150 W 138 cm, unique, photo © Steve Murez
@@ -44,73 +44,89 @@ window.oceansPics = [
     caption : " Oceans of Notions, surface detail, 2017, photo © Steve Murez
 "},
    {num : 7,
-    caption : "Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique,photo © Steve Murez
+    caption : "Oceans of Notions (in situ), 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm, unique,photo © Steve Murez
 "},
    {num : 8,
     caption : "Studio snapshot, Oceans of Notions, 2017, the endless notes"},
    {num : 9,
     caption : "Foundry snapshot, Oceans of Notions (in progress), 2016"},
    {num : 10,
-    caption : "Foundry snapshot, Oceans of Notions (in progress), 2016"},
+    caption : "Foundry snapshot, Oceans of Notions, in progress"},
    {num : 12,
     caption : "Foundry snapshot, Oceans of Notions (almosed finished), 2016"},
    {num : 14,
     caption : "Studio snapshot, Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm"},
-   {num : 15,
-    caption : "Studio snapshot, Oceans of Notions, 6 piece modular coffee table, 2017, bronze, H 40-50 L 150 W 138 cm"}
-];
+   
+    
+
 
 window.lumieresPics = [
    {num : 1,
-    caption : ""},
+    caption : "Les Lumières (in situ), table lamps, 2017, vapor patinated bronze, photo © Steve Murez
+
+Les Lumières, hommage #1 (blocks) H 80 W 21 D 16 cm, unique
+
+Les Lumières, hommage #2 (tree), H 95 W 21.5 D 20 cm, unique
+
+Les Lumières, hommage #3 (cone), H 70 W 26.5 D 15 cm, unique
+
+Les Lumières, hommage #4  (loops),  H 26 W 28 D 19 cm, unique
+"},
    {num : 20,
-    caption : ""},
+    caption : "Les Lumières, table lamps, 2017, vapor patinated bronze, photo © Steve Murez
+
+Les Lumières, hommage #1 (blocks) H 80 W 21 D 16 cm, unique
+
+Les Lumières, hommage #2 (tree), H 95 W 21.5 D 20 cm, unique
+
+Les Lumières, hommage #3 (cone), H 70 W 26.5 D 15 cm, unique
+
+Les Lumières, hommage #4  (loops),  H 26 W 28 D 19 cm, unique
+"},
    {num : 30,
-    caption : ""},
+    caption : "Les Lumières, hommage #4  (loops), vapor patinated bronze, H 26 W 28 D 19 cm, unique, photo © Steve Murez"},
    {num : 40,
-    caption : ""},
+    caption : "Les Lumières, hommage #2  (tree), vapor patinated bronze, H 26 W 28 D 19 cm, unique, photo © Steve Murez"},
    {num : 41,
-    caption : ""},
+    caption : "Les Lumières, hommage #2  (tree), vapor patinated bronze, H 26 W 28 D 19 cm, unique, photo © Steve Murez"},
    {num : 48,
-    caption : ""},
+    caption : "Les Lumières, hommage #1  (blocks), vapor patinated bronze, H 26 W 28 D 19 cm, unique, photo © Steve Murez"},
    {num : 50,
-    caption : ""},
-   {num : 52,
-    caption : ""},
+    caption :"Foundry snapshot: Les Lumières, hommage #1 in progress"},
+   {num: 52
+    caption : "Foundry snapshot: Les Lumières, hommage #1 and #2 in progress"},
    {num : 54,
-    caption : ""},
+    caption : "Foundry snapshot: Les Lumières, hommage #4 in progress"},
 ];
 
 window.parcheminsPics = [
    {num : 1,
-    caption : ""},
+    caption : "Parchemins, side table,  2017, bronze, H 48 L 60 w 58, unique,photo © Steve Murez"},
    {num : 2,
-    caption : ""},
+    caption : "Parchemins (surface detail), side table,  2017, bronze, H 48 L 60 w 58, unique, photo © Steve Murez"},
    {num : 3,
-    caption : ""},
+    caption : "Parchemins, side table,  2017, bronze, H 48 L 60 w 58, unique,photo © Steve Murez"},
    {num : 4,
-    caption : ""},
+    caption : "Parchemins (in situ), side table,  2017, bronze, H 48 L 60 w 58, unique,photo © Steve Murez"},
    {num : 5,
-    caption : ""},
-   {num : 6,
-    caption : ""},
+    caption : "Parchemins (in situ), side table,  2017, bronze, H 48 L 60 w 58, unique,photo © Steve Murez"},
    {num : 7,
-    caption : ""}
+    caption : "Foundry snapshot: Parchemins in progress"}
 ];
 
 window.returnPics = [
    {num : 1,
-    caption : ""},
+    caption : "Return to Form,  mirror, 2017,  sand etched mirror, brass,  bronze and tarnished white gold  leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP, photo © Steve Murez"},
    {num : 2,
-    caption : ""},
+    caption : "Return to Form (detail),  mirror, 2017,  sand etched mirror, brass,  bronze and tarnished white gold  leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP, photo © Steve Murez"},
    {num : 3,
-    caption : ""},
+    caption : "Return to Form,  mirror, 2017,  sand etched mirror, brass,  bronze and tarnished white gold  leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP, photo © Steve Murez"},
    {num : 5,
-    caption : ""},
+    caption : "Studio snapshot: Return to Form (detail of hand etched mirror), 2017"},
    {num : 7,
-    caption : ""},
+    caption : "Foundry snapshot: Return to From, in progress"},
    {num : 8,
-    caption : ""}
+    caption : "original model (maquette) for "Return to Form", 2016, foam, aluminum foil, and oil paint"}
 ];
 
 window.surfacePics = [
@@ -121,19 +137,18 @@ window.surfacePics = [
    {num : 3,
     caption : "Oceans of Notions (surface detail), 2017, patinated bronze, 2017,photo © Steve Murez"},
    {num : 4,
-    caption : "The Plate Throwers (surface detail), 2017, vapour tarnished silver leaf on bronze, 2017,photo © Steve Murez"},
+    caption : "The Plate Throwers (surface detail), 2017, vapour tarnished silver leaf on bronze, 2017, photo © Steve Murez"},
    {num : 5,
-    caption : "Oceans of Notions (surface detail), 2017, patinated bronze,photo © Steve Murez"},
-   {num : 6,
-    caption : "Sculpture patinas: Pauline, 2015, clay, plaster and pure pigment patina on bronze"},
-   {num : 7,
-    caption : "Sculpture patinas: Armour, 2015, clay, fire scale and pure pigment patina on bronze"},
+    caption : "Oceans of Notions (surface detail), 2017, patinated bronze, photo © Steve Murez"},
    {num : 8,
-    caption : "patina test"},
+    caption : "patina test on test from "Oceans of Notions""},
    {num : 11,
-    caption : "new motifs in wax"},
+    caption : "new motif ideas in wax"},
    {num : 12,
     caption : "color tests in oil paint on sample wax motifs"}
     {num : 13,
     caption : "color tests in oil paint on sample wax motifs"}
+    {num : 14,
+    caption : "Example of an unusual patina made using clay, plaster and pure pigment over a traditional chemical patina on bronze (Pauline, 2016, bronze, photo © Steve Murez)"}
+   
 ];
