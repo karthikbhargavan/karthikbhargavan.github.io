@@ -253,6 +253,7 @@ div.piece div.picview div.caption {
 	width: auto;
 	max-width: 600px;
 	float:left;
+	clear:both; 
 	margin-top:20px;
 }
 
@@ -261,6 +262,7 @@ div.piece div.picview div.caption p.title {
 	font-size: 18px;
 	margin: 0px;
 	float:left;
+	clear:both;
 	display:block;
 	width: calc(100% - 120px);
 }
