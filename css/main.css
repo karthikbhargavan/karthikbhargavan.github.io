@@ -373,6 +373,7 @@ div.text h3 {
 div.text div.wide-image {
        display:block;
        max-width: 100%;
+       margin: 5px 10px 5px 0px;
 }
 
 div.text div.wide-image img {
