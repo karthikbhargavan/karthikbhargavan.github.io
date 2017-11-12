@@ -423,6 +423,24 @@ color: #000000;
 /* line-height: 24px; */
 }
 
+
+div.text ul{
+max-width:650px;
+/* Lorem ipsum dolor si: */
+font-family: OpenSans;
+font-size: 16px;
+color: #000000;
+list-style-type:none;
+margin:0;
+padding:0 0 0 1em;
+/* letter-spacing: 0.75px; */
+/* line-height: 24px; */
+}
+
+div.text ul li{
+padding:0 0 1em 0;
+}
+
 @media all and (max-width: 800px) {
        	body {
 		width: 100%;
