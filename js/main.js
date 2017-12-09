@@ -46,10 +46,10 @@ function displayMenu(piece,picsDir,picsList) {
         let i = document.createElement('img');
         let thumbfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
         let picfile = picsDir+"/"+piece+picsList[p].num+".jpg";
-        i.src = "thumbs/"+thumbfile;
+        i.src = "/thumbs/"+thumbfile;
         i.id = piece+p;
 	let caption = picsList[p].caption;
-        i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile);
+        i.onclick = function(){switchViewPic(i.id,piece+"-img","/smaller/"+picfile);
 	                       document.getElementById(piece+"-caption").innerHTML=caption;};
         if (p == 0) i.className = "currentPic";
         a.appendChild(i);
