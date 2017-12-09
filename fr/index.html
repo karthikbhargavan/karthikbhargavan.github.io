@@ -23,7 +23,7 @@
 
 <div class="full" id="full">
 <div id="home" onclick="switchDiv('normal','collection')" >
-<img src="images/surface-details/surface1.jpg"/>
+<img src="/images/surface-details/surface1.jpg"/>
 </div>
 <div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
 <img id="currentFullPic" src=""/>
@@ -42,37 +42,37 @@
 <button class="dropdown">&#9776;</button>
 <div class="smallmenu-item">
 <a id="piece1" onclick="switchPiece(this.id,'plate')">
-<img src="smaller/the-plate-throwers/plate1.jpg"></img>
+<img src="/smaller/the-plate-throwers/plate1.jpg"></img>
 The Plate Throwers
 </a>
 </div>
 <div class="smallmenu-item">
 <a id="piece2" onclick="switchPiece(this.id,'oceans')">
-<img src="smaller/oceans-of-notions/oceans1.jpg"></img>
+<img src="/smaller/oceans-of-notions/oceans1.jpg"></img>
 Oceans of Notions
 </a>
 </div>
 <div class="smallmenu-item">
 <a id="piece3" onclick="switchPiece(this.id,'lumieres')">
-<img src="smaller/les-lumieres/lumieres1.jpg"></img>
+<img src="/smaller/les-lumieres/lumieres1.jpg"></img>
 Les Lumières
 </a>
 </div>
 <div class="smallmenu-item">
 <a id="piece4" onclick="switchPiece(this.id,'parchemins')">
-<img src="smaller/parchemins/parchemins1.jpg"></img>
+<img src="/smaller/parchemins/parchemins1.jpg"></img>
 Parchemins
 </a>
 </div>
 <div class="smallmenu-item">
 <a id="piece5" onclick="switchPiece(this.id,'return')">
-<img src="smaller/return-to-form/return1.jpg"></img>
+<img src="/smaller/return-to-form/return1.jpg"></img>
 Return to Form
 </a>
 </div>
 <div class="smallmenu-item">
 <a id="piece6" onclick="switchPiece(this.id,'surface')">
-<img src="smaller/surface-details/surface1.jpg"></img>
+<img src="/smaller/surface-details/surface1.jpg"></img>
 Surface Details</a>
 </div>
 </div>
@@ -82,7 +82,7 @@ Surface Details</a>
 <div class="right" id="view">
 <div class="piece" id="plate"> 
 <div class="picview" id="plate-view">
-  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="smaller/the-plate-throwers/plate1.jpg" /></a>
+  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="/smaller/the-plate-throwers/plate1.jpg" /></a>
 <div class="caption">
 <p class="title">
 The Plate Throwers, 2017
@@ -108,7 +108,7 @@ displayMenu("plate","the-plate-throwers",window.platePics);
 
 <div class="piece" id="oceans"> 
 <div class="picview" id="oceans-view">
-  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="smaller/oceans-of-notions/oceans1.jpg" /></a>
+  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
 <div class="caption">
 <p class="title"> Oceans of Notions, 2017
 </p>
@@ -134,7 +134,7 @@ displayMenu("oceans","oceans-of-notions",window.oceansPics);
 
 <div class="piece" id="lumieres"> 
 <div class="picview" id="lumieres-view">
-  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="smaller/les-lumieres/lumieres1.jpg" /></a>
+  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="/smaller/les-lumieres/lumieres1.jpg" /></a>
 <div class="caption">
 <p class = "title"> 
 Les Lumières, 2017
@@ -164,7 +164,7 @@ displayMenu("lumieres","les-lumieres",window.lumieresPics);
 
 <div class="piece" id="parchemins"> 
 <div class="picview" id="parchemins-view">
-  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="smaller/parchemins/parchemins1.jpg" /></a>
+  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="/smaller/parchemins/parchemins1.jpg" /></a>
 <div class="caption">
 <p class="title">
 Parchemins, 2017
@@ -186,7 +186,7 @@ displayMenu("parchemins","parchemins",window.parcheminsPics);
 
 <div class="piece" id="return"> 
 <div class="picview" id="return-view">
-  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="smaller/return-to-form/return1.jpg" /></a>
+  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="/smaller/return-to-form/return1.jpg" /></a>
 <div class="caption">
 <p class="title">
 Return to Form, 2017
@@ -210,7 +210,7 @@ displayMenu("return","return-to-form",window.returnPics);
 
 <div class="piece" id="surface"> 
 <div class="picview" id="surface-view">
-  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="smaller/surface-details/surface1.jpg" /></a>
+  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="/smaller/surface-details/surface1.jpg" /></a>
 
 <div class="caption">
 <p class="description" id="surface-caption">
@@ -229,21 +229,21 @@ displayMenu("surface","surface-details",window.surfacePics);
 
 <div class="collection" id="collection">
 <a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
-   onmouseout="document.getElementById('piece1').className='';"><img src="smaller/the-plate-throwers/plate1.jpg" /></a>
+   onmouseout="document.getElementById('piece1').className='';"><img src="/smaller/the-plate-throwers/plate1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
-   onmouseout="document.getElementById('piece2').className='';"><img src="smaller/oceans-of-notions/oceans1.jpg" /></a>
+   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
-   onmouseout="document.getElementById('piece3').className='';"><img src="smaller/les-lumieres/lumieres1.jpg" /></a>
+   onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/lumieres1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
-   onmouseout="document.getElementById('piece4').className='';"><img src="smaller/parchemins/parchemins1.jpg" /></a>
+   onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
-   onmouseout="document.getElementById('piece5').className='';"><img src="smaller/return-to-form/return1.jpg" /></a>
+   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
-   onmouseout="document.getElementById('piece6').className='';"><img src="smaller/surface-details/surface1.jpg" /></a>
+   onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/surface-details/surface1.jpg" /></a>
 </div>
 
 <div class="text" id="intro"> 
-<!-- <img src="smaller/about/intro1.jpg" /> -->
+<!-- <img src="/smaller/about/intro1.jpg" /> -->
 
 <p style="margin-top:0px">
 En tant que peintre et sculpteur, je recherche des formes tout autant ouvertes et fermées, ordonnées et désordonnées, et dans l'opulence de la maîtrise, que dans les matériaux bruts, pour révéler la poussée et la traction entre le privé et le public, l’épic et l’éphémère.
@@ -284,14 +284,14 @@ Les pièces de More material s'inspirent de l'environnement domestique, dans leu
 Pour réaliser les pièces de More Material, la fonderie a été à la fois mon atelier et mon laboratoire. David de Gourcuff, son propriétaire, a investi dans mon projet, m'a accueillie, et m'a donné un accès libre et sans précédent pour travailler et expérimenter dans les rangs de son effervescente fonderie. Créer ces pièces a impliqué des collaborations avec les ateliers de la fonderie, et plusieurs travailleurs là-bas m'ont aidée à certaines étapes plus ou moins critiques. Cette collection n'aurait pas pu être réalisée sans eux.
 </p>
 
-<img src="smaller/about/intro2.jpg" />
+<img src="/smaller/about/intro2.jpg" />
 
 </div>
 <div class="text" id="background"> 
 
 <div class="wide-image">
-  <!-- <img src="images/artist-bio/bground1.jpg" /> -->
-<img src="images/artist-bio/bground15.jpg" /> 
+  <!-- <img src="/images/artist-bio/bground1.jpg" /> -->
+<img src="/images/artist-bio/bground15.jpg" /> 
 </div>
 
 <!--<h3>Bio</h3>-->
@@ -301,7 +301,7 @@ Je suis née dans une famille d'artiste vivant dans les forêts du New Hampshire
 </p>
 
 <div class="wide-image">
-<img src="images/artist-bio/bground2.jpg" />
+<img src="/images/artist-bio/bground2.jpg" />
 <p class="caption">
   <i>Francis and Alex, plâtre et bronze, 1998.</i> <br/>
 J'ai réalisé ces sculptures de deux amis artistes qui ont posé pour moi dans mon atelier de Philadelphie où, y compris en tant qu'étudiante en art, j'ai passé la plupart de mon temps.
@@ -310,7 +310,7 @@ J'ai réalisé ces sculptures de deux amis artistes qui ont posé pour moi dans 
 <div style="clear:both" />
 
 <div class="half-image">
-<img src="images/artist-bio/bground3.jpg" />
+<img src="/images/artist-bio/bground3.jpg" />
 </div>
 
 <p class="caption">
@@ -333,7 +333,7 @@ Pour moi, le modèle n'est pas seulement un moyen de peindre ou de sculpter mais
 
 
 <div class="wide-image">
-<img src="images/artist-bio/bground9.jpg" />
+<img src="/images/artist-bio/bground9.jpg" />
 <p class="caption">
   <i>Jasmine in the Braemare house, huile sur plâtre, 2008</i> <br/>
 Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 2008. Durant ces années, elles souffrait de problèmes de santé et poser était le seule travail qu'elle pouvait envisager. Son tranquille état intérieur s'est inscrit dans les représentations que j'ai faites d'elle durant ces années.
@@ -341,7 +341,7 @@ Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 200
 </div>
 
 <div class="wide-image">
-<img src="images/artist-bio/bground6.jpg" />
+<img src="/images/artist-bio/bground6.jpg" />
 <p class="caption">
   <i>Put the dog and the cat in the Poster (George and Sylvia Whitman dans la librairie Shakespeare and Company à Paris), huile sur toile, 2011.</i><br/>
   Cette peinture appartient à une série de portraits de familles posant chez elles. Elle a été exposée à la BP Portrait Exhibition à la National Portrait Gallery de Londres en 2012.
@@ -358,7 +358,7 @@ Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 200
 <div style="clear:both" />
 
 <div class="wide-image">
-<img src="images/artist-bio/bground13.jpg" />
+<img src="/images/artist-bio/bground13.jpg" />
 <p class="caption">
   <i>Hanna with a red cloth, huile sur plâtre, 2010.</i> <br/>
   Ces dernières années, différents modèles sont venus travailler avec moi régulièrement durant plusieurs mois ou plusieurs années.
@@ -369,7 +369,7 @@ Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 200
 <div style="clear:both" />
 
 <div class="wide-image">
-<img src="images/artist-bio/bground18.jpg" />
+<img src="/images/artist-bio/bground18.jpg" />
 <p class="caption">
   <i>Margaux, Broken and repaired, oil on plaster with plaster éstampage frame, 2014</i> <br/>
   Margaux, une talentueuse jeune photographe, a posé en 2014 et 2015.
@@ -379,7 +379,7 @@ Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 200
 
 <!--
 <div class="wide-image">
-<img src="images/artist-bio/bground15.jpg" />
+<img src="/images/artist-bio/bground15.jpg" />
 <p class="caption">
   <i>Some of the sculptures in my studio, 2013</i><br/>
 The sculptures lying around my studio grew to be an ungainly population of mismatched heads and bodies which often appear in the background of my paintings. 
@@ -388,7 +388,7 @@ The sculptures lying around my studio grew to be an ungainly population of misma
 -->
 <!--
 <div class="wide-image">
-<img src="images/artist-bio/bground16.jpg" />
+<img src="/images/artist-bio/bground16.jpg" />
 <p class="caption">
   <i>Le visiteur, oil on plaster, 65x86 cm, 2015.</i>
 </p>
@@ -408,14 +408,14 @@ Au début de l'année 2016, j'ai travaillé ces nouvelles techniques dans une s�
 
 <div style="clear:both" />
 <div class="wide-image">
-<img src="images/artist-bio/bground20.jpg" />
+<img src="/images/artist-bio/bground20.jpg" />
 <p class="caption">Armour, bronze, 2016
 </p>
 </div>
 <div style="clear:both" />
 
 <div class="wide-image">
-<img src="images/artist-bio/bground21.jpg" />
+<img src="/images/artist-bio/bground21.jpg" />
 <p class="caption">Oceans of Notions, modular coffee table, unique, bronze, 2017
 </p>
 </div>
@@ -423,7 +423,7 @@ Au début de l'année 2016, j'ai travaillé ces nouvelles techniques dans une s�
 <div style="clear:both" />
 
 <div class="half-image" style="text-align:center;margin-left:auto;margin-right:auto">
-<img src="images/artist-bio/bground22.jpg" />
+<img src="/images/artist-bio/bground22.jpg" />
 <p class="caption">Rosy Lamb, photo by Steve Murez
 </p>
 </div>
