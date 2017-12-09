@@ -19,12 +19,12 @@
 <div class="header" onclick="switchDiv('normal','collection')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
-<div class="lang"> <a href="/">EN</a> | <a href="/fr">FR</a> </div>
+<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>
 </div>
 
 <div class="full" id="full">
 <div id="home" onclick="switchDiv('normal','collection')" >
-<img src="images/surface-details/surface1.jpg"/>
+<img src="images/surface-details/surface0.jpg"/>
 </div>
 <div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
 <img id="currentFullPic" src=""/>
@@ -73,7 +73,7 @@ Return to Form
 </div>
 <div class="smallmenu-item">
 <a id="piece6" onclick="switchPiece(this.id,'surface')">
-<img src="smaller/surface-details/surface1.jpg"></img>
+<img src="smaller/surface-details/surface0.jpg"></img>
 Surface Details</a>
 </div>
 </div>
@@ -209,11 +209,11 @@ displayMenu("return","return-to-form",window.returnPics);
 
 <div class="piece" id="surface"> 
 <div class="picview" id="surface-view">
-  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="smaller/surface-details/surface1.jpg" /></a>
+  <a href="#"><img id="surface-img" onclick="switchFullPic(this.src);" src="smaller/surface-details/surface0.jpg" /></a>
 
 <div class="caption">
 <p class="description" id="surface-caption">
-The plate Throwers (surface detail), 2017, patinated bronze, 2017 <br/>photo © Steve Murez
+Color tests in oil paint on sample wax motifs.
 </p>
 <p class="note" id="surface-note">
 </p>
@@ -238,7 +238,7 @@ displayMenu("surface","surface-details",window.surfacePics);
 <a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
    onmouseout="document.getElementById('piece5').className='';"><img src="smaller/return-to-form/return1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
-   onmouseout="document.getElementById('piece6').className='';"><img src="smaller/surface-details/surface1.jpg" /></a>
+   onmouseout="document.getElementById('piece6').className='';"><img src="smaller/surface-details/surface0.jpg" /></a>
 </div>
 
 <div class="text" id="intro"> 
@@ -283,11 +283,17 @@ To make More Material, the foundry has been my studio and my laboratory. David d
 </div>
 <div class="text" id="background"> 
 
-<div class="wide-image">
-  <!-- <img src="images/artist-bio/bground1.jpg" /> -->
-<img src="images/artist-bio/bground15.jpg" /> 
+<div class="wide-image" style="text-align:center;margin-left:auto;margin-right:auto">
+<img src="images/artist-bio/bground22.jpg" />
+<p class="caption">Rosy Lamb, photo by Steve Murez
+</p>
 </div>
 
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground15.jpg" /> 
+</div>
+-->
 <!--<h3>Bio</h3>-->
 
 <p>
@@ -303,15 +309,16 @@ I was born to a family of artists living in the woods of New Hampshire. My sibli
 </div>
 <div style="clear:both" />
 
+<!--
 <div class="half-image">
 <img src="images/artist-bio/bground3.jpg" />
 </div>
-
 <p class="caption">
   <i>Leonardo da Vinci relief, plaster, 2001</i> <br/>
   A plaster relief sculpture of Leonardo da Vinci that I worked on with Jean Cardot. The final bronze version (after being further worked on by Cardot in the wax) is now on da Vinci’s gravesite in Amboise, Loire Valley, France. 
 </p>
 <div style="clear:both" />
+-->
 
 &nbsp;
 &nbsp;
@@ -329,8 +336,8 @@ To me, the model is not just a means to making a painting or sculpture but a wal
 <div class="wide-image">
 <img src="images/artist-bio/bground9.jpg" />
 <p class="caption">
-  <i>Jasmine in the Braemare house, oil on plaster, 79x63 cm, 2008</i> <br/>
-My sister Jasmine, before Hanna, was my model for many paintings between 2006-2008. During these years she was having health problems and modeling was the only job she felt up to. Her quiet inward state inscribed itself into the images I made of her during those years. 
+  <i>Jasmine in the Braemare house, oil on plaster, 2008</i> <br/>
+My sister Jasmine was my model for many paintings between 2006-2008. During these years she was having health problems and modeling was the only job she felt up to. Her quiet inward state inscribed itself into the images I made of her during those years. 
 </p>
 </div>
 
@@ -352,6 +359,14 @@ My sister Jasmine, before Hanna, was my model for many paintings between 2006-20
 <div style="clear:both" />
 
 <div class="wide-image">
+<img src="images/artist-bio/bground7.jpg" />
+<p class="caption">
+  <i>Ames de plates et instants inachevée, exhibition poster. Photo by Benjamin Pierce, 2006.</i>
+</p>
+</div>
+
+<!--
+<div class="wide-image">
 <img src="images/artist-bio/bground13.jpg" />
 <p class="caption">
 <i>Hanna with a red cloth, oil on plaster, 2010.</i> <br/>
@@ -369,6 +384,8 @@ Hanna was my assistant, student, and model from 2008 to 2010.
 Margaux, a talented young photographer, modeled and spent time in my studio in 2014 and 2015.
 </p>
 </div>
+-->
+
 <div style="clear:both" />
 
 <!--

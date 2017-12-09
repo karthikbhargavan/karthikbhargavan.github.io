@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
   <script type="application/javascript" src="/js/smooth-scroll.js"></script>
   <script type="application/javascript" src="/js/main.js"></script>
-  <script type="application/javascriot" src="/js/caption.json"></script>
+  <script type="application/javascript" src="/js/caption.json"></script>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 <div class="header" onclick="switchDiv('normal','collection')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
-<div class="lang"> <a href="/">EN</a> | <a href="/fr">FR</a> </div>
+<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>
 </div>
 
 <div class="full" id="full">
@@ -313,11 +313,12 @@ J'ai réalisé ces deux sculptures d'amis artistes, qui ont posé pour moi, dans
 <div class="half-image">
 <img src="/images/artist-bio/bground3.jpg" />
 </div>
-
+<!--
 <p class="caption">
   <i>Léonard de Vinci, relief en plâtre, 2001.</i> <br/>
 J'ai réalisé ce relief en plâtre de Léonard de Vinci pour Jean Cardot. La version définitive en bronze, retravaillée par lui à l’étape de la cire, se trouve aujourd'hui sur la tombe de Léonard de Vinci à Amboise. 
 </p>
+-->
 <div style="clear:both" />
 
 &nbsp;
@@ -357,7 +358,16 @@ Au fil des années, je me suis tournée vers la peinture sur plâtre. Cela m'a p
   </p>
 
 <div style="clear:both" />
+<div class="wide-image">
+<img src="images/artist-bio/bground7.jpg" />
+<p class="caption">
+  <i>Ames de plates et instants inachevée, exhibition poster. Photo by Benjamin Pierce, 2006.</i>
+</p>
+</div>
 
+<div style="clear:both" />
+
+<!--
 <div class="wide-image">
 <img src="/images/artist-bio/bground13.jpg" />
 <p class="caption">
@@ -377,7 +387,7 @@ Au fil des années, je me suis tournée vers la peinture sur plâtre. Cela m'a p
 </p>
 </div>
 <div style="clear:both" />
-
+-->
 <!--
 <div class="wide-image">
 <img src="/images/artist-bio/bground15.jpg" />

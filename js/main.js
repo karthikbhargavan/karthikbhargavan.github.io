@@ -86,3 +86,12 @@ function switchText(piece) {
     window.currentText = piece;
     document.getElementById(piece+"-menu").className="active";     
 }
+
+function switchLang(lang,path) {
+    if (lang == "en" && path.startsWith("/fr")) {
+	window.location.pathname = path.replace("/fr","");
+    } else
+	if (lang == "fr" && !path.startsWith("/fr")) {
+	window.location.pathname = "/fr"+path;
+    }      
+}
