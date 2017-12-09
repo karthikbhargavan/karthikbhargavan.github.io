@@ -10,225 +10,12 @@
   <title>MORE MATERIAL by Rosy Lamb</title>
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
   <script type="application/javascript" src="/js/smooth-scroll.js"></script>
-  <script type="application/javascript">
-    window.addEventListener('load', function() {
-    smoothScroll.init();
-    });
-
-    window.currentMode = "normal"
-    window.currentTarget = "collection";
-    window.prevTarget = "collection";
-    function switchDiv(mode,target) {
-    if (window.currentMode !== mode) {
-       document.getElementById(window.currentMode).style.display='none';
-       document.getElementById(mode).style.display='block';
-       window.currentMode = mode;
-    }
-    if (window.currentTarget !== target) {
-       document.getElementById(window.currentTarget).style.display='none';
-       document.getElementById(target).style.display='block';
-       window.prevTarget = window.currentTarget;
-       window.currentTarget = target;
-    }
-    let w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    x = w.innerWidth || e.clientWidth || g.clientWidth,
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    if (x <= 800) document.getElementById("view").scrollIntoView();
-    }
-
-    function switchViewPic(id,target,src) {
-       document.getElementById(target).src = src;
-       document.getElementById(currentPic).className = "";
-       document.getElementById(id).className = "currentPic";
-       window.currentPic = id;
-    }
-
-    function switchFullPic(src) {
-       document.getElementById('currentFullPic').src = src.replace("smaller","images");
-       switchDiv('full','fullpic');
-    }
-
-    function displayMenu(piece,picsDir,picsList) {
-       let m = document.getElementById(piece+"-menu");
-       for (p in picsList) {
-          let a = document.createElement('a');
-          a.href="#";
-          let i = document.createElement('img');
-          let thumbfile = picsDir+"/thumb-"+piece+picsList[p].num+".jpg";
-          let picfile = picsDir+"/"+piece+picsList[p].num+".jpg";
-          i.src = "thumbs/"+thumbfile;
-          i.id = piece+p;
-	  let caption = picsList[p].caption;
-          i.onclick = function(){switchViewPic(i.id,piece+"-img","smaller/"+picfile);
-	                            document.getElementById(piece+"-caption").innerHTML=caption;};
-          if (p == 0) i.className = "currentPic";
-          a.appendChild(i);
-          m.appendChild(a);
-        }
-    }
-
-    window.currentPiece = "";
-    function switchPiece(id,piece) {
-      switchDiv('normal',piece);
-      if (window.currentText != "") {
-         document.getElementById(window.currentText+"-menu").className="";     
-      }
-      window.currentText = "";
-      if (window.currentPiece != "") {
-         document.getElementById(window.currentPiece).className = "";
-      }
-      document.getElementById(id).className="currentPiece";
-      window.currentPiece = id;
-      window.currentPic = piece+0;
-    }
-	     
-    window.currentText = "";
-    function switchText(piece) {
-      switchDiv('normal',piece);
-      if (window.currentPiece != "") {
-         document.getElementById(window.currentPiece).className = "";
-      }
-      window.currentPiece = "";
-
-      if (window.currentText != "") {
-         document.getElementById(window.currentText+"-menu").className="";     
-      }
-      window.currentText = piece;
-      document.getElementById(piece+"-menu").className="active";     
-    }
-    </script>
+  <script type="application/javascript" src="/js/main.js"></script>
+  <script type="application/javascriot" src="/js/caption.json"></script>
 </head>
 <body>
 
-<script src="caption.json"></script>
   
-<!-- <script>
-/* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
-window.platePics = [
-   {num : 1,
-    caption : ""},
-   {num : 15,
-    caption : ""},
-   {num : 20,
-    caption : ""},
-   {num : 25,
-    caption : ""},
-   {num : 30,
-    caption : ""},
-   {num : 50,
-    caption : ""},
-   {num : 80,
-    caption : ""},
-   {num : 82,
-    caption : ""},
-   {num : 84,
-    caption : ""},
-   {num : 91,
-    caption : ""},
-   {num : 92,
-    caption : ""}
-];
-
-window.oceansPics = [
-   {num : 1,
-    caption : ""},
-   {num : 2,
-    caption : ""},
-   {num : 3,
-    caption : ""},
-   {num : 4,
-    caption : ""},
-   {num : 7,
-    caption : ""},
-   {num : 8,
-    caption : ""},
-   {num : 9,
-    caption : ""},
-   {num : 10,
-    caption : ""},
-   {num : 12,
-    caption : ""},
-   {num : 14,
-    caption : ""}
-];
-
-window.lumieresPics = [
-   {num : 1,
-    caption : ""},
-   {num : 20,
-    caption : ""},
-   {num : 30,
-    caption : ""},
-   {num : 40,
-    caption : ""},
-   {num : 41,
-    caption : ""},
-   {num : 48,
-    caption : ""},
-   {num : 50,
-    caption : ""},
-   {num : 52,
-    caption : ""}
-];
-
-window.parcheminsPics = [
-   {num : 1,
-    caption : ""},
-   {num : 2,
-    caption : ""},
-   {num : 3,
-    caption : ""},
-   {num : 4,
-    caption : ""},
-   {num : 5,
-    caption : ""},
-   {num : 7,
-    caption : ""}
-];
-
-window.returnPics = [
-   {num : 1,
-    caption : ""},
-   {num : 2,
-    caption : ""},
-   {num : 3,
-    caption : ""},
-   {num : 6,
-    caption : ""},
-   {num : 7,
-    caption : ""},
-   {num : 9,
-    caption : ""}
-];
-
-window.surfacePics = [
-   {num : 1,
-    caption : ""},
-   {num : 2,
-    caption : ""},
-   {num : 3,
-    caption : ""},
-   {num : 4,
-    caption : ""},
-   {num : 5,
-    caption : ""},
-   {num : 8,
-    caption : ""},
-   {num : 11,
-    caption : ""},
-   {num : 12,
-    caption : ""},
-   {num : 13,
-    caption : ""},
-   {num : 14,
-    caption : ""}
-];
-
-</script>-->
-
 <div class="header" onclick="switchDiv('normal','collection')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
@@ -248,7 +35,7 @@ window.surfacePics = [
 <div class="left">
 <div class="bigmenu">
 <a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
-<a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
+<a href="#" id="background-menu" onclick="switchText('background')">Artist</a>
 <a href="mailto:rosy@rosylamb.com" id="contact-menu">Contact</a>
 </div>
 <div class="smallmenu">
@@ -567,7 +354,8 @@ My sister Jasmine, before Hanna, was my model for many paintings between 2006-20
 <img src="images/artist-bio/bground13.jpg" />
 <p class="caption">
 <i>Hanna with a red cloth, oil on plaster, 2010.</i> <br/>
-Hanna,  a young Swedish woman, was my studio assistant, student and model from 2008 -2010 and appears in many of my paintings from this time.
+In recent years I have had many different models that come to work with me usually over a span of several months or years.
+Hanna was my assistant, student, and model from 2008 to 2010.
 </p>
 </div>
 
@@ -577,7 +365,7 @@ Hanna,  a young Swedish woman, was my studio assistant, student and model from 2
 <img src="images/artist-bio/bground18.jpg" />
 <p class="caption">
   <i>Margaux, Broken and repaired, oil on plaster with plaster éstampage frame, 2014</i> <br/>
-In recent years I have had many different models that come to work with me usually over a span of several months or years. Margaux, a talented young photographer, modeled and spent time in my studio in 2014 and 2015.
+Margaux, a talented young photographer, modeled and spent time in my studio in 2014 and 2015.
 </p>
 </div>
 <div style="clear:both" />
