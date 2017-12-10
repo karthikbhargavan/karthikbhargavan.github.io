@@ -5,6 +5,7 @@ window.addEventListener('load', function() {
 window.currentMode = "normal"
 window.currentTarget = "collection";
 window.prevTarget = "collection";
+window.currentView = "view";
 function switchDiv(mode,target) {
     if (window.currentMode !== mode) {
 	document.getElementById(window.currentMode).style.display='none';
@@ -26,11 +27,35 @@ function switchDiv(mode,target) {
     if (x <= 800) document.getElementById("view").scrollIntoView();
 }
 
-function switchViewPic(id,target,src) {
+function switchViewPic(piece,id,target,src) {
+    if (currentView == "vidview") {
+	document.getElementById(piece+"-vidview").style.display = "none";
+	document.getElementById(piece+"-view").style.display = "block";
+	currentView="view";
+    }
     document.getElementById(target).src = src;
-    document.getElementById(currentPic).className = "";
+    let pic = document.getElementById(currentPic);
+    if (pic) pic.className = "";
+    let vid = document.getElementById(currentVid);
+    if (pic) pic.className = "";
     document.getElementById(id).className = "currentPic";
     window.currentPic = id;
+    window.currentVid = 0;
+}
+
+function switchViewVid(piece,id) {
+    if (currentView == "view") {
+	document.getElementById(piece+"-view").style.display = "none";
+	document.getElementById(piece+"-vidview").style.display = "block";
+	currentView="vidview";
+    }
+    let pic = document.getElementById(currentPic);
+    if (pic) pic.className = "";
+    let vid = document.getElementById(currentVid);
+    if (pic) pic.className = "";
+    document.getElementById(id).className = "currentVid";
+    window.currentPic = 0;
+    window.currentVid = id;
 }
 
 function switchFullPic(src) {
@@ -49,7 +74,7 @@ function displayMenu(piece,picsDir,picsList) {
         i.src = "/thumbs/"+thumbfile;
         i.id = piece+p;
 	let caption = picsList[p].caption;
-        i.onclick = function(){switchViewPic(i.id,piece+"-img","/smaller/"+picfile);
+        i.onclick = function(){switchViewPic(piece,i.id,piece+"-img","/smaller/"+picfile);
 	                       document.getElementById(piece+"-caption").innerHTML=caption;};
         if (p == 0) i.className = "currentPic";
         a.appendChild(i);
@@ -70,6 +95,7 @@ function switchPiece(id,piece) {
     document.getElementById(id).className="currentPiece";
     window.currentPiece = id;
     window.currentPic = piece+0;
+    window.currentVid = 0;
 }
 
 window.currentText = "";

@@ -244,6 +244,20 @@ div.normal div.right div.piece {
 	display:none;
 }
 
+div.piece div.vidview {
+    display:none;
+	height: auto;
+	width:650px;
+	float:left;
+	max-width: calc(100% - 250px);    
+}
+
+
+div.piece div.vidview iframe {
+    display:block;
+    max-width: 600px;
+}
+
 div.piece div.picview {
 	display:block;
 	height: auto;
@@ -271,7 +285,7 @@ div.piece div.picview a img {
         cursor: zoom-in;
 }
 
-div.piece div.picview div.caption {
+div.piece div.caption {
 	width: auto;
 	max-width: 600px;
 	float:left;
@@ -279,7 +293,7 @@ div.piece div.picview div.caption {
 	margin-top:20px;
 }
 
-div.piece div.picview div.caption p.title {
+div.piece div.caption p.title {
 	font-family: OpenSansBold;
 	font-size: 18px;
 	margin: 0px;
@@ -289,7 +303,7 @@ div.piece div.picview div.caption p.title {
 	width: calc(100% - 120px);
 }
 
-div.piece div.picview div.caption button.viewmore {
+div.piece div.caption button.viewmore {
 	font-family: OpenSansLightBold;
 	font-size: 16px;
 	color: #797879;
@@ -303,7 +317,7 @@ div.piece div.picview div.caption button.viewmore {
 	border:1px solid #797879;
 }
 
-div.piece div.picview div.caption p.description {
+div.piece div.caption p.description {
 	width: 100%;
 	font-family: OpenSansLight;
 	color:#797879;
@@ -313,7 +327,7 @@ div.piece div.picview div.caption p.description {
 	float:left;
 }
 
-div.piece div.picview div.caption p.note {
+div.piece div.caption p.note {
 	width: 100%;
 	font-family: OpenSans;
 	color:#000000;
@@ -321,6 +335,43 @@ div.piece div.picview div.caption p.note {
 	display:block;
 	float:left;
 }
+
+div.piece div.vidmenu {
+	height: auto;
+	width: auto;	
+	max-width: 250px;
+	max-height: 500px;
+	float:left;
+	display:block;
+	margin: 0px 0px 0px 0px;
+}
+
+div.piece div.vidmenu a {
+	width: 100px;
+	height: 80px;
+	display: block;
+	float: left;
+	margin: 0px 0px 10px 10px;
+}
+
+div.piece div.vidmenu a img {
+	width: 100px;
+	height: 80px;
+	opacity: 0.37;
+}
+
+div.piece div.vidmenu a img:hover {
+	width: 100px;
+	height: 80px;
+	opacity: 1;
+}
+
+div.piece div.vidmenu a img.currentVid {
+	width: 100px;
+	height: 80px;
+	opacity: 1;
+}
+
 
 div.piece div.picmenu {
 	height: auto;
