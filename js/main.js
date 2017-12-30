@@ -6,6 +6,7 @@ window.currentMode = "normal"
 window.currentTarget = "collection";
 window.prevTarget = "collection";
 window.currentView = "view";
+window.currentPic = "plate0";
 function switchDiv(mode,target) {
     if (window.currentMode !== mode) {
 	document.getElementById(window.currentMode).style.display='none';
@@ -34,9 +35,9 @@ function switchViewPic(piece,id,target,src) {
 	currentView="view";
     }
     document.getElementById(target).src = src;
-    let pic = document.getElementById(currentPic);
+    let pic = document.getElementById(window.currentPic);
     if (pic) pic.className = "";
-    let vid = document.getElementById(currentVid);
+    let vid = document.getElementById(window.currentVid);
     if (pic) pic.className = "";
     document.getElementById(id).className = "currentPic";
     window.currentPic = id;
@@ -93,9 +94,13 @@ function switchPiece(id,piece) {
         document.getElementById(window.currentPiece).className = "";
     }
     document.getElementById(id).className="currentPiece";
+    let pic = document.getElementById(currentPic);
+    if (pic) pic.className = "";
     window.currentPiece = id;
     window.currentPic = piece+0;
     window.currentVid = 0;
+    pic = document.getElementById(currentPic);
+    if (pic) pic.onclick();
 }
 
 window.currentText = "";
