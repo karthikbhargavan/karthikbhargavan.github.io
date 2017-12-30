@@ -7,4 +7,3 @@ for i in `ls ../images/oceans-of-notions`; do convert ../images/oceans-of-notion
 for i in `ls ../images/parchemins`; do convert ../images/parchemins/"$i" -thumbnail 100x80^ -gravity center -extent 100x80 parchemins/"thumb-$i"; done
 for i in `ls ../images/return-to-form`; do convert ../images/return-to-form/"$i" -thumbnail 100x80^ -gravity center -extent 100x80 return-to-form/"thumb-$i"; done
 for i in `(cd ../images/surface-details && ls thumb-*)`; do convert ../images/surface-details/"$i" -thumbnail 100x80^ -gravity center -extent 100x80 surface-details/"$i"; done
-for i in `(cd ../images/les-lumieres && ls thumb-*)`; do convert ../images/les-lumieres/"$i" -thumbnail 100x80^ -gravity center -extent 100x80 les-lumieres/"$i"; done
