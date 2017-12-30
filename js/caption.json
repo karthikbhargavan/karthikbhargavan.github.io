@@ -75,12 +75,14 @@ window.parcheminsPics = [
    {num : 2,
     caption : "Parchemins (surface detail), side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
    {num : 3,
-    caption : "Parchemins, side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
+    caption : "Parchemins (detail, in situ), side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
    {num : 4,
+    caption : "Parchemins (detail, in situ), side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
+   {num : 6,
     caption : "Parchemins (in situ), side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
-   {num : 5,
+    {num : 7,
     caption : "Parchemins (in situ), side table,  2017, bronze, H 48 L 60 w 58, unique <br/>photo © Steve Murez"},
-   {num : 7,
+   {num : 8,
     caption : "Foundry snapshot: Parchemins in progress"}
 ];
 
