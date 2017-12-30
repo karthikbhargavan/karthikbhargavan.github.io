@@ -60,15 +60,15 @@ Parchemins
 </a>
 </div>
 <div class="smallmenu-item">
-<a id="piece5" onclick="switchPiece(this.id,'return')">
-<img src="smaller/return-to-form/return1.jpg"></img>
-Return to Form
-</a>
-</div>
-<div class="smallmenu-item">
 <a id="piece3" onclick="switchPiece(this.id,'lumieres')">
 <img src="smaller/les-lumieres/thumb-lumieres1.jpg"></img>
 Les Lumières
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece5" onclick="switchPiece(this.id,'return')">
+<img src="smaller/return-to-form/return1.jpg"></img>
+Return to Form
 </a>
 </div>
 <div class="smallmenu-item">
@@ -118,9 +118,11 @@ This is a short film clip by my friend Adrian Hornsby In which an unseen man thr
 </div>
 -->
 <div class="picmenu" id="plate-menu">
+  <!--
   <div class="vidmenu" id="plate-vid">
     <a href="#" onclick="switchViewVid('plate','plate-vid')"><img src="/images/the-plate-throwers/platevid.jpg" /></a>
   </div>
+-->
 <script>
 displayMenu("plate","the-plate-throwers",window.platePics);
 </script>
@@ -255,10 +257,10 @@ displayMenu("surface","surface-details",window.surfacePics);
    onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
    onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /></a>
-<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
-   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
    onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
+   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /></a>
 <a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
    onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/surface-details/surface0.jpg" /></a>
 </div>
