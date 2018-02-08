@@ -119,10 +119,10 @@ function switchText(piece) {
 }
 
 function switchLang(lang,path) {
-    if (lang == "en" && path.startsWith("/fr")) {
+    if (lang == "en" && path.endsWith("/fr")) {
 	window.location.pathname = path.replace("/fr","");
     } else
-	if (lang == "fr" && !path.startsWith("/fr")) {
-	window.location.pathname = "/fr"+path;
+	if (lang == "fr" && !path.endsWith("/fr")) {
+	window.location.pathname = path+"/fr";
     }      
 }
