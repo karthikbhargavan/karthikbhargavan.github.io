@@ -52,7 +52,7 @@ window.oceansPics = [
 
 window.lumieresPics = [
    {num : 1,
-    caption : "Les Lumières (in situ), table lamps, 2017, vapor patinated bronze <br/>photo © Steve Murez<br/>Les Lumières, hommage #1 (blocks) H 80 W 21 D 16 cm, unique<br/>Les Lumières, hommage #2 (tree), H 95 W 21.5 D 20 cm, unique<br/>Les Lumières, hommage #3 (cone), H 70 W 26.5 D 15 cm, unique<br/>Les Lumières, hommage #4  (loops),  H 26 W 28 D 19 cm, unique<br/>"},
+    caption : "Les Lumières (in situ), table lamps, 2017, vapor patinated bronze <br/>photo © Steve Murez<br/>Les Lumières, hommage #1 (blocks) H 80 W 21 D 16 cm, unique<br/>Les Lumières, hommage #2 (tree), H 95 W 21.5 D 20 cm, unique<br/>Les Lumières, hommage #3 (cone), H 70 W 26.5 D 15 cm, unique<br/>Les Lumières, hommage #4  (loops),  H 62 W 28 D 19 cm, unique<br/>"},
    {num : 20,
     caption : "Les Lumières (in situ), table lamps, 2017, vapor patinated bronze <br/>photo © Steve Murez<br/>Les Lumières, hommage #1 (blocks) H 80 W 21 D 16 cm, unique<br/>Les Lumières, hommage #2 (tree), H 95 W 21.5 D 20 cm, unique<br/>Les Lumières, hommage #3 (cone), H 70 W 26.5 D 15 cm, unique<br/>Les Lumières, hommage #4  (loops),  H 26 W 28 D 19 cm, unique<br/>"},
    {num : 30,
