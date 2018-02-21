@@ -412,7 +412,7 @@ div.piece div.picmenu a img.currentPic {
 div.collection {
        width: auto;
        max-width:900px;
-       display:block;
+       display:none;
        float:left;
 }
 

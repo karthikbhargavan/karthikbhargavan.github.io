@@ -3,8 +3,8 @@ window.addEventListener('load', function() {
 });
 
 window.currentMode = "normal"
-window.currentTarget = "collection";
-window.prevTarget = "collection";
+window.currentTarget = "invitation";
+window.prevTarget = "invitation";
 window.currentView = "view";
 window.currentPic = "plate0";
 function switchDiv(mode,target) {
