@@ -16,7 +16,7 @@
 <body>
 
   
-<div class="header" onclick="switchDiv('normal','collection')">
+<div class="header" onclick="switchDiv('normal','invitation')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
 <!-- <div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div> -->
@@ -28,7 +28,48 @@
 <a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
 <a href="#" id="process-menu" onclick="switchText('process')">Process</a>
 <a href="#" id="background-menu" onclick="switchText('background')">Bio</a>
+<a href="#" id="collection-menu" onclick="switchDiv('normal','collection')">Selected Pieces</a>
 </div>
+
+<div class="smallmenu">
+<button class="dropdown">&#9776;</button>
+<div class="smallmenu-item">
+<a id="piece1" onclick="switchPiece(this.id,'plate')">
+<img src="/smaller/the-plate-throwers/plate1.jpg"></img>
+The Plate Throwers
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece2" onclick="switchPiece(this.id,'oceans')">
+<img src="/smaller/oceans-of-notions/oceans1.jpg"></img>
+Oceans of Notions
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece4" onclick="switchPiece(this.id,'parchemins')">
+<img src="/smaller/parchemins/parchemins1.jpg"></img>
+Parchemins
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece3" onclick="switchPiece(this.id,'lumieres')">
+<img src="/smaller/les-lumieres/thumb-lumieres1.jpg"></img>
+Les Lumières
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece5" onclick="switchPiece(this.id,'return')">
+<img src="/smaller/return-to-form/return1.jpg"></img>
+Return to Form
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece6" onclick="switchPiece(this.id,'surface')">
+<img src="/smaller/surface-details/surface0.jpg"></img>
+Surface Details</a>
+</div>
+</div>
+
 <div class="bigmenu">
 <a href="#" id="press-menu" onclick="switchText('press')">Press</a>
 <a href="mailto:guido@galerieguidoromeropierini.com" id="contact-menu">Contact</a>
@@ -37,14 +78,223 @@
 
 <div class="right" id="view">
 
-<div class="text" style="display:block;" id="collection">
+<div class="text" style="display:block;" id="invitation">
 <div class="wide-image">
   <img style="border:1px solid #d3d3d3" src="/Invitation-More-Material.png"></img>
 </div>
 </div>
 
+<div class="collection" id="collection">
+<a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
+   onmouseout="document.getElementById('piece1').className='';"><img src="/smaller/the-plate-throwers/plate1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
+   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
+   onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
+   onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
+   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece6','surface')" onmouseover="document.getElementById('piece6').className='currentPiece';"
+   onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/surface-details/surface0.jpg" /></a>
+</div>
+
 <div class="text" id="intro"> 
 </div> 
+
+<div class="text" id="process"> 
+
+ 
+<iframe src="https://player.vimeo.com/video/235557083?title=0&byline=0&portrait=0" width="480" height="270" style="padding-bottom:20px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<!-- <img src="smaller/about/intro1.jpg" /> -->
+
+<p style="margin-top:0px">
+As a painter and sculptor, I seek forms that are open and closed, ordered and disordered in equal measure and in which opulent workmanship competes with untouched raw materials to reveal the push and pull between the public and private, the epic and the transient. I often work with sculpted plaster that looks as if it has naturally aged and crumbled over time. It is more difficult to evoke this aesthetic with traditional bronze sculptures, but recently, I developed a technique of painting in hot wax that allows me to make expressive and delicate bronze surfaces that balance the strength of metal with the visual fragility of painted brush strokes. 
+</p>
+
+<div class="wide-image">
+<img src="/smaller/surface-details/surface4.jpg" />
+</div>
+<div class="wide-image">
+<img src="/smaller/surface-details/surface1.jpg" />
+<p class="caption">Surface details, The Plate Throwers (2017) 
+</p>
+</div>
+
+<p>
+  These unique surfaces and motifs are the foundation for my new series of functional sculptures, called More Material, on which I have been working for the the past two years at La Fonderie Fusions in Auvergne, France.
+</p>
+
+<p>
+To make More Material, the foundry has been my studio and my laboratory. David de Gourcuff, the owner of the foundry, invested in my work, put me up in his home, and gave me unprecedented access and free rein to work and play in the midst of his busy foundry. Making these pieces involved collaborations with every atelier of the foundry, and every worker there helped me at some critical juncture or other. This collection would not have been possible otherwise. 
+</p>
+
+<img src="/smaller/about/intro2.jpg" />
+
+</div>
+
+<div class="text" id="background"> 
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground22.jpg" />
+<p class="caption">Rosy Lamb, photo by Steve Murez
+</p>
+</div>
+
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground15.jpg" /> 
+</div>
+-->
+<!--<h3>Bio</h3>-->
+
+<p>
+I was born to a family of artists living in the woods of New Hampshire. My siblings and I were homeschooled, that is, we were mostly left to pursue our own projects. At seventeen, I went to the Pennsylvania Academy of the Fine Arts where I formally studied painting and sculpture.  I then moved to Paris, where I assisted the sculptor Jean Cardot on his public monuments for two years, before moving to my own studio to work on painting, sculpture, and now, furniture. 
+</p>
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground2.jpg" />
+<p class="caption">
+  <i>Francis and Alex, plaster and bronze, 1998.</i> <br/>
+  I made these two sculptures of two artist friends who modeled for me in my home studio in Philadelphia, where, even as an art school student, I spent most of my time. 
+</p>
+</div>
+<div style="clear:both" />
+
+<!--
+<div class="half-image">
+<img src="images/artist-bio/bground3.jpg" />
+</div>
+<p class="caption">
+  <i>Leonardo da Vinci relief, plaster, 2001</i> <br/>
+  A plaster relief sculpture of Leonardo da Vinci that I worked on with Jean Cardot. The final bronze version (after being further worked on by Cardot in the wax) is now on da Vinci’s gravesite in Amboise, Loire Valley, France. 
+</p>
+<div style="clear:both" />
+-->
+
+&nbsp;
+&nbsp;
+<h3>Intimate Portraits</h3>
+
+<p>
+Since childhood, retreating into my private world has been the generative stance in which it is possible for me to make things. Alone in my studio, the vulnerability that comes with openness can be a cultivated strength, and the space that the dust takes up in between the things in the room is as much part of what I can see and feel and use as inspiration as the things, sculptures, and living models that surround me.
+</p>
+
+<p>
+To me, the model is not just a means to making a painting or sculpture but a walking, breathing conduit for the unknown. The images I make with models are fractured embroideries of time; they mix observed moments with a more inward form of seeing and feeling.
+</p>
+
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground9.jpg" />
+<p class="caption">
+  <i>Jasmine in the Braemare house, oil on plaster, 2008</i> <br/>
+My sister Jasmine was my model for many paintings between 2006-2008. During these years she was having health problems and modeling was the only job she felt up to. Her quiet inward state inscribed itself into the images I made of her during those years. 
+</p>
+</div>
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground6.jpg" />
+<p class="caption">
+  <i>Put the dog and the cat in the Poster (George and Sylvia Whitman in the bookstore Shakespeare and Company, Paris), oil on linen, 2011.</i><br/>
+  This painting from a small series of portraits I made of families posing in their homes was exhibited at the BP Portrait exhibition, National Portrait Gallery, London in 2012
+</p>
+</div>
+
+
+<h3>Plaster + Hybrids</h3>
+  
+<p>
+  Over time I increasingly turned toward making paintings on plaster in which I experimented with admixing sculptural elements and shadow into the pieces. In some instances my hybrid plaster paintings look no different from paintings on other supports, except for their slightly irregular shapes or the texture on their cast plaster surfaces. In other works, using plaster supports allows me to integrate high and low relief into my painting by breaking, sculpting, scratching away and incising portions of the surface image.
+  </p>
+
+<div style="clear:both" />
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground7.jpg" />
+<p class="caption">
+  <i>Ames de plates et instants inachevée, exhibition poster. Photo by Benjamin Pierce, 2006.</i>
+</p>
+</div>
+
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground13.jpg" />
+<p class="caption">
+<i>Hanna with a red cloth, oil on plaster, 2010.</i> <br/>
+In recent years I have had many different models that come to work with me usually over a span of several months or years.
+Hanna was my assistant, student, and model from 2008 to 2010.
+</p>
+</div>
+
+<div style="clear:both" />
+
+<div class="wide-image">
+<img src="images/artist-bio/bground18.jpg" />
+<p class="caption">
+  <i>Margaux, Broken and repaired, oil on plaster with plaster éstampage frame, 2014</i> <br/>
+Margaux, a talented young photographer, modeled and spent time in my studio in 2014 and 2015.
+</p>
+</div>
+-->
+
+<div style="clear:both" />
+
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground15.jpg" />
+<p class="caption">
+  <i>Some of the sculptures in my studio, 2013</i><br/>
+The sculptures lying around my studio grew to be an ungainly population of mismatched heads and bodies which often appear in the background of my paintings. 
+</p>
+</div>
+-->
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground16.jpg" />
+<p class="caption">
+  <i>Le visiteur, oil on plaster, 65x86 cm, 2015.</i>
+</p>
+</div>-->
+
+
+<h3>Hot Wax and <i>More Material</i></h3>
+
+<p>
+  In 2014 I developed a technique of painting in hot wax in order to make expressive metal surfaces while making a small series of new sculptures.
+  My sculpture <i>Armour</i> is an example of this new direct wax technique.
+</p>
+
+
+<div style="clear:both" />
+<div class="wide-image">
+<img src="/images/artist-bio/bground20.jpg" />
+<p class="caption">Armour, bronze, 2016
+</p>
+</div>
+<div style="clear:both" />
+
+<p>
+  At the beginning of 2016 I began developing these new techniques into a series of unique furniture pieces and painterly architectural motifs in bronze that embody my lifelong interest in making art that reflects on  the private experience of home and family life. I am calling this new series of domestic sculptures More Material as these are  works in which the material weight and bulk compete with their visual and conceptual presence.
+</p>
+
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground21.jpg" />
+<p class="caption">Oceans of Notions, modular coffee table, unique, bronze, 2017
+</p>
+</div>
+
+<div style="clear:both" />
+<!--
+<div class="half-image" style="text-align:center;margin-left:auto;margin-right:auto">
+<img src="images/artist-bio/bground22.jpg" />
+<p class="caption">Rosy Lamb, photo by Steve Murez
+</p>
+</div>
+-->
+</div>
 
 </div> 
 </div> 
