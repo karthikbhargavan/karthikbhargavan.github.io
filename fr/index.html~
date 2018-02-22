@@ -17,7 +17,7 @@
 <div class="header" onclick="switchDiv('normal','invitation')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
-<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div> 
+<!-- <div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div> -->
 </div>
 
 <div class="normal" id="normal">
@@ -25,7 +25,7 @@
 <div class="bigmenu">
 <a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
 <a href="#" id="process-menu" onclick="switchText('process')">Process</a>
-<a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
+<a href="#" id="collection-menu" onclick="switchDiv('normal','collection')">Selected Pieces</a>
 </div>
 
 <div class="smallmenu">
@@ -63,8 +63,8 @@ Return to Form
 </div>
 
 <div class="bigmenu">
-<a href="/press-release.pdf")">Press</a>
-<!--<a href="/dossier-de-presse.pdf")">Presse [fr]</a>-->
+<a href="/press-release.pdf")">Press [en]</a>
+<a href="/dossier-de-presse.pdf")">Presse [fr]</a>
 <a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contact</a>
 <a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
 </div>
@@ -258,7 +258,7 @@ In <i>Parchemins</i> (2017) a paper-thin tabletop, its stretched
 surface evoking the texture of hospital bandages, clings at its
 corners to lean supports like crutches propping it up. An impression
 of frail precariousness misleads us, however, since the object in
-question is rugged cast bronze. It is the first sign of a quiet
+question is rugged cast bronze. It is the rst sign of a quiet
 conceptual play in Rosy Lamb’s work, which, on the surface of things,
 can seem almost exclusively about the process of making beautiful
 objects.

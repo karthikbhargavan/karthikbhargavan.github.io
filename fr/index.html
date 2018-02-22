@@ -1,0 +1,606 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="
+				 user-scalable=no, initial-scale=1,
+				 maximum-scale=1, minimum-scale=1,
+				 width=device-width, height=device-height,
+				 target-densitydpi=device-dpi" />
+  <meta name="keywords" content="symbolic software" />
+  <title>MORE MATERIAL by Rosy Lamb</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <script type="application/javascript" src="/js/smooth-scroll.js"></script>
+  <script type="application/javascript" src="/js/main.js"></script>
+  <script type="application/javascript" src="/js/caption.json"></script>
+</head>
+<body>
+<div class="header" onclick="switchDiv('normal','invitation')">
+<div class="title"> MORE MATERIAL </div>
+<div class="author"> Rosy Lamb </div>
+<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div> 
+</div>
+
+<div class="normal" id="normal">
+<div class="left">
+<div class="bigmenu">
+<a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
+<a href="#" id="process-menu" onclick="switchText('process')">Process</a>
+<a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
+</div>
+
+<div class="smallmenu">
+<button class="dropdown">&#9776;</button>
+<div class="smallmenu-item">
+<a id="piece1" onclick="switchPiece(this.id,'plate')">
+<img src="/smaller/the-plate-throwers/plate1.jpg"></img>
+The Plate Throwers
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece2" onclick="switchPiece(this.id,'oceans')">
+<img src="/smaller/oceans-of-notions/oceans1.jpg"></img>
+Oceans of Notions
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece4" onclick="switchPiece(this.id,'parchemins')">
+<img src="/smaller/parchemins/parchemins1.jpg"></img>
+Parchemins
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece3" onclick="switchPiece(this.id,'lumieres')">
+<img src="/smaller/les-lumieres/thumb-lumieres1.jpg"></img>
+Les Lumières
+</a>
+</div>
+<div class="smallmenu-item">
+<a id="piece5" onclick="switchPiece(this.id,'return')">
+<img src="/smaller/return-to-form/return1.jpg"></img>
+Return to Form
+</a>
+</div>
+</div>
+
+<div class="bigmenu">
+<!-- <a href="/press-release.pdf")">Press [en]</a>-->
+<a href="/dossier-de-presse.pdf")">Presse</a>
+<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contact</a>
+<a href="#" id="background-menu" onclick="switchText('background')">Artiste Bio</a>
+</div>
+</div>
+
+<div class="right" id="view">
+
+<div class="piece" id="plate"> 
+<div class="picview" id="plate-view">
+  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="/smaller/the-plate-throwers/plate1.jpg" /></a>
+<div class="caption">
+<p class="title">
+The Plate Throwers, 2017
+</p>
+<p class="description" id="plate-caption">
+[front view with doors closed], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique <br/>photo © Steve Murez
+</p>
+<p class="note" id="plate-note">
+<i>The Plate Throwers</i>, un buffet qui, de l'extérieur, expose les traces presque dorées de grands gestes, l'intérieur dissimulant le portrait de l'éternelle dispute au sujet de qui doit faire la vaisselle.
+</p>
+</div>
+</div>
+<!--
+<div class="vidview" id="plate-vidview">
+<iframe src="https://player.vimeo.com/video/4555656" width="640" height="512" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div class="caption">
+  <p class="title">
+    That's how strong my love is, 2003.
+</p>
+  <p class="description" id="plate-vidcaption">
+    Film element within mixed-media stage play 'Marion Davies & the Moon' by Adrian Hornsby <br/>
+cast: Rosy lamb <br/>
+camera: Jethro Massey<br/>
+Paris, 2003<br/>
+</p>
+<p class="note" id="plate-vidnote">
+This is a short film clip by my friend Adrian Hornsby In which an unseen man throws plates at me.  I had entirely forgotten about this little film until I recently showed Adrian a picture of my sculpture, The Plate Throwers, and he reminded me that my ideas have a long history.
+</p>
+</div>
+</div>
+-->
+<div class="picmenu" id="plate-menu">
+  <!--
+  <div class="vidmenu" id="plate-vid">
+    <a href="#" onclick="switchViewVid('plate','plate-vid')"><img src="/images/the-plate-throwers/platevid.jpg" /></a>
+  </div>
+-->
+<script>
+displayMenu("plate","the-plate-throwers",window.platePics);
+</script>
+</div>
+</div>
+
+<div class="piece" id="oceans"> 
+<div class="picview" id="oceans-view">
+  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
+<div class="caption">
+<p class="title"> Oceans of Notions, 2017
+</p>
+<p class="description" id="oceans-caption">
+6 piece modular coffee table, bronze, H 40-50 L 150  W 138 cm, unique.
+</p>
+<p class="note" id="oceans-note">
+  <i>Oceans of Notions</i>, une table basse ondulante et modulable, faite de panneaux uniques, possède des surfaces couvertes d'une langage inconnu, fait d'éclaboussures et de remous.
+</p>
+</div>
+</div>
+<div class="picmenu" id="oceans-menu">
+<script>
+displayMenu("oceans","oceans-of-notions",window.oceansPics);
+</script>
+</div>
+</div>
+
+<div class="piece" id="return"> 
+<div class="picview" id="return-view">
+  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="smaller/return-to-form/return1.jpg" /></a>
+<div class="caption">
+<p class="title">
+Return to Form, 2017
+</p>
+<p class="description" id="return-caption">
+sand etched mirror, brass, bronze, and tarnished white gold leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP
+</p>
+<p class="note" id="return-note">
+        <i>Return to Form</i>, un miroir dont la buée semble avoir été essuyée après la douche et ceint d'un cadre doré, délabré et comme animé, nous renvoie notre reflet à travers le temps.
+</p>
+</div>
+</div>
+<div class="picmenu" id="return-menu">
+<script>
+displayMenu("return","return-to-form",window.returnPics);
+</script>
+</div>
+</div>
+
+
+<div class="piece" id="parchemins"> 
+<div class="picview" id="parchemins-view">
+  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="/smaller/parchemins/parchemins1.jpg" /></a>
+<div class="caption">
+<p class="title">
+Parchemins, 2017
+</p>
+<p class = "description" id="parchemins-caption">
+side table,  bronze, H 48 L 60 w 58, unique
+</p>
+<p class="note" id="parchemins-note">
+  <i>Parchemins</i>, une table de chevet aux bords irréguliers, apparaît comme le fantôme d'une simple table de bois, son plateau reposant à peine sur quatre pieds roulés.
+</p>
+</div>
+</div>
+<div class="picmenu" id="parchemins-menu">
+<script>
+displayMenu("parchemins","parchemins",window.parcheminsPics);
+</script>
+</div>
+</div>
+
+<div class="piece" id="lumieres"> 
+<div class="picview" id="lumieres-view">
+  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="smaller/les-lumieres/lumieres1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+Les Lumières, 2017
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">about</button> -->
+<p class = "description" id="lumieres-caption">
+table lamps, vapour patinated bronze <br/>
+hommage #1 (blocks) H 80 W 21 D 16 cm, unique <br/>
+hommage #2 (tree), H 95 W 21.5 D 20 cm, unique <br/>
+hommage #3 (cone), H 70 W 26.5 D 15 cm, unique <br/>
+hommage #4  (loops),  H 26 W 28 D 19 cm, unique
+</p>
+<p class="note" id="lumieres-note">
+      <i>Les Lumi&egrave;res</i>, sont quatre lampes uniques qui éclairent des hommes de l'intérieur, moquant notre préférence culturelle pour les lumières masculines.
+</p>
+</div>
+</div>
+<div class="picmenu" id="lumieres-menu">
+<script>
+displayMenu("lumieres","les-lumieres",window.lumieresPics);
+</script>
+</div>
+</div>
+
+
+
+<div class="text" style="display:block" id="invitation">
+<div class="wide-image">
+  <img style="border:1px solid #d3d3d3" src="/Invitation-More-Material.png"></img>
+</div>
+</div>
+
+<script>
+  switchDiv('normal','invitation');
+</script>
+  
+
+<div class="text" id="press">
+<p>
+  <a href="/press-release.pdf">Press Release (English)</a>
+</p>
+<p>
+  <a href="/press-release.pdf">Communiqu&eacute; de Presse (Francais)</a>
+  </p>
+</div>
+
+<div class="collection" id="collection">
+<a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
+   onmouseout="document.getElementById('piece1').className='';"><img src="/smaller/the-plate-throwers/plate1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece2','oceans)" onmouseover="document.getElementById('piece2').className='currentPiece';"
+   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
+   onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
+   onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /></a>
+<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
+   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /></a>
+</div>
+
+<div class="text" id="intro"> 
+<p style="padding-top:0px;margin-top:0px">
+<b style="font-size:22px">Introduction</b>
+</p>
+<p>
+<i> by Ellen McBreen </i>
+</p>
+
+<p>
+Sur la pièce <i>Parchemins</i> (2017), le fin dessus de table, dont la
+surface tendue évoque la texture des bandages hospitaliers, accroche
+ses coins à de minces renforts, comme des béquilles servant
+d’appui. Cette impression de précarité nous égare cependant, car
+l’objet en question, est fait en robuste bronze moulé. C’est là le
+premier signe d’un jeu tacitement conceptuel dans le travail de Rosy
+Lamb qui pourrait, de prime abord, sembler porté presque exclusivement
+par une démarche de création de beaux objets.
+</p>
+
+<p>
+Cette démarche, après tout, est ce qui frappe initialement dans chaque
+détail et riche surface des sculptures fonctionnelles de <i>More Material</i>. 
+Prenez, par exemple, <i>Oceans of Notions</i>. La conception
+irrégulière de ses panneaux flottants promène l’œil d’un côté et de
+l’autre sur ses ruisseaux sinueux, offrant une unité là où en réalité
+se dressent douze sculptures aux reliefs uniques et aux hauteurs
+diverses. Bien que ces créations soient emprisonnées de manière
+pérenne dans le bronze, elles transmettent l’énergie inquiète des
+tourbillons dans l’eau. Chacun des vingt-deux panneaux verticaux
+provient d’un modèle unique, aux formes rondes et légèrement
+picturales, qui révèle en quelque sorte le positif du négatif des
+sillons des surfaces horizontales.
+Tout le travail de Rosy Lamb vise à préserver la fraîcheur et la
+spontanéité de sa propre méthode de création, opposant un démenti à
+l’extrême et intensif labeur de cette réalisation.
+Pour exemple, les panneaux de côtés verticaux ont été faits en
+brossant et construisant directement avec de la cire chaude tandis que
+les panneaux du dessus ont été teints à la main avec du pigment pur,
+puis recouverts de cire et patinés afin de les protéger de
+l’oxydation.
+</p>
+
+<p>
+Rosy Lamb a apporté la patience d’un peintre et la prouesse technique
+d’un sculpteur figuratif à <i>More Material</i>. Les objets qui y sont
+présentés canalisent de longues années d’expérimentation en
+travaillant tour à tour les deux disciplines dans son atelier: peindre
+comme un sculpteur et sculpter comme un peintre. [Lorsque j'ai écrit
+mon livre sur la sculpture de Matisse, Rosy Lamb a été pour moi la
+source d’information la mieux renseignée quant aux processus de
+moulage. Elle est profondément ancrée dans l’artisanat et dans la
+fabrication]. Son adoption récente de la peinture sur de la cire
+chaude lui a permis de rendre les surfaces de ses sculptures de bronze
+encore plus expressives. Cette innovation constitue l’origine des
+processus utilisés pour <i>More Material</i>.
+</p>
+
+<p>
+Une constante dans cette collection est le fait que tous les objets
+sont fondamentalement enracinés dans les réalités physiques. Rosy Lamb
+a exploré sans relâche la manière dont les matériaux réagissent et
+répondent au cours de multiples processus. Durant ces deux dernières
+années, la fonderie en Auvergne a été son laboratoire. Elle a
+collaboré avec d’autres artisans dans les ateliers, les entrainant à
+bousculer les techniques traditionnelles de fonderie en les
+confrontant à de nouvelles expériences et idées. Elle a réalisé de la
+patine extensive et des essais couleur sur des échantillons en cire
+des motifs présents dans sa collection. Ses recherches sur les
+matériaux frôlent l'obsessionnel mais c’est le lieu où son imagination
+peut déployer toute sa richesse.
+</p>
+
+
+<p>
+Les aspects techniques, aussi bien que les exigences physiques, de la
+sculpture et de la fabrication de meubles semblent résolument
+"macho". Les imposantes œuvres de <i>More Material</i> transmettent un peu de
+cette bravade; elles ne décoreront pas poliment une chambre, elles
+l’inspireront. Oceans of Notions, en particulier, avec ses pièces
+faites-main, délicieusement irrégulières, ressemblent à une vision
+idiosyncratique des sculptures composées de carrés du coriace et
+laconique célèbre américain minimaliste Carl André. Après tout, le
+travail de fonderie a souvent été celui de virils artistes. Mais les
+œuvres en elles-mêmes, destinées à l'intérieur de la maison, traitent
+aussi fondamentalement du travail domestique, moins visible, des
+femmes, qui disposent généralement l'apéritif sur la table et en
+essuient les déversements accidentels (Rosy Lamb a spécifiquement
+pensé à fabriquer sa table-sculpture de manière à ce que sa surface
+soit aisément lavable). Qui rangera la vaisselle dans le buffet <i>The Plate Throwers</i>
+ une fois les invités partis? <i>The Plate Throwers</i>, tout
+particulièrement, révèle un jeu de genre, également actif dans
+d’autres pièces de la collection. Derrière ses luisantes portes
+dorées, nous est révélée une obscure lutte domestique des sexes. Une
+agile figure féminine est sur le point de lancer une assiette à son
+vis-à-vis masculin qui, pris de court, marche avec une pile
+d’assiettes consciencieusement dressée sur sa tête. Même dans les
+maisons les mieux tenues, le chaos total est à deux pas.
+</p>
+
+<p>
+Dans <i>Les Lumières</i>, quatre hommes nus se présentent (ce qui constitue
+traditionnellement un sujet d’héroïsme masculin) humbles et
+apprivoisés, étant chargés de la tâche domestique d’apporter la
+lumière. Dans cette série, Rosy Lamb combine son don pour rendre ses
+nus vivants et animés avec son esprit inventif. Les jambes et les
+torses des quatre figures expressives se joignent aux sculptures
+abstraites filtrant la lumière, ce qui entraine l’effacement de leurs
+identités individuelles. Une tête est pulvérisée contre la toile de
+matière abstraite, émergeant de son torse. Le titre <i>Les Lumières</i> (en
+anglais <i>The Luminaries</i>) semble être suffisamment explicite. Il s’agit
+après tout de lampes fonctionnelles, dans la tradition des torchères
+figuratives. [Mais le nom évoque, aussi en anglais, une personne
+remarquable, experte dans son domaine de compétence. Ainsi,
+"Dr. Robertson is a luminary in the medical profession, and so the
+surgical procedure is named after him”.] Bien entendu, le mot est plus
+souvent utilisé pour décrire un homme.
+</p>
+
+<p>
+Dans l’histoire de l’art, la sculpture figurative commémorative a été
+consacrée de manière écrasante aux réussites masculines. Tradition
+bien connue de Rosy Lamb, puisqu’elle a travaillé dans le domaine des
+monuments publics durant deux années lors de son arrivée à Paris. Sa
+modeste série <i>Les Lumieres, hommages</i>, rappellent la tradition
+grandiose des hommes illustres (Famous Men), telles les 86 sculptures
+debout qui décorent la balustrade du premier étage dans la cour
+Napoléon du Louvre. Ils baissent les yeux devant la pyramide, tandis
+que peu de visiteurs lèvent les yeux vers eux. Canonisés au XIXème
+siècle par Hector-Martin Lefuel, l’architecte qui les commanda,
+beaucoup d’entre eux (Etienne Duperac, Jean Bullant, ...) sont oubliés de
+nos jours. Ils furent certainement des lumières en leur
+époque. Combien plus appréciés seraient-ils aujourd’hui s’ils
+irradiaient de la lumière ?
+</p>
+</div> 
+
+<div class="text" id="process"> 
+
+ 
+<iframe src="https://player.vimeo.com/video/235557083?title=0&byline=0&portrait=0" width="480" height="270" style="padding-bottom:20px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<!-- <img src="smaller/about/intro1.jpg" /> -->
+
+<p style="margin-top:0px">
+En tant que peintre et sculpteur, je recherche des formes ouvertes et
+fermées, ordonnées et désordonnées et dans la maîtrise tout autant que
+dans les matériaux bruts, pour révéler la poussée et la traction entre
+privé et public, épique et éphémère.. 
+</p>
+
+<p>
+Je travaille souvent le plâtre sculpté, qui semble naturellement altéré par le temps. Il est plus difficile d'atteindre cette esthétique avec les sculptures traditionnelles en bronze. J'ai néanmoins développé dernièrement une technique de peinture sur cire chaude qui me permet de réaliser des surfaces expressives et délicates en bronze, qui équilibrent la force du métal par l'apparente fragilité des motifs.
+</p>
+
+<div class="wide-image">
+<img src="/smaller/surface-details/surface4.jpg" />
+</div>
+<div class="wide-image">
+<img src="/smaller/surface-details/surface1.jpg" />
+<p class="caption">Surface details, The Plate Throwers (2017) 
+</p>
+</div>
+
+<p>
+Ces surfaces uniques sont la base d'une nouvelle série de
+meubles-sculptures, intitulée <i>More Material</i>, sur laquelle j'ai
+travaillé durant les deux dernières années à la fonderie Fusions, en
+Auvergne.
+</p>
+
+<p>
+Pour réaliser les pièces de <i>More Material</i>, la fonderie a été à la fois
+mon atelier et mon laboratoire. David de Gourcuff, son propriétaire, a
+investi dans mon projet, m'a accueillie, et m'a donné un accès libre
+et sans précédent pour travailler et expérimenter dans l'effervescence
+de sa fonderie. Créer ces pièces a impliqué des collaborations avec
+les ateliers de la fonderie, et plusieurs travailleurs là-bas m'ont
+aidée à certaines étapes plus ou moins critiques. Cette collection
+n'aurait pas pu être réalisée sans eux.
+</p>
+
+<img src="/smaller/about/intro2.jpg" />
+
+</div>
+
+<div class="text" id="background"> 
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground22.jpg" />
+<p class="caption">Rosy Lamb, photo by Steve Murez
+</p>
+</div>
+
+<!--
+<div class="wide-image">
+<img src="images/artist-bio/bground15.jpg" /> 
+</div>
+-->
+<!--<h3>Bio</h3>-->
+
+<p>
+Je suis née dans une famille d'artiste vivant dans les forêts du New
+Hampshire. Mes frères et s&#339;urs et moi étions scolarisés à la
+maison, ce qui consistait essentiellement dans le fait de nous laisser
+suivre notre inclination et nos propres projets. À dix-sept ans, je
+suis entrée à la Pennsylvania Academy of the Fine Arts à Philadelphie
+où j'ai étudié la peinture et la sculpture. Puis je me suis installée
+à Paris où j'ai assisté le sculpteur Jean Cardot dans son travail sur
+les monuments publics durant deux ans, avant d'investir mon propre
+atelier pour y travailler la peinture, la sculpture et dorénavant pour
+créer des meubles.
+</p>
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground2.jpg" />
+<p class="caption">
+  <i>Francis and Alex, plâtre et bronze, 1998.</i> <br/> 
+J'ai réalisé ces deux sculptures d'amis artistes qui ont posé pour moi
+dans mon atelier de Philadelphie où, y compris en tant qu'étudiante en
+art, j'ai passé le plus clair de mon temps.
+</p>
+</div>
+<div style="clear:both" />
+
+<!--
+<div class="half-image">
+<img src="images/artist-bio/bground3.jpg" />
+</div>
+<p class="caption">
+  <i>Leonardo da Vinci relief, plaster, 2001</i> <br/>
+  A plaster relief sculpture of Leonardo da Vinci that I worked on with Jean Cardot. The final bronze version (after being further worked on by Cardot in the wax) is now on da Vinci’s gravesite in Amboise, Loire Valley, France. 
+</p>
+<div style="clear:both" />
+-->
+
+&nbsp;
+&nbsp;
+<h3>Portraits Intimes</h3>
+
+<p>
+Depuis l'enfance, me retrancher dans mon monde est la position dans laquelle il me devient possible de faire des choses. Seule dans mon studio, la vulnérabilité qui vient avec l’état d'ouverture devient une force patiemment entretenue, et l'espace même que la poussière prend entre les choses est autant que je peux voir, sentir et utiliser comme source d'inspiration que les objets, sculptures et modèles vivants.
+</p>
+
+<p>
+Pour moi, le modèle n'est pas seulement un moyen de peindre ou de sculpter mais une voie vivante et vibrante vers l’inconnu. Les images que je fais sont des broderies libres des moments passés face aux modèles, elles allient les moments observés avec une façon plus intérieure de voir et de ressentir.
+</p>
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground9.jpg" />
+<p class="caption">
+  <i>Jasmine in the Braemare house, huile sur plâtre, 2008</i> <br/>
+Ma sœur Jasmine a été le modèle de nombre de mes peintures entre 2006 et 2008. Durant ces années, elles souffrait de problèmes de santé et poser était le seul travail qu'elle pouvait envisager. Son tranquille état intérieur transparaît dans les représentations que j'ai faites d'elle durant ces années.
+</p>
+</div>
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground6.jpg" />
+<p class="caption">
+  <i>Put the dog and the cat in the Poster (George and Sylvia Whitman dans la librairie Shakespeare and Company, à Paris), huile sur toile, 2011.</i><br/>
+  Cette peinture appartient à une série de portraits de familles posant chez elles. Elle a été exposée à la BP Portrait Exhibition à la National Portrait Gallery de Londres en 2012.
+</p>
+</div>
+
+<h3>Plâtre et Matériaux Hybrides</h3>
+  
+<p>
+Au fil des années, je me suis tournée vers la peinture sur plâtre. Cela m'a permis d'associer des éléments sculptés et des ombres dans mes tableaux. Sur certaines pièces, l’utilisation du plâtre permet d’ajouter du relief à ma peinture en cassant, sculptant et grattant des pans de l’image.
+  </p>
+
+<div style="clear:both" />
+<div class="wide-image">
+<img src="/images/artist-bio/bground7.jpg" />
+<p class="caption">
+  <i>&#194;mes de pl&#226;tres et instants inachevée, exhibition poster, photo by Benjamin Pierce.</i>
+</p>
+</div>
+
+<div style="clear:both" />
+
+<!--
+<div class="wide-image">
+<img src="/images/artist-bio/bground13.jpg" />
+<p class="caption">
+  <i>Hanna with a red cloth, huile sur plâtre, 2010.</i> <br/>
+  Ces dernières années, différents modèles sont venus travailler avec moi régulièrement durant plusieurs mois ou plusieurs années.
+  Hanna a été mon assistante, mon élève et mon modèle de 2008 à 2010.
+</p>
+</div>
+
+<div style="clear:both" />
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground18.jpg" />
+<p class="caption">
+  <i>Margaux, Broken and repaired, oil on plaster with plaster éstampage frame, 2014</i> <br/>
+  Margaux, une talentueuse jeune photographe, a posé en 2014 et 2015.
+</p>
+</div>
+<div style="clear:both" />
+-->
+<!--
+<div class="wide-image">
+<img src="/images/artist-bio/bground15.jpg" />
+<p class="caption">
+  <i>Some of the sculptures in my studio, 2013</i><br/>
+The sculptures lying around my studio grew to be an ungainly population of mismatched heads and bodies which often appear in the background of my paintings. 
+</p>
+</div>
+-->
+<!--
+<div class="wide-image">
+<img src="/images/artist-bio/bground16.jpg" />
+<p class="caption">
+  <i>Le visiteur, oil on plaster, 65x86 cm, 2015.</i>
+</p>
+</div>-->
+
+
+<h3>Cire Chaude et <i>More Material</i></h3>
+
+<p>
+En 2014, j'ai développé une technique de peinture sur cire chaude afin de rendre expressives les surfaces en métal en faisant une petite série de sculptures. Ma sculpture <i>Armour</i> est un exemple de cette technique de cire directe.
+</p>
+
+
+<div style="clear:both" />
+<div class="wide-image">
+<img src="/images/artist-bio/bground20.jpg" />
+<p class="caption">Armour, bronze, 2016
+</p>
+</div>
+<div style="clear:both" />
+
+<p>
+Au début de l'année 2016, j'ai travaillé ces nouvelles techniques dans une série de meubles-sculptures uniques et dans les motifs sculptés et peints dans le bronze qui reflètent la vie intime et familiale. J'ai intitulé cette nouvelle série de sculptures More Material car dans la plupart le matériau rivalise avec la présence visuelle et conceptuelle.
+</p>
+
+
+<div class="wide-image">
+<img src="/images/artist-bio/bground21.jpg" />
+<p class="caption">Oceans of Notions, modular coffee table, unique, bronze, 2017
+</p>
+</div>
+
+<div style="clear:both" />
+<!--
+<div class="half-image" style="text-align:center;margin-left:auto;margin-right:auto">
+<img src="/images/artist-bio/bground22.jpg" />
+<p class="caption">Rosy Lamb, photo by Steve Murez
+</p>
+</div>
+-->
+</div>
+
+</div> 
+</div> 
+
+</body>

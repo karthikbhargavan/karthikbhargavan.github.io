@@ -603,12 +603,23 @@ div.normal div.left div.bigmenu a:hover{
  float:left
 }
 
+div.normal div.left div.bigmenu a.active{
+ font-family: OpenSansSemiBold;
+ color: #000000;
+ margin: 0px 30px 0px 0px;
+ display: block;
+ text-decoration: none;
+ width:auto;
+ float:left
+}
+
 
 	div.normal div.left div.smallmenu{
 	 width: auto;
 	 max-width: 600px;
 	 font-size: 14px;
          margin: 30px 0px 0px 0px;
+	 display:none;
 	}
 
 
@@ -629,7 +640,7 @@ div.normal div.left div.bigmenu a:hover{
        }
 
 	div.normal div.left div.smallmenu div.smallmenu-item a img {
-	 display:block;
+	 display:none;
 	 width: 150px;
          height: 125px;
 	 overflow: hidden;
@@ -655,11 +666,28 @@ div.normal div.left div.bigmenu a:hover{
 	}
 
 	div.collection {
-	 display: none;
+	    height: auto;
+	    width:auto;
+	    max-width:100%;
+	    float:none;
+	    display: left; 
 	}
 
+	div.collection a {
+	    width: 150px;
+            height: auto;
+	    float: left; 
+	    margin: 0px 20px 0px 0px;
+	    /*	 letter-spacing: 0.75px; */
+	    text-align: center;
+	    cursor:pointer;
+	}
 	div.collection img {
-	 display: none;
+	    display: block;
+	    float:left;
+	    width:150px;
+	    height:125px;
+	    overflow:hidden;
 	}
 
 	div.piece div.picview {
