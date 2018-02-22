@@ -105,6 +105,7 @@ margin-right: 20px;
 }
 
 div.header div.lang a {
+    color: #797879;
     text-decoration: none;
 }
 
@@ -200,6 +201,7 @@ font-family: OpenSansSemiBold;
 
 
 div.normal div.left div.smallmenu{
+    display:none;
  font-size: 14px;
 /* letter-spacing: 2px; */
  line-heght: 40px;
@@ -416,14 +418,26 @@ div.collection {
        float:left;
 }
 
-div.collection img {
+div.collection a {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    color: #797879;
+    text-align: center;
+    text-decoration: none;
+    width: 240px;
+    height: auto;
+    float: left; 
+    cursor:pointer;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+div.collection a img {
        display:block;
        float:left;
        width:240px;
        height:200px;
        overflow: hidden;
-       margin-right:20px;
-       margin-bottom:20px;
 }
 
 div.text {
@@ -557,6 +571,22 @@ div.full div#fullpic img{
 	    vertical-align: bottom;
 	}
 
+	div.header div.lang {
+	    float:right;
+	    /* Rosy Lamb: */
+	    font-family: OpenSans;
+	    font-size: 18px;
+	    color: #797879;
+	    letter-spacing: 3px;
+	    margin-top: 8px;
+	    margin-right: 20px;
+	}
+
+	div.header div.lang a {
+	    text-decoration: none;
+	    color: #000000;
+	}
+
         div.normal {
 	    margin-top: 10px;
 	    margin-left: 10px;
@@ -674,15 +704,21 @@ div.normal div.left div.bigmenu a.active{
 	}
 
 	div.collection a {
+	    font-size: 14px;
+	    font-family: OpenSansSemiBold;
+	    color: #797879;
+	    text-align: center;
+	    text-decoration: none;
 	    width: 150px;
-            height: auto;
+	    height: auto;
 	    float: left; 
-	    margin: 0px 20px 0px 0px;
+	    margin: 0px 20px 10px 0px;
 	    /*	 letter-spacing: 0.75px; */
 	    text-align: center;
 	    cursor:pointer;
 	}
-	div.collection img {
+
+	div.collection a img {
 	    display: block;
 	    float:left;
 	    width:150px;
