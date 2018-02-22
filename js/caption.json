@@ -1,6 +1,27 @@
 /* THIS IS WHERE YOU SAY WHICH PICTURES YOU WANT TO DISPLAY AND THEIR CAPTIONS. */
+window.armourPics = [
+    {num : 1,
+     caption : "Armour, bronze, unique, H 175, W 42, D 36 cm, 2017"},
+    {num : 2,
+     caption : "Armour, bronze, unique, H 175, W 42, D 36 cm, 2017"},
+    {num : 3,
+     caption : "Armour, bronze, unique, H 175, W 42, D 36 cm, 2017"},
+    {num : 4,
+     caption : "Armour, bronze, unique, H 175, W 42, D 36 cm, 2017 <br/>photo © Steve Murez"},
+    {num : 5,
+     caption : "Armour, bronze, unique, H 175, W 42, D 36 cm, 2017"},
+    ]
+
+window.fredPics = [
+    {num : 1,
+     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2016 <br/>photo © Steve Murez"},
+    {num : 2,
+     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2016 <br/>photo © Steve Murez"},
+]
+
 window.platePics = [
-   {num : 1,
+
+    {num : 1,
     caption : "The Plate Throwers Cupboard  [front view with doors closed], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique <br/>photo © Steve Murez"},
    {num : 15,
     caption : "The Plate Throwers Cupboard  [front view with doors open], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique <br/>photo © Steve Murez"},
