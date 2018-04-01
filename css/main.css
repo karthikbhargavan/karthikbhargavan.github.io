@@ -1,57 +1,59 @@
 html {}
 
-/* Webfont: Lato-Black */@font-face {
-    font-family: 'LatoWebBlack';
-    src: url('/fonts/Lato2/Lato/fonts/Lato-Black.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/Lato2/Lato/fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/Lato2/Lato/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
-         url('/fonts/Lato2/Lato/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
-         url('/fonts/Lato2/Lato/fonts/Lato-Black.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+/* Webfont: Lato-Black */
+
+@font-face {
+	font-family: 'LatoWebBlack';
+	src: url('/fonts/Lato2/Lato/fonts/Lato-Black.eot');
+	/* IE9 Compat Modes */
+	src: url('/fonts/Lato2/Lato/fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('/fonts/Lato2/Lato/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+	url('/fonts/Lato2/Lato/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+	url('/fonts/Lato2/Lato/fonts/Lato-Black.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+	font-family: 'OpenSans';
+	src: url('/fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'OpenSansSemiBold';
-    src: url('/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+	font-family: 'OpenSansSemiBold';
+	src: url('/fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'OpenSansBold';
-    src: url('/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+	font-family: 'OpenSansBold';
+	src: url('/fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'OpenSansLight';
-    src: url('/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+	font-family: 'OpenSansLight';
+	src: url('/fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
-
 
 body {
-        overflow-x:hidden;
+	overflow-x: hidden;
 	background: #FFF;
 	color: #000000;
 	font-family: 'OpenSans';
 	font-size: 18px;
-/*	letter-spacing: 0.95px; */
+	/*	letter-spacing: 0.95px; */
 	line-height: 23px;
 	width: 100%;
 	height: 100%;
@@ -61,231 +63,226 @@ body {
 div.header {
 	max-width: 1000px;
 	min-width: 350px;
-	overflow : hidden;
+	overflow: hidden;
 	height: 62px;
-	display:block;
+	display: block;
 	position: relative;
-	margin-top:0px;
+	margin-top: 0px;
 	vertical-align: top;
 }
 
 div.header div.title {
-width: 450px;
-float:left;
-position: relative;
-/* MORE MATERIALS: */
-font-family: LatoWebBlack;
-font-size: 44px;
-color: #000000;
-letter-spacing: 5px;
-margin-top: 25px;
-margin-left: 20px;
+	width: 450px;
+	float: left;
+	position: relative;
+	/* MORE MATERIALS: */
+	font-family: LatoWebBlack;
+	font-size: 44px;
+	color: #000000;
+	letter-spacing: 5px;
+	margin-top: 25px;
+	margin-left: 20px;
 }
 
 div.header div.author {
-float:left;
-/* Rosy Lamb: */
-font-family: OpenSans;
-font-size: 24px;
-color: #000000;
-letter-spacing: 3px;
-margin-top: 32px;
-margin-left: 10px;
+	float: left;
+	/* Rosy Lamb: */
+	font-family: OpenSans;
+	font-size: 24px;
+	color: #000000;
+	letter-spacing: 3px;
+	margin-top: 32px;
+	margin-left: 10px;
 }
 
 div.header div.lang {
-float:right;
-/* Rosy Lamb: */
-font-family: OpenSans;
-font-size: 18px;
-color: #797879;
-letter-spacing: 3px;
-margin-top: 38px;
-margin-right: 20px;
+	float: right;
+	/* Rosy Lamb: */
+	font-family: OpenSans;
+	font-size: 18px;
+	color: #797879;
+	letter-spacing: 3px;
+	margin-top: 38px;
+	margin-right: 20px;
 }
 
 div.header div.lang a {
-    color: #797879;
-    text-decoration: none;
+	color: #797879;
+	text-decoration: none;
 }
 
 div.full {
 	width: 100%;
-	display:none;
+	display: none;
 	position: relative;
 	margin-top: 40px;
-	}
+}
 
 div.full div#home {
 	width: 100%;
-	display:none;
+	display: none;
 }
 
-
-div.full div#home img{
+div.full div#home img {
 	height: auto;
 	width: 100%;
 	display: block;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 div.full div#fullpic {
 	max-width: 1200px;
 	width: auto;
 	height: auto;
-	overflow:scroll;
-	display:none;
+	overflow: scroll;
+	display: none;
 	margin-left: 20px;
 }
 
-div.full div#fullpic img{
+div.full div#fullpic img {
 	height: auto;
 	width: auto;
 	max-width: 2000px;
 	max-height: 2000px;
-        margin: auto;
-        cursor: -moz-zoom-out; 
-        cursor: -webkit-zoom-out; 
-        cursor: zoom-out;
+	margin: auto;
+	cursor: -moz-zoom-out;
+	cursor: -webkit-zoom-out;
+	cursor: zoom-out;
 }
-	 
+
 div.normal {
 	width: 100%;
-	display:block;
+	display: block;
 	position: relative;
-	float:left;
+	float: left;
 	margin-top: 40px;
 	margin-left: 20px;
 }
 
 div.normal div.left {
 	width: 200px;
-	display:block;
-	float:left;
+	display: block;
+	float: left;
 }
 
 div.normal div.right {
 	width: auto;
 	max-width: calc(100% - 200px);
-	display:block;
-	float:left;
+	display: block;
+	float: left;
 }
 
 div.normal div.left div.lang {
-font-family: OpenSans;
-font-size: 18px;
-color: #F08080;
-letter-spacing: 3px;
-margin-top:30px;
+	font-family: OpenSans;
+	font-size: 18px;
+	color: #F08080;
+	letter-spacing: 3px;
+	margin-top: 30px;
 }
 
 div.normal div.left div.lang a {
-    color: #F08080;
-    text-decoration: none;
+	color: #F08080;
+	text-decoration: none;
 }
 
-
-div.normal div.left div.bigmenu{
- font-size: 22px;
-/* letter-spacing: 3px; */
+div.normal div.left div.bigmenu {
+	font-size: 22px;
+	/* letter-spacing: 3px; */
 }
 
-div.normal div.left div.bigmenu a{
- color: #000000;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
+div.normal div.left div.bigmenu a {
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
 }
 
-div.normal div.left div.bigmenu a:hover{
-font-family: OpenSansSemiBold;
- color: #000000;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
+div.normal div.left div.bigmenu a:hover {
+	font-family: OpenSansSemiBold;
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
 }
 
-div.normal div.left div.bigmenu a.active{
-font-family: OpenSansSemiBold;
- color: #000000;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
+div.normal div.left div.bigmenu a.active {
+	font-family: OpenSansSemiBold;
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
 }
 
-
-div.normal div.left div.smallmenu{
-    display:none;
- font-size: 14px;
-/* letter-spacing: 2px; */
- line-heght: 40px;
- margin: 30px 0px 30px 0px;
+div.normal div.left div.smallmenu {
+	display: none;
+	font-size: 14px;
+	/* letter-spacing: 2px; */
+	line-heght: 40px;
+	margin: 30px 0px 30px 0px;
 }
 
-div.normal div.left div.smallmenu button{
-    display: none;
+div.normal div.left div.smallmenu button {
+	display: none;
 }
 
-div.normal div.left div.smallmenu div.smallmenu-item a{
- color: #797879;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
- cursor:pointer;
+div.normal div.left div.smallmenu div.smallmenu-item a {
+	color: #797879;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-div.normal div.left div.smallmenu div.smallmenu-item a:hover{
- color: #000000;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
- cursor:pointer;
+div.normal div.left div.smallmenu div.smallmenu-item a:hover {
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-div.normal div.left div.smallmenu div.smallmenu-item a img{
- display: none;
+div.normal div.left div.smallmenu div.smallmenu-item a img {
+	display: none;
 }
 
 div.normal div.left div.smallmenu div.smallmenu-item a.currentPiece {
- color: #000000;
- margin: 0px 0px 10px 0px;
- display: block;
- text-decoration: none;
- cursor:pointer;
+	color: #000000;
+	margin: 0px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 div.normal div.right div.piece {
 	height: auto;
-	width:100%;
-	display:none;
+	width: 100%;
+	display: none;
 }
 
 div.piece div.vidview {
-    display:none;
+	display: none;
 	height: auto;
-	width:650px;
-	float:left;
-	max-width: calc(100% - 250px);    
-}
-
-
-div.piece div.vidview iframe {
-    display:block;
-    max-width: 600px;
-}
-
-div.piece div.picview {
-	display:block;
-	height: auto;
-	width:650px;
-	float:left;
+	width: 650px;
+	float: left;
 	max-width: calc(100% - 250px);
 }
 
+div.piece div.vidview iframe {
+	display: block;
+	max-width: 600px;
+}
+
+div.piece div.picview {
+	display: block;
+	height: auto;
+	width: 650px;
+	float: left;
+	max-width: calc(100% - 250px);
+}
 
 div.piece div.picview a {
-	width:auto;
-	float:left;
+	width: auto;
+	float: left;
 	max-width: 600px;
 }
 
@@ -294,28 +291,28 @@ div.piece div.picview a img {
 	width: auto;
 	max-width: 100%;
 	max-height: 500px;
-        display: block;
- 	float:left;
-        cursor: -moz-zoom-in; 
-        cursor: -webkit-zoom-in; 
-        cursor: zoom-in;
+	display: block;
+	float: left;
+	cursor: -moz-zoom-in;
+	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
 }
 
 div.piece div.caption {
 	width: auto;
 	max-width: 600px;
-	float:left;
-	clear:both; 
-	margin-top:20px;
+	float: left;
+	clear: both;
+	margin-top: 20px;
 }
 
 div.piece div.caption p.title {
 	font-family: OpenSansBold;
 	font-size: 18px;
 	margin: 0px;
-	float:left;
-	clear:both;
-	display:block;
+	float: left;
+	clear: both;
+	display: block;
 	width: calc(100% - 120px);
 }
 
@@ -324,41 +321,41 @@ div.piece div.caption button.viewmore {
 	font-size: 16px;
 	color: #797879;
 	margin: 0px 10px;
-        width: 100px;
-	float:left;
-	display:block;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #797879;
+	width: 100px;
+	float: left;
+	display: block;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	border: 1px solid #797879;
 }
 
 div.piece div.caption p.description {
 	width: 100%;
 	font-family: OpenSansLight;
-	color:#797879;
+	color: #797879;
 	font-size: 16px;
 	margin: 0px;
-	display:block;
-	float:left;
+	display: block;
+	float: left;
 }
 
 div.piece div.caption p.note {
 	width: 100%;
 	font-family: OpenSans;
-	color:#000000;
+	color: #000000;
 	font-size: 16px;
-	display:block;
-	float:left;
+	display: block;
+	float: left;
 }
 
 div.piece div.vidmenu {
 	height: auto;
-	width: auto;	
+	width: auto;
 	max-width: 250px;
 	max-height: 500px;
-	float:left;
-	display:block;
+	float: left;
+	display: block;
 	margin: 0px 0px 0px 0px;
 }
 
@@ -388,14 +385,13 @@ div.piece div.vidmenu a img.currentVid {
 	opacity: 1;
 }
 
-
 div.piece div.picmenu {
 	height: auto;
-	width: auto;	
+	width: auto;
 	max-width: 250px;
 	max-height: 500px;
-	float:left;
-	display:block;
+	float: left;
+	display: block;
 	margin: 0px 0px 0px 0px;
 }
 
@@ -426,377 +422,337 @@ div.piece div.picmenu a img.currentPic {
 }
 
 div.collection {
-       width: auto;
-       max-width:900px;
-       display:none;
-       float:left;
+	width: auto;
+	max-width: 900px;
+	display: none;
+	float: left;
 }
 
 div.collection a {
-    font-size: 14px;
-    font-family: OpenSansSemiBold;
-    color: #797879;
-    text-align: center;
-    text-decoration: none;
-    width: 240px;
-    height: auto;
-    float: left; 
-    cursor:pointer;
-    margin-right:20px;
-    margin-bottom:20px;
+	font-size: 14px;
+	font-family: OpenSansSemiBold;
+	color: #797879;
+	text-align: center;
+	text-decoration: none;
+	width: 240px;
+	height: auto;
+	float: left;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 div.collection a img {
-       display:block;
-       float:left;
-       width:240px;
-       height:200px;
-       overflow: hidden;
+	display: block;
+	float: left;
+	width: 240px;
+	height: 200px;
+	overflow: hidden;
 }
 
 div.text {
-       display:none;
-       width: auto;
-       max-width:500px;
+	display: none;
+	width: auto;
+	max-width: 500px;
 }
 
 div.text h3 {
-    padding-top:10px;
+	padding-top: 10px;
 }
 
-div.text div.column{
-    float: left;
-    width: 50%;
-    margin-right:20px
+div.text div.column {
+	float: left;
+	width: 50%;
+	margin-right: 20px
 }
+
 div.text div.wide-image {
-       display:block;
-       max-width: 100%;
-       margin: 5px 10px 5px 0px;
+	display: block;
+	max-width: 100%;
+	margin: 5px 10px 5px 0px;
 }
 
 div.text div.wide-image img {
-       display:block;
-       max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
-
 div.text div.half-image {
-       display:block;
-       max-width: calc(50% - 10px);
-       float:left;
-       margin: 5px 10px 5px 0px;
+	display: block;
+	max-width: calc(50% - 10px);
+	float: left;
+	margin: 5px 10px 5px 0px;
 }
 
 div.text div.quarter-image {
-       display:block;
-       max-width: 30%;
-       float:left;
-       margin: 5px 10px 5px 0px;
+	display: block;
+	max-width: 30%;
+	float: left;
+	margin: 5px 10px 5px 0px;
 }
 
 div.text div.half-image img {
-       display:block;
-       max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 div.text div.quarter-image img {
-       display:block;
-       max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 div.text p.caption {
-       display:block;
-       max-width: 100%;
-       font-size: 14px;
-       color: #797879;
-       margin-top:0px;
-       line-height: 20px;
-       text-aligh: center;
+	display: block;
+	max-width: 100%;
+	font-size: 14px;
+	color: #797879;
+	margin-top: 0px;
+	line-height: 20px;
+	text-aligh: center;
 }
 
-
-
-div.text p{
-max-width:650px;
-/* Lorem ipsum dolor si: */
-font-family: OpenSans;
-font-size: 16px;
-color: #000000;
-/* letter-spacing: 0.75px; */
-/* line-height: 24px; */
+div.text p {
+	max-width: 650px;
+	/* Lorem ipsum dolor si: */
+	font-family: OpenSans;
+	font-size: 16px;
+	color: #000000;
+	/* letter-spacing: 0.75px; */
+	/* line-height: 24px; */
 }
 
-div.text p a{
-max-width:650px;
-/* Lorem ipsum dolor si: */
-font-family: OpenSans;
-font-size: 16px;
-color: #000000;
-text-decoration:none;   
+div.text p a {
+	max-width: 650px;
+	/* Lorem ipsum dolor si: */
+	font-family: OpenSans;
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
 }
 
-
-div.text ul{
-max-width:650px;
-/* Lorem ipsum dolor si: */
-font-family: OpenSans;
-font-size: 16px;
-color: #000000;
-list-style-type:none;
-margin:0;
-padding:0 0 0 1em;
-/* letter-spacing: 0.75px; */
-/* line-height: 24px; */
+div.text ul {
+	max-width: 650px;
+	/* Lorem ipsum dolor si: */
+	font-family: OpenSans;
+	font-size: 16px;
+	color: #000000;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 1em;
+	/* letter-spacing: 0.75px; */
+	/* line-height: 24px; */
 }
 
-div.text ul li{
-padding:0 0 1em 0;
+div.text ul li {
+	padding: 0 0 1em 0;
 }
 
 @media all and (max-width: 800px) {
-       	body {
+	body {
 		width: 100%;
 		height: 100%;
 		font-size: 16px;
 		margin-top: 10px;
 		margin-left: 10px;
 	}
-
-div.full div#fullpic img{
-	height: auto;
-	width: auto;
-	max-width: 1000px;
-	max-height: 1000px;
-        margin: auto;
-        cursor: -moz-zoom-out; 
-        cursor: -webkit-zoom-out; 
-        cursor: zoom-out;
-}
-
-        div.header {
-            height: 40px;
-        }
-
+	div.full div#fullpic img {
+		height: auto;
+		width: auto;
+		max-width: 1000px;
+		max-height: 1000px;
+		margin: auto;
+		cursor: -moz-zoom-out;
+		cursor: -webkit-zoom-out;
+		cursor: zoom-out;
+	}
+	div.header {
+		height: 40px;
+	}
 	div.header div.title {
-	    width: auto;
-	    height: 30px;
-	    float:left;
-	    position: relative;
-	    font-size: 30px;
-	    margin-top: 5px;
-	    margin-left: 10px;
-	    vertical-align: bottom;
+		width: auto;
+		height: 30px;
+		float: left;
+		position: relative;
+		font-size: 30px;
+		margin-top: 5px;
+		margin-left: 10px;
+		vertical-align: bottom;
 	}
-
 	div.header div.author {
-	    position: relative;
-	    height: 30px;
-	    float:left;
-	    font-size: 24px;
-	    margin-top: 8px;
-	    margin-left: 20px;
-	    vertical-align: bottom;
+		position: relative;
+		height: 30px;
+		float: left;
+		font-size: 24px;
+		margin-top: 8px;
+		margin-left: 20px;
+		vertical-align: bottom;
 	}
-
 	div.header div.lang {
-	    float:right;
-	    /* Rosy Lamb: */
-	    font-family: OpenSans;
-	    font-size: 18px;
-	    color: #797879;
-	    letter-spacing: 3px;
-	    margin-top: 8px;
-	    margin-right: 20px;
+		float: right;
+		/* Rosy Lamb: */
+		font-family: OpenSans;
+		font-size: 18px;
+		color: #797879;
+		letter-spacing: 3px;
+		margin-top: 8px;
+		margin-right: 20px;
 	}
-
 	div.header div.lang a {
-	    text-decoration: none;
-	    color: #000000;
+		text-decoration: none;
+		color: #000000;
 	}
-
-        div.normal {
-	    margin-top: 10px;
-	    margin-left: 10px;
-
+	div.normal {
+		margin-top: 10px;
+		margin-left: 10px;
 	}
-
 	div.normal div.left {
 		width: 100%;
-		display:block;
-		float:left;
+		display: block;
+		float: left;
 		display: inline-block;
-        }
-
+	}
 	div.normal div.right {
 		width: 100%;
-		display:block;
-		float:left;
+		display: block;
+		float: left;
 		margin-top: 20px;
-        }
-
-	div.normal div.left div.bigmenu{
-	  font-size: 18px;
- 	  display: inline-block;
-	  margin: 10px 0px 0px 0px;
-	  max-width: calc(100% - 120px);
-	  float:left;
 	}
-
-	div.normal div.left div.lang{
-	  font-size: 16px;
- 	  display: inline-block;
-	  margin: 10px 20px 0px 0px;
-	  max-width: 120px;
-	  float:left;
+	div.normal div.left div.bigmenu {
+		font-size: 18px;
+		display: inline-block;
+		margin: 10px 0px 0px 0px;
+		max-width: calc(100% - 120px);
+		float: left;
 	}
-
-
-
-
-div.normal div.left div.bigmenu a{
- color: #000000;
- margin: 0px 30px 0px 0px;
- display: block;
- text-decoration: none;
- width:auto;
- float:left
-}
-
-div.normal div.left div.bigmenu a:hover{
- font-family: OpenSansSemiBold;
- color: #000000;
- margin: 0px 30px 0px 0px;
- display: block;
- text-decoration: none;
- width:auto;
- float:left
-}
-
-div.normal div.left div.bigmenu a.active{
- font-family: OpenSansSemiBold;
- color: #000000;
- margin: 0px 30px 0px 0px;
- display: block;
- text-decoration: none;
- width:auto;
- float:left
-}
-
-
-	div.normal div.left div.smallmenu{
-	 width: auto;
-	 max-width: 600px;
-	 font-size: 14px;
-         margin: 30px 0px 0px 0px;
-	 display:none;
+	div.normal div.left div.lang {
+		font-size: 16px;
+		display: inline-block;
+		margin: 10px 20px 0px 0px;
+		max-width: 120px;
+		float: left;
 	}
-
-
-	div.normal div.left div.smallmenu button{
-         display:block;
-	 font-size: 14px;
-	 float:right;
+	div.normal div.left div.bigmenu a {
+		color: #000000;
+		margin: 0px 30px 0px 0px;
+		display: block;
+		text-decoration: none;
+		width: auto;
+		float: left
 	}
-
+	div.normal div.left div.bigmenu a:hover {
+		font-family: OpenSansSemiBold;
+		color: #000000;
+		margin: 0px 30px 0px 0px;
+		display: block;
+		text-decoration: none;
+		width: auto;
+		float: left
+	}
+	div.normal div.left div.bigmenu a.active {
+		font-family: OpenSansSemiBold;
+		color: #000000;
+		margin: 0px 30px 0px 0px;
+		display: block;
+		text-decoration: none;
+		width: auto;
+		float: left
+	}
+	div.normal div.left div.smallmenu {
+		width: auto;
+		max-width: 600px;
+		font-size: 14px;
+		margin: 30px 0px 0px 0px;
+		display: none;
+	}
+	div.normal div.left div.smallmenu button {
+		display: block;
+		font-size: 14px;
+		float: right;
+	}
 	div.normal div.left div.smallmenu div.smallmenu-item a {
-	 width: 150px;
-         height: auto;
-	 float: left; 
-	 margin: 0px 20px 0px 0px;
-/*	 letter-spacing: 0.75px; */
-	 text-align: center;
-	 cursor:pointer;
-       }
-
+		width: 150px;
+		height: auto;
+		float: left;
+		margin: 0px 20px 0px 0px;
+		/*	 letter-spacing: 0.75px; */
+		text-align: center;
+		cursor: pointer;
+	}
 	div.normal div.left div.smallmenu div.smallmenu-item a img {
-	 display:none;
-	 width: 150px;
-         height: 125px;
-	 overflow: hidden;
+		display: none;
+		width: 150px;
+		height: 125px;
+		overflow: hidden;
 	}
-
 	div.normal div.left div.smallmenu div.smallmenu-item a.currentPiece {
-	 color: #000000;
-	 display: block;
-	 text-decoration: none;
-	 margin: 0px 20px 0px 0px;
-	 cursor:pointer;
-	 }
-
+		color: #000000;
+		display: block;
+		text-decoration: none;
+		margin: 0px 20px 0px 0px;
+		cursor: pointer;
+	}
 	div.normal div.left div.smallmenu div.smallmenu-item a:hover {
-	 color: #000000;
-	 display: block;
-	 text-decoration: none;
-	 margin: 0px 20px 0px 0px;
-	 }
-
+		color: #000000;
+		display: block;
+		text-decoration: none;
+		margin: 0px 20px 0px 0px;
+	}
 	div.normal div.right {
-	 max-width: calc(100% - 10px);
+		max-width: calc(100% - 10px);
 	}
-
 	div.collection {
-	    height: auto;
-	    width:auto;
-	    max-width:100%;
-	    float:none;
-	    display: left; 
+		height: auto;
+		width: auto;
+		max-width: 100%;
+		float: none;
+		display: left;
 	}
-
 	div.collection a {
-	    font-size: 14px;
-	    font-family: OpenSansSemiBold;
-	    color: #797879;
-	    text-align: center;
-	    text-decoration: none;
-	    width: 150px;
-	    height: auto;
-	    float: left; 
-	    margin: 0px 20px 10px 0px;
-	    /*	 letter-spacing: 0.75px; */
-	    text-align: center;
-	    cursor:pointer;
+		font-size: 14px;
+		font-family: OpenSansSemiBold;
+		color: #797879;
+		text-align: center;
+		text-decoration: none;
+		width: 150px;
+		height: auto;
+		float: left;
+		margin: 0px 20px 10px 0px;
+		/*	 letter-spacing: 0.75px; */
+		text-align: center;
+		cursor: pointer;
 	}
-
 	div.collection a img {
-	    display: block;
-	    float:left;
-	    width:150px;
-	    height:125px;
-	    overflow:hidden;
+		display: block;
+		float: left;
+		width: 150px;
+		height: 125px;
+		overflow: hidden;
 	}
-
 	div.piece div.picview {
-	  width: calc(100% - 10px);
-	  max-width: 600px;	
-	  height: auto;
-	  }
-
+		width: calc(100% - 10px);
+		max-width: 600px;
+		height: auto;
+	}
 	div.piece div.picview a {
-	  width:100%;
-	  float:left;
-	  height: auto;
-	  }
-
+		width: 100%;
+		float: left;
+		height: auto;
+	}
 	div.piece div.picview a img {
-	  width: auto;
-  	  height: auto;	
-	  max-width: calc(100% - 10px);
-	  max-height: 500px;
-          display: block;
-	  float:left;
-	  }
-
-
+		width: auto;
+		height: auto;
+		max-width: calc(100% - 10px);
+		max-height: 500px;
+		display: block;
+		float: left;
+	}
 	div.piece div.picmenu {
-	  width: calc(100% - 10px);
-	  max-width: 500px;
+		width: calc(100% - 10px);
+		max-width: 500px;
 	}
-
 	div.piece div.picmenu a {
-          margin: 10px 10px 0px 0px;
+		margin: 10px 10px 0px 0px;
 	}
-
 }
 
 /*
