@@ -7,6 +7,7 @@ window.currentTarget = "invitation";
 window.prevTarget = "invitation";
 window.currentView = "view";
 window.currentPic = "plate0";
+window.menuToggled = false;
 
 function switchDiv(mode, target) {
 	if (window.currentMode !== mode) {
@@ -129,5 +130,30 @@ function switchLang(lang, path) {
 	} else
 	if (lang == "fr" && !path.endsWith("/fr")) {
 		window.location.pathname = path + "/fr";
+	}
+}
+
+function toggleMenu() {
+	let bigMenu = document.getElementsByClassName('bigmenu')[0];
+	let lang = document.getElementsByClassName('lang')[0];
+	let bigMenuLinks = bigMenu.getElementsByTagName('a');
+	console.log(bigMenuLinks);
+	if (menuToggled) {
+		setTimeout(function() {
+			bigMenu.style['max-height'] = '0px';
+		}, 100);
+		for (let i = 0; i < bigMenuLinks.length; i++) {
+			bigMenuLinks[i].style.opacity = '0';
+		}
+		lang.style.opacity = '0';
+		window.menuToggled = false;
+	}
+	else {
+		bigMenu.style['max-height'] = '200px';
+		for (let i = 0; i < bigMenuLinks.length; i++) {
+			bigMenuLinks[i].style.opacity = '1';
+		}
+		lang.style.opacity = '1';
+		window.menuToggled = true;
 	}
 }

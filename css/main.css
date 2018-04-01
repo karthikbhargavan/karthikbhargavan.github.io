@@ -603,7 +603,7 @@ div.text ul li {
 	div.normal {
 		margin: 0 3px;
 		text-align: justify;
-		width: 96%;
+		width: calc(100% - 13px);
 	}
 	div.normal div.left {
 		width: 100%;
@@ -623,13 +623,21 @@ div.text ul li {
 		margin: 10px 0px 0px 0px;
 		max-width: calc(100% - 120px);
 		float: left;
+		transition: max-height 0.4s ease-in-out;
+		max-height: 0px;
 	}
+	div.normal div.left img.menuToggle {
+		cursor: pointer;
+		display: block;
+	} 
 	div.normal div.left div.lang {
 		font-size: 16px;
 		display: inline-block;
 		margin: 10px 20px 0px 0px;
 		max-width: 120px;
 		float: left;
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0;
 	}
 	div.normal div.left div.bigmenu a {
 		color: #000000;
@@ -637,7 +645,9 @@ div.text ul li {
 		display: block;
 		text-decoration: none;
 		width: auto;
-		float: left
+		float: left;
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0;
 	}
 	div.normal div.left div.bigmenu a:hover {
 		font-family: OpenSansSemiBold;
@@ -646,7 +656,8 @@ div.text ul li {
 		display: block;
 		text-decoration: none;
 		width: auto;
-		float: left
+		float: left;
+		opacity: 0;
 	}
 	div.normal div.left div.bigmenu a.active {
 		font-family: OpenSansSemiBold;
