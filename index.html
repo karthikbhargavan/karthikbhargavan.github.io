@@ -81,6 +81,43 @@ Armour
 Fred
 </a>
 </div>
+
+<div class="smallmenu-item">
+<a id="piece8" onclick="switchPiece(this.id,'newborn')">
+<img src="/smaller/sculptures/new-born1.jpg"></img>
+New Born
+</a>
+</div>
+
+<div class="smallmenu-item">
+<a id="piece9" onclick="switchPiece(this.id,'new-you')">
+<img src="/smaller/sculptures/new-you1.jpg"></img>
+New You
+</a>
+</div>
+
+<div class="smallmenu-item">
+<a id="piece10" onclick="switchPiece(this.id,'spring')">
+<img src="/smaller/sculptures/spring1.jpg"></img>
+Spring is in the Air
+</a>
+</div>
+
+<div class="smallmenu-item">
+<a id="piece11" onclick="switchPiece(this.id,'seaside-sculptor')">
+<img src="/smaller/sculptures/seaside-sculptor1.jpg"></img>
+Seaside Sculptor
+</a>
+</div>
+
+<div class="smallmenu-item">
+<a id="piece12" onclick="switchPiece(this.id,'smoulder')">
+<img src="/smaller/sculptures/smoulder1.jpg"></img>
+Smoulder
+</a>
+</div>
+
+
 </div>
 </div>
 
@@ -258,7 +295,7 @@ Fred, 2017
 </p>
 <!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
 <p class = "description" id="fred-caption">
-  edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2016 <br/>
+  edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm <br/>
   photo © Steve Murez
 </p>
 <p class="note" id="fred-note">
@@ -271,6 +308,27 @@ displayMenu("fred","fred",window.fredPics);
 </script>
 </div>
 </div>
+
+<div class="piece" id="newborn"> 
+<div class="picview" id="newborn-view">
+  <a href="#"><img id="newborn-img" onclick="switchFullPic(this.src);" src="smaller/newborn/new-born1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+New Born, 2018
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+<p class = "description" id="newborn-caption">
+vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
+</p>
+<p class="note" id="newborn-note">
+</p>
+</div>
+</div>
+<div class="picmenu" id="newborn-menu">
+</div>
+</div>
+
+
 
 
 <div class="text" style="display:block" id="invitation">
@@ -344,6 +402,9 @@ displayMenu("fred","fred",window.fredPics);
    onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /> Oceans of Notions </a>
 <a href="#" onclick="switchPiece('piece7','fred')" onmouseover="document.getElementById('piece7').className='currentPiece';"
    onmouseout="document.getElementById('piece7').className='';"><img src="/smaller/fred/thumb-fred1.jpg" /> Fred </a>
+
+<a href="#" onclick="switchPiece('piece8','newborn')" onmouseover="document.getElementById('piece7').className='currentPiece';"
+   onmouseout="document.getElementById('piece7').className='';"><img src="/smaller/sculptures/new-born1.jpg" /> New Born </a>
 </div>
 
 <div class="text" id="intro"> 
