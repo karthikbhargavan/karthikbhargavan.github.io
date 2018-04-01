@@ -2,6 +2,7 @@
 for i in `ls ../images/about`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/about/"$i" -quality 85 -resize 780x650\> about/"$i"; done
 for i in `ls ../images/armour`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/armour/"$i" -quality 85 -resize 780x650\> armour/"$i"; done
 for i in `ls ../images/fred`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/fred/"$i" -quality 85 -resize 780x650\> fred/"$i"; done
+for i in `ls ../images/sculptures`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/sculptures/"$i" -quality 85 -resize 780x650\> sculptures/"$i"; done
 for i in `ls ../images/artist-bio`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/artist-bio/"$i" -quality 85 -resize 780x650\> artist-bio/"$i"; done
 for i in `ls ../images/les-lumieres`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/les-lumieres/"$i" -quality 85 -resize 780x650\> les-lumieres/"$i"; done
 for i in `ls ../images/the-plate-throwers`; do /usr/local/Cellar/imagemagick/7.0.7-1/bin/convert ../images/the-plate-throwers/"$i" -quality 85 -resize 780x650\> the-plate-throwers/"$i"; done

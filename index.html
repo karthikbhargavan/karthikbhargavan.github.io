@@ -17,7 +17,7 @@
 <div class="header" onclick="switchDiv('normal','invitation')">
 <div class="title"> MORE MATERIAL </div>
 <div class="author"> Rosy Lamb </div>
-<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div> 
+<!--<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>  -->
 </div>
 
 <div class="normal" id="normal">
@@ -26,10 +26,15 @@
 <a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
 <a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
 <a href="#" id="process-menu" onclick="switchText('process')">Process</a>
-<a href="/press-release.pdf")">Press</a>
+<!-- <a href="/press-release.pdf")">Press</a> -->
+<a href="#" id="press-menu" onclick="switchText('press')">Press</a>
 <a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
 <!--<a href="/dossier-de-presse.pdf")">Presse [fr]</a>-->
-<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contact</a>
+<!--<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contacts</a>-->
+<a href="#" id="contacts-menu" onclick="switchText('contacts')">Contacts</a>
+</div>
+<div class="lang">
+  <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a>
 </div>
 
 <div class="smallmenu">
@@ -72,7 +77,7 @@ Armour
 </div>
 <div class="smallmenu-item">
 <a id="piece7" onclick="switchPiece(this.id,'fred')">
-<img src="/smaller/fred/fred1.jpg"></img>
+<img src="/smaller/fred/thumb-fred1.jpg"></img>
 Fred
 </a>
 </div>
@@ -279,39 +284,80 @@ displayMenu("fred","fred",window.fredPics);
 </script>
   
 
-<div class="text" id="press">
-<p>
-  <a href="/press-release.pdf">Press Release (English)</a>
+<div class="text" id="press" style="margin-left:20px">
+<p style="text-align:left;margin-top:0px">
+  <a href="/press-release.pdf">
+    <img src="/press_thumbnail.png" style="width:200px" /> <br/>
+    <b>Press Release</b><br/>(PDF in English)</a>
 </p>
-<p>
-  <a href="/press-release.pdf">Communiqu&eacute; de Presse (Francais)</a>
-  </p>
+
+<p style="text-align:left;margin-top:30px">
+  <a href="/dossier-de-presse.pdf">
+    <img src="/presse_thumbnail.png" style="width:200px" /> <br/>
+    <b>Communiqu&eacute; de Presse</b><br/> (PDF en Francais)</a>
+</p>
+<p style="text-align:left;margin-top:30px">
+  <a href="/art-et-decoration-article.pdf">
+    <img src="/art-et-decoration.png" style="width:150px" /> <br/>
+    <b>Article in Arts & D&eacute;coration</b><br/>(Jan-Feb 2018)</a>
+</p>
+
+</div>
+
+<div class="text" id="contacts">
+  <p style="text-align:center;margin-top:0">
+    <b>Sara Chambard</b> <br/>
+    Attachée de presse <br/>
+    <a href="mailto:sara.chambard@gmail.com">sara.chambard@gmail.com</a> <br/>
+    +33 7 70 90 67 41
+</p>
+
+  <p style="text-align:center;margin-top:40px">
+    <b>Guido Romero Pierini</b> <br/>
+    Commissaire d'exposition <br/>
+    <a href="mailto:guidoromeropierini@gmail.com">guidoromeropierini@gmail.com</a> <br/>
+    +33 6 89 08 91 66
+</p>
+
+    <p style="text-align:center;margin-top:40px">
+    <b>Rosy Lamb</b> <br/>
+    Artist <br/>
+    <a href="mailto:rosy@rosylamb.com">rosy@rosylamb.com</a>
+</p>
 </div>
 
 <div class="collection" id="collection">
 <a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
    onmouseout="document.getElementById('piece1').className='';"><img src="/smaller/the-plate-throwers/plate1.jpg" /> The Plate Throwers </a>
-<a href="#" onclick="switchPiece('piece2','oceans')" onmouseover="document.getElementById('piece2').className='currentPiece';"
-   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /> Oceans of Notions </a>
+
+<a href="#" onclick="switchPiece('piece6','armour')" onmouseover="document.getElementById('piece6').className='currentPiece';"
+   onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/armour/thumb-armour1.jpg" /> Armour </a>
+
 <a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
    onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /> Parchemins </a>
 <a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
    onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /> Les Lumieres </a>
 <a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
    onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /> Return to Form </a>
-<a href="#" onclick="switchPiece('piece6','armour')" onmouseover="document.getElementById('piece6').className='currentPiece';"
-   onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/armour/armour1.jpg" /> Armour </a>
+
+<a href="#" onclick="switchPiece('piece2','oceans')" onmouseover="document.getElementById('piece2').className='currentPiece';"
+   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /> Oceans of Notions </a>
+<!--
 <a href="#" onclick="switchPiece('piece7','fred')" onmouseover="document.getElementById('piece7').className='currentPiece';"
-   onmouseout="document.getElementById('piece7').className='';"><img src="/smaller/fred/fred1.jpg" /> Fred </a>
+   onmouseout="document.getElementById('piece7').className='';"><img src="/smaller/fred/thumb-fred1.jpg" /> Fred </a>
+-->
 </div>
 
 <div class="text" id="intro"> 
 <p style="padding-top:0px;margin-top:0px">
-<b style="font-size:22px">Introduction</b>
+<b style="font-size:22px">More Material</b>
 </p>
-<p>
-<i> by Ellen McBreen </i>
+<p class="caption">
+  <b>Ellen McBreen</b> <br/>
+  Curator and Associate Professor in Art History. <br/>
+  Wheaton College, Massachusetts, USA.
 </p>
+
 <p>
 In <i>Parchemins</i> (2017) a paper-thin tabletop, its stretched
 surface evoking the texture of hospital bandages, clings at its
@@ -322,6 +368,11 @@ conceptual play in Rosy Lamb’s work, which, on the surface of things,
 can seem almost exclusively about the process of making beautiful
 objects.
 </p>
+
+<div class="wide-image">
+  <img src="/smaller/parchemins/parchemins1.jpg" />
+  <p class="caption">Parchemins, side table, bronze, H 48 L 60 w 58, unique, 2017</p>
+  </div>
 
 <p>
 Process, after all, is what strikes you initially in every detail and
@@ -341,6 +392,10 @@ while the surface panels were hand-tinted with pure pigment, and then
 covered with wax and patina to protect it from oxidizing.
 </p>
 
+<div class="wide-image">
+  <img src="/smaller/oceans-of-notions/oceans3.jpg" />
+  <p class="caption">Oceans of Notions, 6 piece modular coffee table (detail of two modules), bronze, H 40-50 L 150 W 138 cm, unique, 2017</p>
+  </div>
 
 <p>
 Lamb brought the patience of a painter and the technical prowess of a
@@ -352,7 +407,7 @@ knowledgeable source of information about casting processes. She is
 thoroughly entrenched in craft and workmanship]. Her recent adoption
 of painting in hot wax allowed her to make the surfaces of her bronze
 sculptures even more expressive; this breakthrough lies at the origin
-of the processes used for More Material.
+of the processes used for <i>More Material</i>.
 </p>
 
 <p>
@@ -366,6 +421,12 @@ ideas. She made extensive patina and color tests on the motifs found
 in this collection. Her research into materials is almost obsessional,
 but it’s where her rich imagination finds a place to play.
 </p>
+
+<div class="wide-image">
+  <img src="/smaller/oceans-of-notions/oceans4.jpg" />
+  <p class="caption">Oceans of Notions (surface detail), pigmented paint and cold patina on bronze, 2017</p>
+  </div>
+
 
 <p>
 Both the technical, and demandingly physical aspects of sculpture and
@@ -389,6 +450,14 @@ pile of plates dutifully poised on his head. Even in the best- run
 homes, after all, total chaos is just minutes away.
 </p>
 
+<div class="wide-image">
+  <img src="/smaller/the-plate-throwers/plate15.jpg" />
+  <img src="/smaller/the-plate-throwers/plate25.jpg" />
+  <p class="caption">The Plate Throwers Cupboard [front and back views], bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique, 2017
+  </p>
+  </div>
+
+
 <p>
 In <i>Les Lumières</i>, four other male nudes, traditionally a subject
 for masculine heroism, are humbled and domesticated, given the
@@ -406,6 +475,12 @@ in the medical profession, and so the surgical procedure is named
 after him.” It’s a word, of course, more frequently used to describe
 men.
 </p>
+
+o<div class="wide-image">
+  <img src="/smaller/les-lumieres/lumieres20.jpg" />
+  <p class="caption">Les Lumi&egrave;res (in situ), table lamps, vapor patinated bronze, 2017</p>
+  </div>
+
 
 <p>
 In the history of art, commemorative figural sculpture has been
@@ -439,7 +514,7 @@ As a painter and sculptor, I seek forms that are open and closed, ordered and di
 </div>
 <div class="wide-image">
 <img src="/smaller/surface-details/surface1.jpg" />
-<p class="caption">Surface details, The Plate Throwers (2017) 
+<p class="caption">The Plate Throwers (surface details), 2017
 </p>
 </div>
 

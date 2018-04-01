@@ -171,6 +171,20 @@ div.normal div.right {
 	float:left;
 }
 
+div.normal div.left div.lang {
+font-family: OpenSans;
+font-size: 18px;
+color: #F08080;
+letter-spacing: 3px;
+margin-top:30px;
+}
+
+div.normal div.left div.lang a {
+    color: #F08080;
+    text-decoration: none;
+}
+
+
 div.normal div.left div.bigmenu{
  font-size: 22px;
 /* letter-spacing: 3px; */
@@ -450,6 +464,11 @@ div.text h3 {
     padding-top:10px;
 }
 
+div.text div.column{
+    float: left;
+    width: 50%;
+    margin-right:20px
+}
 div.text div.wide-image {
        display:block;
        max-width: 100%;
@@ -506,6 +525,15 @@ font-size: 16px;
 color: #000000;
 /* letter-spacing: 0.75px; */
 /* line-height: 24px; */
+}
+
+div.text p a{
+max-width:650px;
+/* Lorem ipsum dolor si: */
+font-family: OpenSans;
+font-size: 16px;
+color: #000000;
+text-decoration:none;   
 }
 
 
@@ -611,7 +639,19 @@ div.full div#fullpic img{
 	  font-size: 18px;
  	  display: inline-block;
 	  margin: 10px 0px 0px 0px;
+	  max-width: calc(100% - 120px);
+	  float:left;
 	}
+
+	div.normal div.left div.lang{
+	  font-size: 16px;
+ 	  display: inline-block;
+	  margin: 10px 20px 0px 0px;
+	  max-width: 120px;
+	  float:left;
+	}
+
+
 
 
 div.normal div.left div.bigmenu a{
