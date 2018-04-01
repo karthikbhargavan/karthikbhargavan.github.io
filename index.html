@@ -20,6 +20,13 @@
 <!--<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>  -->
 </div>
 
+<div class="full" id="full">
+<div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
+<img id="currentFullPic" src=""/>
+</div>
+</div>
+
+
 <div class="normal" id="normal">
 <div class="left">
 <div class="bigmenu">
@@ -98,7 +105,7 @@ Smoulder
 
 
 <div class="smallmenu-item">
-<a id="piece8" onclick="switchPiece(this.id,'newborn')">
+<a id="piece8" onclick="switchPiece(this.id,'new-born')">
 <img src="/smaller/sculptures/thumb-new-born1.jpg"></img>
 New Born
 </a>
@@ -311,24 +318,121 @@ displayMenu("fred","fred",window.fredPics);
 </div>
 </div>
 
-<div class="piece" id="newborn"> 
-<div class="picview" id="newborn-view">
-  <a href="#"><img id="newborn-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-born1.jpg" /></a>
+<div class="piece" id="new-born"> 
+<div class="picview" id="new-born-view">
+  <a href="#"><img id="new-born-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-born1.jpg" /></a>
 <div class="caption">
 <p class = "title"> 
 New Born, 2018
 </p>
 <!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="newborn-caption">
+<p class = "description" id="new-born-caption">
 vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
 </p>
-<p class="note" id="newborn-note">
+<p class="note" id="new-born-note">
 </p>
 </div>
 </div>
-<div class="picmenu" id="newborn-menu">
+<div class="picmenu" id="new-born-menu">
+<script>
+displayMenu("new-born","sculptures",window.newbornPics);
+</script>
 </div>
 </div>
+
+
+<div class="piece" id="new-you"> 
+<div class="picview" id="new-you-view">
+  <a href="#"><img id="new-you-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-you1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+New You, 2018
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+<p class = "description" id="new-you-caption">
+vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
+</p>
+<p class="note" id="new-you-note">
+</p>
+</div>
+</div>
+<div class="picmenu" id="new-you-menu">
+<script>
+displayMenu("new-you","sculptures",window.newyouPics);
+</script>
+</div>
+</div>
+
+
+<div class="piece" id="smoulder"> 
+<div class="picview" id="smoulder-view">
+  <a href="#"><img id="smoulder-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/smoulder1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+Smoulder, 2018
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+<p class = "description" id="smoulder-caption">
+bronze, H 24.5 W 19 D 20.53 cm, unique
+</p>
+<p class="note" id="smoulder-note">
+</p>
+</div>
+</div>
+<div class="picmenu" id="smoulder-menu">
+<script>
+displayMenu("smoulder","sculptures",window.smoulderPics);
+</script>
+</div>
+</div>
+
+
+<div class="piece" id="seaside-sculptor"> 
+<div class="picview" id="seaside-sculptor-view">
+  <a href="#"><img id="seaside-sculptor-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/seaside-sculptor1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+Seaside Sculptor, 2018
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+<p class = "description" id="seaside-sculptor-caption">
+bronze, H 29.5 W 25.5 H 31.5 cm, unique
+</p>
+<p class="note" id="seaside-sculptor-note">
+</p>
+</div>
+</div>
+<div class="picmenu" id="seaside-sculptor-menu">
+<script>
+displayMenu("seaside-sculptor","sculptures",window.seasidePics);
+</script>
+</div>
+</div>
+
+
+
+<div class="piece" id="spring"> 
+<div class="picview" id="spring-view">
+  <a href="#"><img id="spring-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/spring1.jpg" /></a>
+<div class="caption">
+<p class = "title"> 
+Spring is in the Air, 2018
+</p>
+<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+<p class = "description" id="spring-caption">
+bronze, H 14 W 12 H 25 cm, unique
+</p>
+<p class="note" id="spring-note">
+</p>
+</div>
+</div>
+<div class="picmenu" id="spring-menu">
+<script>
+displayMenu("spring","sculptures",window.springPics);
+</script>
+</div>
+</div>
+
 
 
 
@@ -408,17 +512,17 @@ vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
 <a href="#" onclick="switchPiece('piece10','spring')" onmouseover="document.getElementById('piece10').className='currentPiece';"
    onmouseout="document.getElementById('piece10').className='';"><img src="/smaller/sculptures/thumb-spring1.jpg" /> Spring is in the Air </a>
 
-<a href="#" onclick="switchPiece('piece11','seaside')" onmouseover="document.getElementById('piece11').className='currentPiece';"
+<a href="#" onclick="switchPiece('piece11','seaside-sculptor')" onmouseover="document.getElementById('piece11').className='currentPiece';"
    onmouseout="document.getElementById('piece11').className='';"><img src="/smaller/sculptures/seaside-sculptor1.jpg" /> Seaside Sculptor </a>
 
 
-<a href="#" onclick="switchPiece('piece8','newborn')" onmouseover="document.getElementById('piece8').className='currentPiece';"
+<a href="#" onclick="switchPiece('piece8','new-born')" onmouseover="document.getElementById('piece8').className='currentPiece';"
    onmouseout="document.getElementById('piece8').className='';"><img src="/smaller/sculptures/thumb-new-born1.jpg" /> New Born </a>
 
 <a href="#" onclick="switchPiece('piece12','smoulder')" onmouseover="document.getElementById('piece12').className='currentPiece';"
    onmouseout="document.getElementById('piece12').className='';"><img src="/smaller/sculptures/smoulder1.jpg" /> Smoulder </a>
 
-<a href="#" onclick="switchPiece('piece9','newyou')" onmouseover="document.getElementById('piece9').className='currentPiece';"
+<a href="#" onclick="switchPiece('piece9','new-you')" onmouseover="document.getElementById('piece9').className='currentPiece';"
    onmouseout="document.getElementById('piece9').className='';"><img src="/smaller/sculptures/thumb-new-you1.jpg" /> New You </a>
 
 

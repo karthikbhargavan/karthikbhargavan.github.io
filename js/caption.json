@@ -14,10 +14,36 @@ window.armourPics = [
 
 window.fredPics = [
     {num : 1,
-     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2016 <br/>photo © Steve Murez"},
+     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2017 <br/>photo © Steve Murez"},
     {num : 2,
-     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2016 <br/>photo © Steve Murez"},
+     caption : "Fred, bronze, edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm, 2017 <br/>photo © Steve Murez"},
 ]
+
+window.newyouPics = [
+    {num : 1,
+     caption : "New You, bronze, 2018"},
+]
+
+window.newbornPics = [
+    {num : 1,
+     caption : "New Born, vapour patinated bronze, H 30.5 W 8 D 8 cm,  2018"},
+]
+
+window.smoulderPics = [
+    {num : 1,
+     caption : "Smoulder, bronze,  H 24.5 W 19 D 20.5 cm, 2018"},
+]
+
+window.springPics = [
+    {num : 1,
+     caption : "Spring is in the Air, bronze, H 14 W 12 D 25, 2018"},
+]
+
+window.seasidePics = [
+    {num : 1,
+     caption : "Seaside Sculptor, bronze, H 29.5 W 25.5 D 31.5, 2018"},
+]
+
 
 window.platePics = [
 
