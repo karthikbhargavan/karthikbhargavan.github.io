@@ -1,153 +1,160 @@
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="
 				 user-scalable=no, initial-scale=1,
 				 maximum-scale=1, minimum-scale=1,
 				 width=device-width, height=device-height,
 				 target-densitydpi=device-dpi" />
-  <meta name="keywords" content="symbolic software" />
-  <title>MORE MATERIAL by Rosy Lamb</title>
-  <link rel="stylesheet" type="text/css" href="/css/main.css" />
-  <script type="application/javascript" src="/js/smooth-scroll.js"></script>
-  <script type="application/javascript" src="/js/main.js"></script>
-  <script type="application/javascript" src="/js/caption.json"></script>
+	<meta name="keywords" content="symbolic software" />
+	<title>MORE MATERIAL by Rosy Lamb</title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<script type="application/javascript" src="/js/smooth-scroll.js"></script>
+	<script type="application/javascript" src="/js/main.js"></script>
+	<script type="application/javascript" src="/js/caption.json"></script>
 </head>
+
 <body>
-<div class="header" onclick="switchDiv('normal','invitation')">
-<div class="title"> MORE MATERIAL </div>
-<div class="author"> Rosy Lamb </div>
-<!--<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>  -->
-</div>
+	<div class="header" onclick="switchDiv('normal','invitation')">
+		<div class="title"> MORE MATERIAL </div>
+		<div class="author"> Rosy Lamb </div>
+		<!--<div class="lang"> <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a> </div>  -->
+	</div>
 
-<div class="full" id="full">
-<div id="fullpic" onclick="switchDiv('normal',window.prevTarget)" >
-<img id="currentFullPic" src=""/>
-</div>
-</div>
-
-
-<div class="normal" id="normal">
-<div class="left">
-<div class="bigmenu">
-<a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
-<a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
-<a href="#" id="process-menu" onclick="switchText('process')">Process</a>
-<!-- <a href="/press-release.pdf")">Press</a> -->
-<a href="#" id="press-menu" onclick="switchText('press')">Press</a>
-<a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
-<!--<a href="/dossier-de-presse.pdf")">Presse [fr]</a>-->
-<!--<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contacts</a>-->
-<a href="#" id="contacts-menu" onclick="switchText('contacts')">Contacts</a>
-</div>
-<div class="lang">
-  <a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> | <a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a>
-</div>
-
-<div class="smallmenu">
-<button class="dropdown">&#9776;</button>
-<div class="smallmenu-item">
-<a id="piece1" onclick="switchPiece(this.id,'plate')">
-<img src="/smaller/the-plate-throwers/plate1.jpg"></img>
-The Plate Throwers
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece2" onclick="switchPiece(this.id,'oceans')">
-<img src="/smaller/oceans-of-notions/oceans1.jpg"></img>
-Oceans of Notions
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece4" onclick="switchPiece(this.id,'parchemins')">
-<img src="/smaller/parchemins/parchemins1.jpg"></img>
-Parchemins
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece3" onclick="switchPiece(this.id,'lumieres')">
-<img src="/smaller/les-lumieres/thumb-lumieres1.jpg"></img>
-Les Lumières
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece5" onclick="switchPiece(this.id,'return')">
-<img src="/smaller/return-to-form/return1.jpg"></img>
-Return to Form
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece6" onclick="switchPiece(this.id,'armour')">
-<img src="/smaller/armour/armour1.jpg"></img>
-Armour
-</a>
-</div>
-<div class="smallmenu-item">
-<a id="piece7" onclick="switchPiece(this.id,'fred')">
-<img src="/smaller/fred/thumb-fred1.jpg"></img>
-Fred
-</a>
-</div>
-
-<div class="smallmenu-item">
-<a id="piece10" onclick="switchPiece(this.id,'spring')">
-<img src="/smaller/sculptures/thumb-spring1.jpg"></img>
-Spring is in the Air
-</a>
-</div>
-
-<div class="smallmenu-item">
-<a id="piece12" onclick="switchPiece(this.id,'smoulder')">
-<img src="/smaller/sculptures/smoulder1.jpg"></img>
-Smoulder
-</a>
-</div>
+	<div class="full" id="full">
+		<div id="fullpic" onclick="switchDiv('normal',window.prevTarget)">
+			<img id="currentFullPic" src="" />
+		</div>
+	</div>
 
 
-<div class="smallmenu-item">
-<a id="piece8" onclick="switchPiece(this.id,'new-born')">
-<img src="/smaller/sculptures/thumb-new-born1.jpg"></img>
-New Born
-</a>
-</div>
+	<div class="normal" id="normal">
+		<div class="left">
+			<div class="bigmenu">
+				<a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
+				<a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
+				<a href="#" id="process-menu" onclick="switchText('process')">Process</a>
+				<!-- <a href="/press-release.pdf")">Press</a> -->
+				<a href="#" id="press-menu" onclick="switchText('press')">Press</a>
+				<a href="#" id="background-menu" onclick="switchText('background')">Artist Bio</a>
+				<!--<a href="/dossier-de-presse.pdf")">Presse [fr]</a>-->
+				<!--<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contacts</a>-->
+				<a href="#" id="contacts-menu" onclick="switchText('contacts')">Contacts</a>
+			</div>
+			<div class="lang">
+				<a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> |
+				<a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a>
+			</div>
+
+			<div class="smallmenu">
+				<button class="dropdown">&#9776;</button>
+				<div class="smallmenu-item">
+					<a id="piece1" onclick="switchPiece(this.id,'plate')">
+						<img src="/smaller/the-plate-throwers/plate1.jpg"></img>
+						The Plate Throwers
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece2" onclick="switchPiece(this.id,'oceans')">
+						<img src="/smaller/oceans-of-notions/oceans1.jpg"></img>
+						Oceans of Notions
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece4" onclick="switchPiece(this.id,'parchemins')">
+						<img src="/smaller/parchemins/parchemins1.jpg"></img>
+						Parchemins
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece3" onclick="switchPiece(this.id,'lumieres')">
+						<img src="/smaller/les-lumieres/thumb-lumieres1.jpg"></img>
+						Les Lumières
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece5" onclick="switchPiece(this.id,'return')">
+						<img src="/smaller/return-to-form/return1.jpg"></img>
+						Return to Form
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece6" onclick="switchPiece(this.id,'armour')">
+						<img src="/smaller/armour/armour1.jpg"></img>
+						Armour
+					</a>
+				</div>
+				<div class="smallmenu-item">
+					<a id="piece7" onclick="switchPiece(this.id,'fred')">
+						<img src="/smaller/fred/thumb-fred1.jpg"></img>
+						Fred
+					</a>
+				</div>
+
+				<div class="smallmenu-item">
+					<a id="piece10" onclick="switchPiece(this.id,'spring')">
+						<img src="/smaller/sculptures/thumb-spring1.jpg"></img>
+						Spring is in the Air
+					</a>
+				</div>
+
+				<div class="smallmenu-item">
+					<a id="piece12" onclick="switchPiece(this.id,'smoulder')">
+						<img src="/smaller/sculptures/smoulder1.jpg"></img>
+						Smoulder
+					</a>
+				</div>
 
 
-<div class="smallmenu-item">
-<a id="piece11" onclick="switchPiece(this.id,'seaside-sculptor')">
-<img src="/smaller/sculptures/seaside-sculptor1.jpg"></img>
-Seaside Sculptor
-</a>
-</div>
-
-<div class="smallmenu-item">
-<a id="piece9" onclick="switchPiece(this.id,'new-you')">
-<img src="/smaller/sculptures/thumb-new-you1.jpg"></img>
-New You
-</a>
-</div>
+				<div class="smallmenu-item">
+					<a id="piece8" onclick="switchPiece(this.id,'new-born')">
+						<img src="/smaller/sculptures/thumb-new-born1.jpg"></img>
+						New Born
+					</a>
+				</div>
 
 
-</div>
-</div>
+				<div class="smallmenu-item">
+					<a id="piece11" onclick="switchPiece(this.id,'seaside-sculptor')">
+						<img src="/smaller/sculptures/seaside-sculptor1.jpg"></img>
+						Seaside Sculptor
+					</a>
+				</div>
 
-<div class="right" id="view">
+				<div class="smallmenu-item">
+					<a id="piece9" onclick="switchPiece(this.id,'new-you')">
+						<img src="/smaller/sculptures/thumb-new-you1.jpg"></img>
+						New You
+					</a>
+				</div>
 
-<div class="piece" id="plate"> 
-<div class="picview" id="plate-view">
-  <a href="#"><img id="plate-img" onclick="switchFullPic(this.src);" src="/smaller/the-plate-throwers/plate1.jpg" /></a>
-<div class="caption">
-<p class="title">
-The Plate Throwers, 2017
-</p>
-<p class="description" id="plate-caption">
-[front view with doors closed], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique <br/>photo © Steve Murez
-</p>
-<p class="note" id="plate-note">
-<i>The Plate Throwers</i>, a dish cupboard that looks like a gestural golden painting on the outside, on the inside hides a sculptural portrayal of the endless fight we all have as to who will do the dishes next. 
-</p>
-</div>
-</div>
-<!--
+
+			</div>
+		</div>
+
+		<div class="right" id="view">
+
+			<div class="piece" id="plate">
+				<div class="picview" id="plate-view">
+					<a href="#">
+						<img id="plate-img" onclick="switchFullPic(this.src);" src="/smaller/the-plate-throwers/plate1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							The Plate Throwers, 2017
+						</p>
+						<p class="description" id="plate-caption">
+							[front view with doors closed], 2017, bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique
+							<br/>photo © Steve Murez
+						</p>
+						<p class="note" id="plate-note">
+							<i>The Plate Throwers</i>, a dish cupboard that looks like a gestural golden painting on the outside, on the inside hides
+							a sculptural portrayal of the endless fight we all have as to who will do the dishes next.
+						</p>
+					</div>
+				</div>
+				<!--
 <div class="vidview" id="plate-vidview">
 <iframe src="https://player.vimeo.com/video/4555656" width="640" height="512" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 <div class="caption">
@@ -166,579 +173,615 @@ This is a short film clip by my friend Adrian Hornsby In which an unseen man thr
 </div>
 </div>
 -->
-<div class="picmenu" id="plate-menu">
-  <!--
+				<div class="picmenu" id="plate-menu">
+					<!--
   <div class="vidmenu" id="plate-vid">
     <a href="#" onclick="switchViewVid('plate','plate-vid')"><img src="/images/the-plate-throwers/platevid.jpg" /></a>
   </div>
 -->
-<script>
-displayMenu("plate","the-plate-throwers",window.platePics);
-</script>
-</div>
-</div>
-
-<div class="piece" id="oceans"> 
-<div class="picview" id="oceans-view">
-  <a href="#"><img id="oceans-img" onclick="switchFullPic(this.src);" src="/smaller/oceans-of-notions/oceans1.jpg" /></a>
-<div class="caption">
-<p class="title"> Oceans of Notions, 2017
-</p>
-<p class="description" id="oceans-caption">
-6 piece modular coffee table, bronze, H 40-50 L 150  W 138 cm, unique.
-</p>
-<p class="note" id="oceans-note">
-  <i>Oceans of Notions</i>, an undulating modular coffee table made with one-of-a-kind open panels, has surfaces inscribed in an unknown language of swishes and swirls. </li>
-</p>
-</div>
-</div>
-<div class="picmenu" id="oceans-menu">
-<script>
-displayMenu("oceans","oceans-of-notions",window.oceansPics);
-</script>
-</div>
-</div>
-
-<div class="piece" id="return"> 
-<div class="picview" id="return-view">
-  <a href="#"><img id="return-img" onclick="switchFullPic(this.src);" src="smaller/return-to-form/return1.jpg" /></a>
-<div class="caption">
-<p class="title">
-Return to Form, 2017
-</p>
-<p class="description" id="return-caption">
-sand etched mirror, brass, bronze, and tarnished white gold leaf,  H 97 L 110  W 12 cm,  limited edition of 8+4 AP
-</p>
-<p class="note" id="return-note">
-  In <i>Return to Form</i>, a mirror that looks like the steam has been wiped away after a hot shower is framed by an ornate, decaying, almost animate golden frame that reflects on our reflection through time.
-</p>
-</div>
-</div>
-<div class="picmenu" id="return-menu">
-<script>
-displayMenu("return","return-to-form",window.returnPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="parchemins"> 
-<div class="picview" id="parchemins-view">
-  <a href="#"><img id="parchemins-img" onclick="switchFullPic(this.src);" src="/smaller/parchemins/parchemins1.jpg" /></a>
-<div class="caption">
-<p class="title">
-Parchemins, 2017
-</p>
-<p class = "description" id="parchemins-caption">
-side table,  bronze, H 48 L 60 w 58, unique
-</p>
-<p class="note" id="parchemins-note">
-  <i>Parchemins</i>, a side-table with thin ragged edges, is the ghostly image of a simple wooden table, the top precariously balanced on scroll like legs.
-</p>
-</div>
-</div>
-<div class="picmenu" id="parchemins-menu">
-<script>
-displayMenu("parchemins","parchemins",window.parcheminsPics);
-</script>
-</div>
-</div>
-
-<div class="piece" id="lumieres"> 
-<div class="picview" id="lumieres-view">
-  <a href="#"><img id="lumieres-img" onclick="switchFullPic(this.src);" src="smaller/les-lumieres/lumieres1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Les Lumières, 2017
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">about</button> -->
-<p class = "description" id="lumieres-caption">
-table lamps, vapour patinated bronze <br/>
-hommage #1 (blocks) H 80 W 21 D 16 cm, unique <br/>
-hommage #2 (tree), H 95 W 21.5 D 20 cm, unique <br/>
-hommage #3 (cone), H 70 W 26.5 D 15 cm, unique <br/>
-hommage #4  (loops),  H 26 W 28 D 19 cm, unique
-</p>
-<p class="note" id="lumieres-note">
-  <i>Les Lumieres</i> are four unique lamps that illuminate men from within, mocking our cultural preference for male luminaries.
-</p>
-</div>
-</div>
-<div class="picmenu" id="lumieres-menu">
-<script>
-displayMenu("lumieres","les-lumieres",window.lumieresPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="armour"> 
-<div class="picview" id="armour-view">
-  <a href="#"><img id="armour-img" onclick="switchFullPic(this.src);" src="smaller/armour/armour1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Armour, 2017
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="armour-caption">
-bronze, H 175 W 42 D 36 cm, unique
-</p>
-<p class="note" id="armour-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="armour-menu">
-<script>
-displayMenu("armour","armour",window.armourPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="fred"> 
-<div class="picview" id="fred-view">
-  <a href="#"><img id="fred-img" onclick="switchFullPic(this.src);" src="smaller/fred/fred1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Fred, 2017
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="fred-caption">
-  edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm <br/>
-  photo © Steve Murez
-</p>
-<p class="note" id="fred-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="fred-menu">
-<script>
-displayMenu("fred","fred",window.fredPics);
-</script>
-</div>
-</div>
-
-<div class="piece" id="new-born"> 
-<div class="picview" id="new-born-view">
-  <a href="#"><img id="new-born-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-born1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-New Born, 2018
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="new-born-caption">
-vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
-</p>
-<p class="note" id="new-born-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="new-born-menu">
-<script>
-displayMenu("new-born","sculptures",window.newbornPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="new-you"> 
-<div class="picview" id="new-you-view">
-  <a href="#"><img id="new-you-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-you1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-New You, 2018
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="new-you-caption">
-vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
-</p>
-<p class="note" id="new-you-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="new-you-menu">
-<script>
-displayMenu("new-you","sculptures",window.newyouPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="smoulder"> 
-<div class="picview" id="smoulder-view">
-  <a href="#"><img id="smoulder-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/smoulder1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Smoulder, 2018
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="smoulder-caption">
-bronze, H 24.5 W 19 D 20.53 cm, unique
-</p>
-<p class="note" id="smoulder-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="smoulder-menu">
-<script>
-displayMenu("smoulder","sculptures",window.smoulderPics);
-</script>
-</div>
-</div>
-
-
-<div class="piece" id="seaside-sculptor"> 
-<div class="picview" id="seaside-sculptor-view">
-  <a href="#"><img id="seaside-sculptor-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/seaside-sculptor1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Seaside Sculptor, 2018
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="seaside-sculptor-caption">
-bronze, H 29.5 W 25.5 H 31.5 cm, unique
-</p>
-<p class="note" id="seaside-sculptor-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="seaside-sculptor-menu">
-<script>
-displayMenu("seaside-sculptor","sculptures",window.seasidePics);
-</script>
-</div>
-</div>
-
-
-
-<div class="piece" id="spring"> 
-<div class="picview" id="spring-view">
-  <a href="#"><img id="spring-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/spring1.jpg" /></a>
-<div class="caption">
-<p class = "title"> 
-Spring is in the Air, 2018
-</p>
-<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
-<p class = "description" id="spring-caption">
-bronze, H 14 W 12 H 25 cm, unique
-</p>
-<p class="note" id="spring-note">
-</p>
-</div>
-</div>
-<div class="picmenu" id="spring-menu">
-<script>
-displayMenu("spring","sculptures",window.springPics);
-</script>
-</div>
-</div>
-
-
-
-
-
-<div class="text" style="display:block" id="invitation">
-<div class="wide-image">
-  <img style="border:1px solid #d3d3d3" src="/Invitation-More-Material.png"></img>
-</div>
-</div>
-
-<script>
-  switchDiv('normal','invitation');
-</script>
-  
-
-<div class="text" id="press" style="margin-left:20px">
-<p style="text-align:left;margin-top:0px">
-  <a href="/press-release.pdf">
-    <img src="/press_thumbnail.png" style="width:200px" /> <br/>
-    <b>Press Release</b><br/>(PDF in English)</a>
-</p>
-
-<p style="text-align:left;margin-top:30px">
-  <a href="/dossier-de-presse.pdf">
-    <img src="/presse_thumbnail.png" style="width:200px" /> <br/>
-    <b>Communiqu&eacute; de Presse</b><br/> (PDF en Francais)</a>
-</p>
-<p style="text-align:left;margin-top:30px">
-  <a href="/art-et-decoration-article.pdf">
-    <img src="/art-et-decoration.png" style="width:150px" /> <br/>
-    <b>Article in Arts & D&eacute;coration</b><br/>(Jan-Feb 2018)</a>
-</p>
-
-</div>
-
-<div class="text" id="contacts">
-  <p style="text-align:center;margin-top:0">
-    <b>Sara Chambard</b> <br/>
-    Attachée de presse <br/>
-    <a href="mailto:sara.chambard@gmail.com">sara.chambard@gmail.com</a> <br/>
-    +33 7 70 90 67 41
-</p>
-
-  <p style="text-align:center;margin-top:40px">
-    <b>Guido Romero Pierini</b> <br/>
-    Commissaire d'exposition <br/>
-    <a href="mailto:guidoromeropierini@gmail.com">guidoromeropierini@gmail.com</a> <br/>
-    +33 6 89 08 91 66
-</p>
-
-    <p style="text-align:center;margin-top:40px">
-    <b>Rosy Lamb</b> <br/>
-    Artist <br/>
-    <a href="mailto:rosy@rosylamb.com">rosy@rosylamb.com</a>
-</p>
-</div>
-
-<div class="collection" id="collection">
-<a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"  
-   onmouseout="document.getElementById('piece1').className='';"><img src="/smaller/the-plate-throwers/plate1.jpg" /> The Plate Throwers </a>
-
-<a href="#" onclick="switchPiece('piece6','armour')" onmouseover="document.getElementById('piece6').className='currentPiece';"
-   onmouseout="document.getElementById('piece6').className='';"><img src="/smaller/armour/thumb-armour1.jpg" /> Armour </a>
-
-<a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
-   onmouseout="document.getElementById('piece4').className='';"><img src="/smaller/parchemins/parchemins1.jpg" /> Parchemins </a>
-<a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
-   onmouseout="document.getElementById('piece3').className='';"><img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /> Les Lumieres </a>
-<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
-   onmouseout="document.getElementById('piece5').className='';"><img src="/smaller/return-to-form/return1.jpg" /> Return to Form </a>
-
-<a href="#" onclick="switchPiece('piece2','oceans')" onmouseover="document.getElementById('piece2').className='currentPiece';"
-   onmouseout="document.getElementById('piece2').className='';"><img src="/smaller/oceans-of-notions/oceans1.jpg" /> Oceans of Notions </a>
-<a href="#" onclick="switchPiece('piece7','fred')" onmouseover="document.getElementById('piece7').className='currentPiece';"
-   onmouseout="document.getElementById('piece7').className='';"><img src="/smaller/fred/thumb-fred1.jpg" /> Fred </a>
-
-<a href="#" onclick="switchPiece('piece10','spring')" onmouseover="document.getElementById('piece10').className='currentPiece';"
-   onmouseout="document.getElementById('piece10').className='';"><img src="/smaller/sculptures/thumb-spring1.jpg" /> Spring is in the Air </a>
-
-<a href="#" onclick="switchPiece('piece11','seaside-sculptor')" onmouseover="document.getElementById('piece11').className='currentPiece';"
-   onmouseout="document.getElementById('piece11').className='';"><img src="/smaller/sculptures/seaside-sculptor1.jpg" /> Seaside Sculptor </a>
-
-
-<a href="#" onclick="switchPiece('piece8','new-born')" onmouseover="document.getElementById('piece8').className='currentPiece';"
-   onmouseout="document.getElementById('piece8').className='';"><img src="/smaller/sculptures/thumb-new-born1.jpg" /> New Born </a>
-
-<a href="#" onclick="switchPiece('piece12','smoulder')" onmouseover="document.getElementById('piece12').className='currentPiece';"
-   onmouseout="document.getElementById('piece12').className='';"><img src="/smaller/sculptures/smoulder1.jpg" /> Smoulder </a>
-
-<a href="#" onclick="switchPiece('piece9','new-you')" onmouseover="document.getElementById('piece9').className='currentPiece';"
-   onmouseout="document.getElementById('piece9').className='';"><img src="/smaller/sculptures/thumb-new-you1.jpg" /> New You </a>
-
-
-</div>
-
-<div class="text" id="intro"> 
-<p style="padding-top:0px;margin-top:0px">
-<b style="font-size:22px">More Material</b>
-</p>
-<p class="caption">
-  <b>Ellen McBreen</b> <br/>
-  Curator and Associate Professor in Art History. <br/>
-  Wheaton College, Massachusetts, USA.
-</p>
-
-<p>
-In <i>Parchemins</i> (2017) a paper-thin tabletop, its stretched
-surface evoking the texture of hospital bandages, clings at its
-corners to lean supports like crutches propping it up. An impression
-of frail precariousness misleads us, however, since the object in
-question is rugged cast bronze. It is the first sign of a quiet
-conceptual play in Rosy Lamb’s work, which, on the surface of things,
-can seem almost exclusively about the process of making beautiful
-objects.
-</p>
-
-<div class="wide-image">
-  <img src="/smaller/parchemins/parchemins1.jpg" />
-  <p class="caption">Parchemins, side table, bronze, H 48 L 60 w 58, unique, 2017</p>
-  </div>
-
-<p>
-Process, after all, is what strikes you initially in every detail and
-richly layered surface of the functional sculptures of <i>More
-Material</i>. Take <i>Oceans of Notions</i>, for example. The irregular design of
-its floating panels draws your eye back and forth over its meandering
-rivulets, providing unity for what in reality is 12 different, unique
-relief sculptures of various heights. Although these designs are
-trapped in bronze permanently, they convey the restless energy of
-swirling eddies in water. The 22 side panels each have a unique
-pattern of rapidly painterly rounded forms that read as the positive
-of the negative trenches above. All of Lamb’s work manages to retain
-the freshness and spontaneity of its method of creation, which belies
-the extreme, labor intensive aspects of its making. These side panels,
-for example, were made by brushing and building directly with hot wax,
-while the surface panels were hand-tinted with pure pigment, and then
-covered with wax and patina to protect it from oxidizing.
-</p>
-
-<div class="wide-image">
-  <img src="/smaller/oceans-of-notions/oceans3.jpg" />
-  <p class="caption">Oceans of Notions, 6 piece modular coffee table (detail of two modules), bronze, H 40-50 L 150 W 138 cm, unique, 2017</p>
-  </div>
-
-<p>
-Lamb brought the patience of a painter and the technical prowess of a
-figural sculptor to <i>More Material</i>. Its objects channel her long
-years of experimentation working back and forth between media in her
-studio: painting as a sculptor, and sculpting as a painter.  [When I
-wrote a book about Matisse’s sculpture, Lamb was the most
-knowledgeable source of information about casting processes. She is
-thoroughly entrenched in craft and workmanship]. Her recent adoption
-of painting in hot wax allowed her to make the surfaces of her bronze
-sculptures even more expressive; this breakthrough lies at the origin
-of the processes used for <i>More Material</i>.
-</p>
-
-<p>
-One constant in the series is that that all of the objects are
-fundamentally rooted to physical realities, as Lamb tirelessly
-explored how materials react and respond to various processes. Over
-the last two years, the foundry in Auvergne was her laboratory. She
-collaborated with other craftspeople in the ateliers, pushing them to
-overturn traditional foundry techniques with new experiments and
-ideas. She made extensive patina and color tests on the motifs found
-in this collection. Her research into materials is almost obsessional,
-but it’s where her rich imagination finds a place to play.
-</p>
-
-<div class="wide-image">
-  <img src="/smaller/oceans-of-notions/oceans4.jpg" />
-  <p class="caption">Oceans of Notions (surface detail), pigmented paint and cold patina on bronze, 2017</p>
-  </div>
-
-
-<p>
-Both the technical, and demandingly physical aspects of sculpture and
-furniture making are decidedly macho. The imposing pieces in More
-Material convey some of this bravado; they will not politely decorate
-a room so much as command it. <i>Oceans of Notions</i>, in particular, with
-its delightfully irregular hand-made units seems like an idiosyncratic
-take on the grid format sculptures of the famously tough, laconic
-American minimalist Carl André. Working in the foundry, after all, has
-mostly been the work of red-blooded male artists. But the pieces
-themselves designed for the home are also fundamentally about the less
-visible work of women. Who normally sets out the aperitifs on a coffee
-table, or wipes up its spills (Lamb specifically thought of making that
-an easily washable surface)? Who will put the dishes away into the
-cabinet of <i>The Plate Throwers</i> after the guests have gone? The <i>Plate
-Throwers</i>, in particular, reveals a gender game at play in other pieces
-in the series. Behind its shiny gilded doors, a darker domestic battle
-of the sexes is revealed. An agile female figure is on the verge of
-launching a plate at her male counterpart, who marches unawares, a
-pile of plates dutifully poised on his head. Even in the best- run
-homes, after all, total chaos is just minutes away.
-</p>
-
-<div class="wide-image">
-  <img src="/smaller/the-plate-throwers/plate15.jpg" />
-  <img src="/smaller/the-plate-throwers/plate25.jpg" />
-  <p class="caption">The Plate Throwers Cupboard [front and back views], bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique, 2017
-  </p>
-  </div>
-
-
-<p>
-In <i>Les Lumières</i>, four other male nudes, traditionally a subject
-for masculine heroism, are humbled and domesticated, given the
-household job of providing light. In this series, Lamb’s combines her
-gift for breathing life into her nudes with her inventive wit. The
-legs and torsos of four expressive figures are joined to
-light-filtering abstract sculptures, so that their individual
-identities are erased. One head is pulverized into the web of abstract
-matter emerging from his torso. The title <i>Les Lumières</i> (<i>The
-Luminaries</i> in English) seems straightforward enough; they are,
-after all, functional light units in the tradition of figural
-torchieres. But the word also evokes luminary: a person of prominence,
-or master in their respective field. As in “Dr. Robertson is a luminary
-in the medical profession, and so the surgical procedure is named
-after him.” It’s a word, of course, more frequently used to describe
-men.
-</p>
-
-o<div class="wide-image">
-  <img src="/smaller/les-lumieres/lumieres20.jpg" />
-  <p class="caption">Les Lumi&egrave;res (in situ), table lamps, vapor patinated bronze, 2017</p>
-  </div>
-
-
-<p>
-In the history of art, commemorative figural sculpture has been
-overwhelming devoted to male achievements. This is a tradition Lamb
-knows well, having worked on public monuments for two years when she
-first came to Paris. Her modest series of Les Lumieres, hommages recalls
-the grandiose tradition of les hommes illustres (Famous Men), like the
-86 standing sculptures decorating the first floor balustrade of the
-Louvre’s Cour Napoléon. They look down at the modern glass pyramid,
-while very few visitors look up at them. Canonized in the 19th-century
-by Hector-Martin Lefuel, the architect who ordered them, many of these
-men are now forgotten (Etienne Duperac? Jean Bullant?). Certainly,
-they were luminaries for their age. How much more appreciated would
-they be now if they too could radiate light?
-</p>
-</div> 
-
-<div class="text" id="process"> 
-
- 
-<iframe src="https://player.vimeo.com/video/235557083?title=0&byline=0&portrait=0" width="480" height="270" style="padding-bottom:20px;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<!-- <img src="smaller/about/intro1.jpg" /> -->
-
-<p style="margin-top:0px">
-As a painter and sculptor, I seek forms that are open and closed, ordered and disordered in equal measure and in which opulent workmanship competes with untouched raw materials to reveal the push and pull between the public and private, the epic and the transient. I often work with sculpted plaster that looks as if it has naturally aged and crumbled over time. It is more difficult to evoke this aesthetic with traditional bronze sculptures, but recently, I developed a technique of painting in hot wax that allows me to make expressive and delicate bronze surfaces that balance the strength of metal with the visual fragility of painted brush strokes. 
-</p>
-
-<div class="wide-image">
-<img src="/smaller/surface-details/surface4.jpg" />
-</div>
-<div class="wide-image">
-<img src="/smaller/surface-details/surface1.jpg" />
-<p class="caption">The Plate Throwers (surface details), 2017
-</p>
-</div>
-
-<p>
-  These unique surfaces and motifs are the foundation for my new series of functional sculptures, called More Material, on which I have been working for the the past two years at La Fonderie Fusions in Auvergne, France.
-</p>
-
-<p>
-To make More Material, the foundry has been my studio and my laboratory. David de Gourcuff, the owner of the foundry, invested in my work, put me up in his home, and gave me unprecedented access and free rein to work and play in the midst of his busy foundry. Making these pieces involved collaborations with every atelier of the foundry, and every worker there helped me at some critical juncture or other. This collection would not have been possible otherwise. 
-</p>
-
-<img src="/smaller/about/intro2.jpg" />
-
-</div>
-
-<div class="text" id="background"> 
-
-<div class="wide-image">
-<img src="/images/artist-bio/bground22.jpg" />
-<p class="caption">Rosy Lamb, photo by Steve Murez
-</p>
-</div>
-
-<!--
+					<script>
+						displayMenu("plate", "the-plate-throwers", window.platePics);
+					</script>
+				</div>
+			</div>
+
+			<div class="piece" id="oceans">
+				<div class="picview" id="oceans-view">
+					<a href="#">
+						<img id="oceans-img" onclick="switchFullPic(this.src);" src="/smaller/oceans-of-notions/oceans1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title"> Oceans of Notions, 2017
+						</p>
+						<p class="description" id="oceans-caption">
+							6 piece modular coffee table, bronze, H 40-50 L 150 W 138 cm, unique.
+						</p>
+						<p class="note" id="oceans-note">
+							<i>Oceans of Notions</i>, an undulating modular coffee table made with one-of-a-kind open panels, has surfaces inscribed
+							in an unknown language of swishes and swirls. </li>
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="oceans-menu">
+					<script>
+						displayMenu("oceans", "oceans-of-notions", window.oceansPics);
+					</script>
+				</div>
+			</div>
+
+			<div class="piece" id="return">
+				<div class="picview" id="return-view">
+					<a href="#">
+						<img id="return-img" onclick="switchFullPic(this.src);" src="smaller/return-to-form/return1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Return to Form, 2017
+						</p>
+						<p class="description" id="return-caption">
+							sand etched mirror, brass, bronze, and tarnished white gold leaf, H 97 L 110 W 12 cm, limited edition of 8+4 AP
+						</p>
+						<p class="note" id="return-note">
+							In
+							<i>Return to Form</i>, a mirror that looks like the steam has been wiped away after a hot shower is framed by an ornate,
+							decaying, almost animate golden frame that reflects on our reflection through time.
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="return-menu">
+					<script>
+						displayMenu("return", "return-to-form", window.returnPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="parchemins">
+				<div class="picview" id="parchemins-view">
+					<a href="#">
+						<img id="parchemins-img" onclick="switchFullPic(this.src);" src="/smaller/parchemins/parchemins1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Parchemins, 2017
+						</p>
+						<p class="description" id="parchemins-caption">
+							side table, bronze, H 48 L 60 w 58, unique
+						</p>
+						<p class="note" id="parchemins-note">
+							<i>Parchemins</i>, a side-table with thin ragged edges, is the ghostly image of a simple wooden table, the top precariously
+							balanced on scroll like legs.
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="parchemins-menu">
+					<script>
+						displayMenu("parchemins", "parchemins", window.parcheminsPics);
+					</script>
+				</div>
+			</div>
+
+			<div class="piece" id="lumieres">
+				<div class="picview" id="lumieres-view">
+					<a href="#">
+						<img id="lumieres-img" onclick="switchFullPic(this.src);" src="smaller/les-lumieres/lumieres1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Les Lumières, 2017
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('lumieres-note').scrollIntoView();">about</button> -->
+						<p class="description" id="lumieres-caption">
+							table lamps, vapour patinated bronze
+							<br/> hommage #1 (blocks) H 80 W 21 D 16 cm, unique
+							<br/> hommage #2 (tree), H 95 W 21.5 D 20 cm, unique
+							<br/> hommage #3 (cone), H 70 W 26.5 D 15 cm, unique
+							<br/> hommage #4 (loops), H 26 W 28 D 19 cm, unique
+						</p>
+						<p class="note" id="lumieres-note">
+							<i>Les Lumieres</i> are four unique lamps that illuminate men from within, mocking our cultural preference for male luminaries.
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="lumieres-menu">
+					<script>
+						displayMenu("lumieres", "les-lumieres", window.lumieresPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="armour">
+				<div class="picview" id="armour-view">
+					<a href="#">
+						<img id="armour-img" onclick="switchFullPic(this.src);" src="smaller/armour/armour1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Armour, 2017
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="armour-caption">
+							bronze, H 175 W 42 D 36 cm, unique
+						</p>
+						<p class="note" id="armour-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="armour-menu">
+					<script>
+						displayMenu("armour", "armour", window.armourPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="fred">
+				<div class="picview" id="fred-view">
+					<a href="#">
+						<img id="fred-img" onclick="switchFullPic(this.src);" src="smaller/fred/fred1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Fred, 2017
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="fred-caption">
+							edition of 4 Artist Proof with unique base, H 95 W 38 D 30 cm
+							<br/> photo © Steve Murez
+						</p>
+						<p class="note" id="fred-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="fred-menu">
+					<script>
+						displayMenu("fred", "fred", window.fredPics);
+					</script>
+				</div>
+			</div>
+
+			<div class="piece" id="new-born">
+				<div class="picview" id="new-born-view">
+					<a href="#">
+						<img id="new-born-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-born1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							New Born, 2018
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="new-born-caption">
+							vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
+						</p>
+						<p class="note" id="new-born-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="new-born-menu">
+					<script>
+						displayMenu("new-born", "sculptures", window.newbornPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="new-you">
+				<div class="picview" id="new-you-view">
+					<a href="#">
+						<img id="new-you-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/new-you1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							New You, 2018
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="new-you-caption">
+							vapour patinated bronze, H 30.5 W 8 D 8 cm, unique
+						</p>
+						<p class="note" id="new-you-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="new-you-menu">
+					<script>
+						displayMenu("new-you", "sculptures", window.newyouPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="smoulder">
+				<div class="picview" id="smoulder-view">
+					<a href="#">
+						<img id="smoulder-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/smoulder1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Smoulder, 2018
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="smoulder-caption">
+							bronze, H 24.5 W 19 D 20.53 cm, unique
+						</p>
+						<p class="note" id="smoulder-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="smoulder-menu">
+					<script>
+						displayMenu("smoulder", "sculptures", window.smoulderPics);
+					</script>
+				</div>
+			</div>
+
+
+			<div class="piece" id="seaside-sculptor">
+				<div class="picview" id="seaside-sculptor-view">
+					<a href="#">
+						<img id="seaside-sculptor-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/seaside-sculptor1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Seaside Sculptor, 2018
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="seaside-sculptor-caption">
+							bronze, H 29.5 W 25.5 H 31.5 cm, unique
+						</p>
+						<p class="note" id="seaside-sculptor-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="seaside-sculptor-menu">
+					<script>
+						displayMenu("seaside-sculptor", "sculptures", window.seasidePics);
+					</script>
+				</div>
+			</div>
+
+
+
+			<div class="piece" id="spring">
+				<div class="picview" id="spring-view">
+					<a href="#">
+						<img id="spring-img" onclick="switchFullPic(this.src);" src="smaller/sculptures/spring1.jpg" />
+					</a>
+					<div class="caption">
+						<p class="title">
+							Spring is in the Air, 2018
+						</p>
+						<!--<button class="viewmore" onclick="document.getElementById('armour-note').scrollIntoView();">about</button> -->
+						<p class="description" id="spring-caption">
+							bronze, H 14 W 12 H 25 cm, unique
+						</p>
+						<p class="note" id="spring-note">
+						</p>
+					</div>
+				</div>
+				<div class="picmenu" id="spring-menu">
+					<script>
+						displayMenu("spring", "sculptures", window.springPics);
+					</script>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="text" style="display:block" id="invitation">
+				<div class="wide-image">
+					<img style="border:1px solid #d3d3d3" src="/Invitation-More-Material.png"></img>
+				</div>
+			</div>
+
+			<script>
+				switchDiv('normal', 'invitation');
+			</script>
+
+
+			<div class="text" id="press" style="margin-left:20px">
+				<p style="text-align:left;margin-top:0px">
+					<a href="/press-release.pdf">
+						<img src="/press_thumbnail.png" style="width:200px" />
+						<br/>
+						<b>Press Release</b>
+						<br/>(PDF in English)</a>
+				</p>
+
+				<p style="text-align:left;margin-top:30px">
+					<a href="/dossier-de-presse.pdf">
+						<img src="/presse_thumbnail.png" style="width:200px" />
+						<br/>
+						<b>Communiqu&eacute; de Presse</b>
+						<br/> (PDF en Francais)</a>
+				</p>
+				<p style="text-align:left;margin-top:30px">
+					<a href="/art-et-decoration-article.pdf">
+						<img src="/art-et-decoration.png" style="width:150px" />
+						<br/>
+						<b>Article in Arts & D&eacute;coration</b>
+						<br/>(Jan-Feb 2018)</a>
+				</p>
+
+			</div>
+
+			<div class="text" id="contacts">
+				<p style="text-align:center;margin-top:0">
+					<b>Sara Chambard</b>
+					<br/> Attachée de presse
+					<br/>
+					<a href="mailto:sara.chambard@gmail.com">sara.chambard@gmail.com</a>
+					<br/> +33 7 70 90 67 41
+				</p>
+
+				<p style="text-align:center;margin-top:40px">
+					<b>Guido Romero Pierini</b>
+					<br/> Commissaire d'exposition
+					<br/>
+					<a href="mailto:guidoromeropierini@gmail.com">guidoromeropierini@gmail.com</a>
+					<br/> +33 6 89 08 91 66
+				</p>
+
+				<p style="text-align:center;margin-top:40px">
+					<b>Rosy Lamb</b>
+					<br/> Artist
+					<br/>
+					<a href="mailto:rosy@rosylamb.com">rosy@rosylamb.com</a>
+				</p>
+			</div>
+
+			<div class="collection" id="collection">
+				<a href="#" onclick="switchPiece('piece1','plate')" onmouseover="document.getElementById('piece1').className='currentPiece';"
+				    onmouseout="document.getElementById('piece1').className='';">
+					<img src="/smaller/the-plate-throwers/plate1.jpg" /> The Plate Throwers </a>
+
+				<a href="#" onclick="switchPiece('piece6','armour')" onmouseover="document.getElementById('piece6').className='currentPiece';"
+				    onmouseout="document.getElementById('piece6').className='';">
+					<img src="/smaller/armour/thumb-armour1.jpg" /> Armour </a>
+
+				<a href="#" onclick="switchPiece('piece4','parchemins')" onmouseover="document.getElementById('piece4').className='currentPiece';"
+				    onmouseout="document.getElementById('piece4').className='';">
+					<img src="/smaller/parchemins/parchemins1.jpg" /> Parchemins </a>
+				<a href="#" onclick="switchPiece('piece3','lumieres')" onmouseover="document.getElementById('piece3').className='currentPiece';"
+				    onmouseout="document.getElementById('piece3').className='';">
+					<img src="/smaller/les-lumieres/thumb-lumieres1.jpg" /> Les Lumieres </a>
+				<a href="#" onclick="switchPiece('piece5','return')" onmouseover="document.getElementById('piece5').className='currentPiece';"
+				    onmouseout="document.getElementById('piece5').className='';">
+					<img src="/smaller/return-to-form/return1.jpg" /> Return to Form </a>
+
+				<a href="#" onclick="switchPiece('piece2','oceans')" onmouseover="document.getElementById('piece2').className='currentPiece';"
+				    onmouseout="document.getElementById('piece2').className='';">
+					<img src="/smaller/oceans-of-notions/oceans1.jpg" /> Oceans of Notions </a>
+				<a href="#" onclick="switchPiece('piece7','fred')" onmouseover="document.getElementById('piece7').className='currentPiece';"
+				    onmouseout="document.getElementById('piece7').className='';">
+					<img src="/smaller/fred/thumb-fred1.jpg" /> Fred </a>
+
+				<a href="#" onclick="switchPiece('piece10','spring')" onmouseover="document.getElementById('piece10').className='currentPiece';"
+				    onmouseout="document.getElementById('piece10').className='';">
+					<img src="/smaller/sculptures/thumb-spring1.jpg" /> Spring is in the Air </a>
+
+				<a href="#" onclick="switchPiece('piece11','seaside-sculptor')" onmouseover="document.getElementById('piece11').className='currentPiece';"
+				    onmouseout="document.getElementById('piece11').className='';">
+					<img src="/smaller/sculptures/seaside-sculptor1.jpg" /> Seaside Sculptor </a>
+
+
+				<a href="#" onclick="switchPiece('piece8','new-born')" onmouseover="document.getElementById('piece8').className='currentPiece';"
+				    onmouseout="document.getElementById('piece8').className='';">
+					<img src="/smaller/sculptures/thumb-new-born1.jpg" /> New Born </a>
+
+				<a href="#" onclick="switchPiece('piece12','smoulder')" onmouseover="document.getElementById('piece12').className='currentPiece';"
+				    onmouseout="document.getElementById('piece12').className='';">
+					<img src="/smaller/sculptures/smoulder1.jpg" /> Smoulder </a>
+
+				<a href="#" onclick="switchPiece('piece9','new-you')" onmouseover="document.getElementById('piece9').className='currentPiece';"
+				    onmouseout="document.getElementById('piece9').className='';">
+					<img src="/smaller/sculptures/thumb-new-you1.jpg" /> New You </a>
+
+
+			</div>
+
+			<div class="text" id="intro">
+				<p style="padding-top:0px;margin-top:0px">
+					<b style="font-size:22px">More Material</b>
+				</p>
+				<p class="caption">
+					<b>Ellen McBreen</b>
+					<br/> Curator and Associate Professor in Art History.
+					<br/> Wheaton College, Massachusetts, USA.
+				</p>
+
+				<p>
+					In
+					<i>Parchemins</i> (2017) a paper-thin tabletop, its stretched surface evoking the texture of hospital bandages, clings
+					at its corners to lean supports like crutches propping it up. An impression of frail precariousness misleads us, however,
+					since the object in question is rugged cast bronze. It is the first sign of a quiet conceptual play in Rosy Lamb’s work,
+					which, on the surface of things, can seem almost exclusively about the process of making beautiful objects.
+				</p>
+
+				<div class="wide-image">
+					<img src="/smaller/parchemins/parchemins1.jpg" />
+					<p class="caption">Parchemins, side table, bronze, H 48 L 60 w 58, unique, 2017</p>
+				</div>
+
+				<p>
+					Process, after all, is what strikes you initially in every detail and richly layered surface of the functional sculptures
+					of
+					<i>More Material
+					</i>. Take
+					<i>Oceans of Notions</i>, for example. The irregular design of its floating panels draws your eye back and forth over its
+					meandering rivulets, providing unity for what in reality is 12 different, unique relief sculptures of various heights.
+					Although these designs are trapped in bronze permanently, they convey the restless energy of swirling eddies in water.
+					The 22 side panels each have a unique pattern of rapidly painterly rounded forms that read as the positive of the negative
+					trenches above. All of Lamb’s work manages to retain the freshness and spontaneity of its method of creation, which
+					belies the extreme, labor intensive aspects of its making. These side panels, for example, were made by brushing and
+					building directly with hot wax, while the surface panels were hand-tinted with pure pigment, and then covered with wax
+					and patina to protect it from oxidizing.
+				</p>
+
+				<div class="wide-image">
+					<img src="/smaller/oceans-of-notions/oceans3.jpg" />
+					<p class="caption">Oceans of Notions, 6 piece modular coffee table (detail of two modules), bronze, H 40-50 L 150 W 138 cm, unique, 2017</p>
+				</div>
+
+				<p>
+					Lamb brought the patience of a painter and the technical prowess of a figural sculptor to
+					<i>More Material</i>. Its objects channel her long years of experimentation working back and forth between media in her
+					studio: painting as a sculptor, and sculpting as a painter. [When I wrote a book about Matisse’s sculpture, Lamb was
+					the most knowledgeable source of information about casting processes. She is thoroughly entrenched in craft and workmanship].
+					Her recent adoption of painting in hot wax allowed her to make the surfaces of her bronze sculptures even more expressive;
+					this breakthrough lies at the origin of the processes used for
+					<i>More Material</i>.
+				</p>
+
+				<p>
+					One constant in the series is that that all of the objects are fundamentally rooted to physical realities, as Lamb tirelessly
+					explored how materials react and respond to various processes. Over the last two years, the foundry in Auvergne was
+					her laboratory. She collaborated with other craftspeople in the ateliers, pushing them to overturn traditional foundry
+					techniques with new experiments and ideas. She made extensive patina and color tests on the motifs found in this collection.
+					Her research into materials is almost obsessional, but it’s where her rich imagination finds a place to play.
+				</p>
+
+				<div class="wide-image">
+					<img src="/smaller/oceans-of-notions/oceans4.jpg" />
+					<p class="caption">Oceans of Notions (surface detail), pigmented paint and cold patina on bronze, 2017</p>
+				</div>
+
+
+				<p>
+					Both the technical, and demandingly physical aspects of sculpture and furniture making are decidedly macho. The imposing
+					pieces in More Material convey some of this bravado; they will not politely decorate a room so much as command it.
+					<i>Oceans of Notions</i>, in particular, with its delightfully irregular hand-made units seems like an idiosyncratic take
+					on the grid format sculptures of the famously tough, laconic American minimalist Carl André. Working in the foundry,
+					after all, has mostly been the work of red-blooded male artists. But the pieces themselves designed for the home are
+					also fundamentally about the less visible work of women. Who normally sets out the aperitifs on a coffee table, or wipes
+					up its spills (Lamb specifically thought of making that an easily washable surface)? Who will put the dishes away into
+					the cabinet of
+					<i>The Plate Throwers</i> after the guests have gone? The
+					<i>Plate Throwers
+					</i>, in particular, reveals a gender game at play in other pieces in the series. Behind its shiny gilded doors, a darker
+					domestic battle of the sexes is revealed. An agile female figure is on the verge of launching a plate at her male counterpart,
+					who marches unawares, a pile of plates dutifully poised on his head. Even in the best- run homes, after all, total chaos
+					is just minutes away.
+				</p>
+
+				<div class="wide-image">
+					<img src="/smaller/the-plate-throwers/plate15.jpg" />
+					<img src="/smaller/the-plate-throwers/plate25.jpg" />
+					<p class="caption">The Plate Throwers Cupboard [front and back views], bronze with tarnished silver leaf, H 97 L 146 W 46 cm, unique, 2017
+					</p>
+				</div>
+
+
+				<p>
+					In
+					<i>Les Lumières</i>, four other male nudes, traditionally a subject for masculine heroism, are humbled and domesticated,
+					given the household job of providing light. In this series, Lamb’s combines her gift for breathing life into her nudes
+					with her inventive wit. The legs and torsos of four expressive figures are joined to light-filtering abstract sculptures,
+					so that their individual identities are erased. One head is pulverized into the web of abstract matter emerging from
+					his torso. The title
+					<i>Les Lumières</i> (
+					<i>The Luminaries
+					</i> in English) seems straightforward enough; they are, after all, functional light units in the tradition of figural
+					torchieres. But the word also evokes luminary: a person of prominence, or master in their respective field. As in “Dr.
+					Robertson is a luminary in the medical profession, and so the surgical procedure is named after him.” It’s a word, of
+					course, more frequently used to describe men.
+				</p>
+
+				o
+				<div class="wide-image">
+					<img src="/smaller/les-lumieres/lumieres20.jpg" />
+					<p class="caption">Les Lumi&egrave;res (in situ), table lamps, vapor patinated bronze, 2017</p>
+				</div>
+
+
+				<p>
+					In the history of art, commemorative figural sculpture has been overwhelming devoted to male achievements. This is a tradition
+					Lamb knows well, having worked on public monuments for two years when she first came to Paris. Her modest series of
+					Les Lumieres, hommages recalls the grandiose tradition of les hommes illustres (Famous Men), like the 86 standing sculptures
+					decorating the first floor balustrade of the Louvre’s Cour Napoléon. They look down at the modern glass pyramid, while
+					very few visitors look up at them. Canonized in the 19th-century by Hector-Martin Lefuel, the architect who ordered
+					them, many of these men are now forgotten (Etienne Duperac? Jean Bullant?). Certainly, they were luminaries for their
+					age. How much more appreciated would they be now if they too could radiate light?
+				</p>
+			</div>
+
+			<div class="text" id="process">
+
+
+				<iframe src="https://player.vimeo.com/video/235557083?title=0&byline=0&portrait=0" width="480" height="270" style="padding-bottom:20px;"
+				    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+				<!-- <img src="smaller/about/intro1.jpg" /> -->
+
+				<p style="margin-top:0px">
+					As a painter and sculptor, I seek forms that are open and closed, ordered and disordered in equal measure and in which opulent
+					workmanship competes with untouched raw materials to reveal the push and pull between the public and private, the epic
+					and the transient. I often work with sculpted plaster that looks as if it has naturally aged and crumbled over time.
+					It is more difficult to evoke this aesthetic with traditional bronze sculptures, but recently, I developed a technique
+					of painting in hot wax that allows me to make expressive and delicate bronze surfaces that balance the strength of metal
+					with the visual fragility of painted brush strokes.
+				</p>
+
+				<div class="wide-image">
+					<img src="/smaller/surface-details/surface4.jpg" />
+				</div>
+				<div class="wide-image">
+					<img src="/smaller/surface-details/surface1.jpg" />
+					<p class="caption">The Plate Throwers (surface details), 2017
+					</p>
+				</div>
+
+				<p>
+					These unique surfaces and motifs are the foundation for my new series of functional sculptures, called More Material, on
+					which I have been working for the the past two years at La Fonderie Fusions in Auvergne, France.
+				</p>
+
+				<p>
+					To make More Material, the foundry has been my studio and my laboratory. David de Gourcuff, the owner of the foundry, invested
+					in my work, put me up in his home, and gave me unprecedented access and free rein to work and play in the midst of his
+					busy foundry. Making these pieces involved collaborations with every atelier of the foundry, and every worker there
+					helped me at some critical juncture or other. This collection would not have been possible otherwise.
+				</p>
+
+				<img src="/smaller/about/intro2.jpg" />
+
+			</div>
+
+			<div class="text" id="background">
+
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground22.jpg" />
+					<p class="caption">Rosy Lamb, photo by Steve Murez
+					</p>
+				</div>
+
+				<!--
 <div class="wide-image">
 <img src="images/artist-bio/bground15.jpg" /> 
 </div>
 -->
-<!--<h3>Bio</h3>-->
+				<!--<h3>Bio</h3>-->
 
-<p>
-I was born to a family of artists living in the woods of New Hampshire. My siblings and I were homeschooled, that is, we were mostly left to pursue our own projects. At seventeen, I went to the Pennsylvania Academy of the Fine Arts where I formally studied painting and sculpture.  I then moved to Paris, where I assisted the sculptor Jean Cardot on his public monuments for two years, before moving to my own studio to work on painting, sculpture, and now, furniture. 
-</p>
+				<p>
+					I was born to a family of artists living in the woods of New Hampshire. My siblings and I were homeschooled, that is, we
+					were mostly left to pursue our own projects. At seventeen, I went to the Pennsylvania Academy of the Fine Arts where
+					I formally studied painting and sculpture. I then moved to Paris, where I assisted the sculptor Jean Cardot on his public
+					monuments for two years, before moving to my own studio to work on painting, sculpture, and now, furniture.
+				</p>
 
-<div class="wide-image">
-<img src="/images/artist-bio/bground2.jpg" />
-<p class="caption">
-  <i>Francis and Alex, plaster and bronze, 1998.</i> <br/>
-  I made these two sculptures of two artist friends who modeled for me in my home studio in Philadelphia, where, even as an art school student, I spent most of my time. 
-</p>
-</div>
-<div style="clear:both" />
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground2.jpg" />
+					<p class="caption">
+						<i>Francis and Alex, plaster and bronze, 1998.</i>
+						<br/> I made these two sculptures of two artist friends who modeled for me in my home studio in Philadelphia, where, even
+						as an art school student, I spent most of my time.
+					</p>
+				</div>
+				<div style="clear:both" />
 
-<!--
+				<!--
 <div class="half-image">
 <img src="images/artist-bio/bground3.jpg" />
 </div>
@@ -749,52 +792,64 @@ I was born to a family of artists living in the woods of New Hampshire. My sibli
 <div style="clear:both" />
 -->
 
-&nbsp;
-&nbsp;
-<h3>Intimate Portraits</h3>
+				&nbsp; &nbsp;
+				<h3>Intimate Portraits</h3>
 
-<p>
-Since childhood, retreating into my private world has been the generative stance in which it is possible for me to make things. Alone in my studio, the vulnerability that comes with openness can be a cultivated strength, and the space that the dust takes up in between the things in the room is as much part of what I can see and feel and use as inspiration as the things, sculptures, and living models that surround me.
-</p>
+				<p>
+					Since childhood, retreating into my private world has been the generative stance in which it is possible for me to make things.
+					Alone in my studio, the vulnerability that comes with openness can be a cultivated strength, and the space that the
+					dust takes up in between the things in the room is as much part of what I can see and feel and use as inspiration as
+					the things, sculptures, and living models that surround me.
+				</p>
 
-<p>
-To me, the model is not just a means to making a painting or sculpture but a walking, breathing conduit for the unknown. The images I make with models are fractured embroideries of time; they mix observed moments with a more inward form of seeing and feeling.
-</p>
-
-
-<div class="wide-image">
-<img src="/images/artist-bio/bground9.jpg" />
-<p class="caption">
-  <i>Jasmine in the Braemare house, oil on plaster, 2008</i> <br/>
-My sister Jasmine was my model for many paintings between 2006-2008. During these years she was having health problems and modeling was the only job she felt up to. Her quiet inward state inscribed itself into the images I made of her during those years. 
-</p>
-</div>
-
-<div class="wide-image">
-<img src="/images/artist-bio/bground6.jpg" />
-<p class="caption">
-  <i>Put the dog and the cat in the Poster (George and Sylvia Whitman in the bookstore Shakespeare and Company, Paris), oil on linen, 2011.</i><br/>
-  This painting from a small series of portraits I made of families posing in their homes was exhibited at the BP Portrait exhibition, National Portrait Gallery, London in 2012
-</p>
-</div>
+				<p>
+					To me, the model is not just a means to making a painting or sculpture but a walking, breathing conduit for the unknown.
+					The images I make with models are fractured embroideries of time; they mix observed moments with a more inward form
+					of seeing and feeling.
+				</p>
 
 
-<h3>Plaster + Hybrids</h3>
-  
-<p>
-  Over time I increasingly turned toward making paintings on plaster in which I experimented with admixing sculptural elements and shadow into the pieces. In some instances my hybrid plaster paintings look no different from paintings on other supports, except for their slightly irregular shapes or the texture on their cast plaster surfaces. In other works, using plaster supports allows me to integrate high and low relief into my painting by breaking, sculpting, scratching away and incising portions of the surface image.
-  </p>
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground9.jpg" />
+					<p class="caption">
+						<i>Jasmine in the Braemare house, oil on plaster, 2008</i>
+						<br/> My sister Jasmine was my model for many paintings between 2006-2008. During these years she was having health problems
+						and modeling was the only job she felt up to. Her quiet inward state inscribed itself into the images I made of her
+						during those years.
+					</p>
+				</div>
 
-<div style="clear:both" />
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground6.jpg" />
+					<p class="caption">
+						<i>Put the dog and the cat in the Poster (George and Sylvia Whitman in the bookstore Shakespeare and Company, Paris),
+							oil on linen, 2011.</i>
+						<br/> This painting from a small series of portraits I made of families posing in their homes was exhibited at the BP Portrait
+						exhibition, National Portrait Gallery, London in 2012
+					</p>
+				</div>
 
-<div class="wide-image">
-<img src="/images/artist-bio/bground7.jpg" />
-<p class="caption">
-  <i>Ames de plates et instants inachevée, exhibition poster. Photo by Benjamin Pierce, 2006.</i>
-</p>
-</div>
 
-<!--
+				<h3>Plaster + Hybrids</h3>
+
+				<p>
+					Over time I increasingly turned toward making paintings on plaster in which I experimented with admixing sculptural elements
+					and shadow into the pieces. In some instances my hybrid plaster paintings look no different from paintings on other
+					supports, except for their slightly irregular shapes or the texture on their cast plaster surfaces. In other works,
+					using plaster supports allows me to integrate high and low relief into my painting by breaking, sculpting, scratching
+					away and incising portions of the surface image.
+				</p>
+
+				<div style="clear:both" />
+
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground7.jpg" />
+					<p class="caption">
+						<i>Ames de plates et instants inachevée, exhibition poster. Photo by Benjamin Pierce, 2006.</i>
+					</p>
+				</div>
+
+				<!--
 <div class="wide-image">
 <img src="images/artist-bio/bground13.jpg" />
 <p class="caption">
@@ -815,9 +870,9 @@ Margaux, a talented young photographer, modeled and spent time in my studio in 2
 </div>
 -->
 
-<div style="clear:both" />
+				<div style="clear:both" />
 
-<!--
+				<!--
 <div class="wide-image">
 <img src="images/artist-bio/bground15.jpg" />
 <p class="caption">
@@ -826,7 +881,7 @@ The sculptures lying around my studio grew to be an ungainly population of misma
 </p>
 </div>
 -->
-<!--
+				<!--
 <div class="wide-image">
 <img src="images/artist-bio/bground16.jpg" />
 <p class="caption">
@@ -835,44 +890,50 @@ The sculptures lying around my studio grew to be an ungainly population of misma
 </div>-->
 
 
-<h3>Hot Wax and <i>More Material</i></h3>
+				<h3>Hot Wax and
+					<i>More Material</i>
+				</h3>
 
-<p>
-  In 2014 I developed a technique of painting in hot wax in order to make expressive metal surfaces while making a small series of new sculptures.
-  My sculpture <i>Armour</i> is an example of this new direct wax technique.
-</p>
-
-
-<div style="clear:both" />
-<div class="wide-image">
-<img src="/images/artist-bio/bground20.jpg" />
-<p class="caption">Armour, bronze, 2016
-</p>
-</div>
-<div style="clear:both" />
-
-<p>
-  At the beginning of 2016 I began developing these new techniques into a series of unique furniture pieces and painterly architectural motifs in bronze that embody my lifelong interest in making art that reflects on  the private experience of home and family life. I am calling this new series of domestic sculptures More Material as these are  works in which the material weight and bulk compete with their visual and conceptual presence.
-</p>
+				<p>
+					In 2014 I developed a technique of painting in hot wax in order to make expressive metal surfaces while making a small series
+					of new sculptures. My sculpture
+					<i>Armour</i> is an example of this new direct wax technique.
+				</p>
 
 
-<div class="wide-image">
-<img src="/images/artist-bio/bground21.jpg" />
-<p class="caption">Oceans of Notions, modular coffee table, unique, bronze, 2017
-</p>
-</div>
+				<div style="clear:both" />
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground20.jpg" />
+					<p class="caption">Armour, bronze, 2016
+					</p>
+				</div>
+				<div style="clear:both" />
 
-<div style="clear:both" />
-<!--
+				<p>
+					At the beginning of 2016 I began developing these new techniques into a series of unique furniture pieces and painterly architectural
+					motifs in bronze that embody my lifelong interest in making art that reflects on the private experience of home and
+					family life. I am calling this new series of domestic sculptures More Material as these are works in which the material
+					weight and bulk compete with their visual and conceptual presence.
+				</p>
+
+
+				<div class="wide-image">
+					<img src="/images/artist-bio/bground21.jpg" />
+					<p class="caption">Oceans of Notions, modular coffee table, unique, bronze, 2017
+					</p>
+				</div>
+
+				<div style="clear:both" />
+				<!--
 <div class="half-image" style="text-align:center;margin-left:auto;margin-right:auto">
 <img src="images/artist-bio/bground22.jpg" />
 <p class="caption">Rosy Lamb, photo by Steve Murez
 </p>
 </div>
 -->
-</div>
+			</div>
 
-</div> 
-</div> 
+		</div>
+	</div>
 
 </body>
