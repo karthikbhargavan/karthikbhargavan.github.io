@@ -91,10 +91,10 @@ window.currentPiece = "";
 
 function switchPiece(id, piece) {
 	switchDiv('normal', piece);
-	if (window.currentText != "") {
-		document.getElementById(window.currentText + "-menu").className = "";
-	}
-	window.currentText = "";
+//	if (window.currentText != "") {
+//		document.getElementById(window.currentText + "-menu").className = "";
+//	}
+//	window.currentText = "";
 	if (window.currentPiece != "") {
 		document.getElementById(window.currentPiece).className = "";
 	}
