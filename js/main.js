@@ -140,20 +140,22 @@ function toggleMenu() {
 	console.log(bigMenuLinks);
 	if (menuToggled) {
 		setTimeout(function() {
-			bigMenu.style['max-height'] = '0px';
+		    bigMenu.style['max-height'] = '0px';
+		    //    bigMenu.style['display'] = 'none';
 		}, 100);
 		for (let i = 0; i < bigMenuLinks.length; i++) {
 			bigMenuLinks[i].style.opacity = '0';
 		}
-		lang.style.opacity = '0';
+//		lang.style.opacity = '0';
 		window.menuToggled = false;
 	}
 	else {
-		bigMenu.style['max-height'] = '200px';
+	    bigMenu.style['max-height'] = '200px';
+//	    bigMenu.style['display'] = 'block';
 		for (let i = 0; i < bigMenuLinks.length; i++) {
 			bigMenuLinks[i].style.opacity = '1';
 		}
-		lang.style.opacity = '1';
+//		lang.style.opacity = '1';
 		window.menuToggled = true;
 	}
 }

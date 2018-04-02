@@ -32,6 +32,10 @@
 	<div class="normal" id="normal">
 		<div class="left">
 			<img src="images/website/menu.svg" alt="Menu" class="menuToggle" onclick="toggleMenu()" />
+			<div class="lang">
+				<a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> |
+				<a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a>
+			</div>
 			<div class="bigmenu">
 				<a href="#" id="intro-menu" onclick="switchText('intro')">Introduction</a>
 				<a href="#" id="collection-menu" onclick="switchText('collection')">Selected Pieces</a>
@@ -43,7 +47,7 @@
 				<!--<a href="mailto:guidoromeropierini@gmail.com" id="contact-menu">Contacts</a>-->
 				<a href="#" id="contacts-menu" onclick="switchText('contacts')">Contacts</a>
 			</div>
-			<div class="lang">
+			<div class="langbottom">
 				<a onclick="switchLang('en',window.location.pathname)" href="/">EN</a> |
 				<a onclick="switchLang('fr',window.location.pathname)" href="/fr">FR</a>
 			</div>
