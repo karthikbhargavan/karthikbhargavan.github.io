@@ -61,6 +61,7 @@ body {
 }
 
 div.header {
+        cursor: pointer;
 	max-width: 1000px;
 	min-width: 350px;
 	overflow: hidden;
