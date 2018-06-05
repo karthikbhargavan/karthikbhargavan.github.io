@@ -96,11 +96,11 @@ div.header div.author {
 	margin-left: 10px;
 }
 
-div.header div.lang a {
+div.header div.author a {
 	text-decoration: none;
 }
 
-div.header div.lang a:hover {
+div.header div.author a:hover {
 	text-decoration: underline;
 }
 
