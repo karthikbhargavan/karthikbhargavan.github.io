@@ -96,6 +96,14 @@ div.header div.author {
 	margin-left: 10px;
 }
 
+div.header div.lang a {
+	text-decoration: none;
+}
+
+div.header div.lang a:hover {
+	text-decoration: underline;
+}
+
 div.header div.lang {
 	float: right;
 	/* Rosy Lamb: */
